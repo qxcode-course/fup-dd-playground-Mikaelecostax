@@ -1,0 +1,64 @@
+{
+    "patches": [
+        {
+            "label": "2026-03-10_17-13-16",
+            "content": "@@ -54,15 +54,13 @@\n ln(%22\n-Mikaele\n+qxcod\n e%22)%0A\n",
+            "lines": "5"
+        },
+        {
+            "label": "2026-03-10_17-22-47",
+            "content": "@@ -61,36 +61,9 @@\n aele\n-%22)%0A    fmt.Println(%22CocaCola\n+e\n %22)%0A%7D\n",
+            "lines": "5"
+        },
+        {
+            "label": "2026-03-10_17-24-28",
+            "content": "@@ -54,23 +54,44 @@\n ln(%22\n-ola mundo%22)%0A    \n+Mikaele%22)%0A    fmt.Println(%22CocaCola%22)\n %0A%7D%0A\n",
+            "lines": "6"
+        },
+        {
+            "label": "2026-03-10_17-32-45",
+            "content": "@@ -37,35 +37,8 @@\n ) %7B%0A\n-    fmt.Println(%22Mikaele%22)%0A\n     \n",
+            "lines": "6"
+        },
+        {
+            "label": "2026-03-10_17-34-02",
+            "content": "@@ -81,16 +81,17 @@\n ln(%22\n-CocaCola\n+ola mundo\n %22)%0A \n",
+            "lines": "7"
+        },
+        {
+            "label": "2026-03-10_17-34-18",
+            "content": "@@ -92,37 +92,8 @@\n a%22)%0A\n-    fmt.Println(%22ola mundo%22)%0A\n     \n",
+            "lines": "7"
+        },
+        {
+            "label": "2026-03-10_17-42-40",
+            "content": "@@ -41,74 +41,57 @@\n     \n-%0A    var num1, num2 float64%0A    fmt.scan(&num1)%0A    fmt.scan(&num2\n+fmt.Println(%22Mikaele%22)%0A    fmt.Println(%22CocaCola%22\n )%0A  \n",
+            "lines": "8"
+        },
+        {
+            "label": "2026-03-10_17-46-59",
+            "content": "@@ -33,16 +33,21 @@\n ain() %7B%0A\n+    %0A\n     var \n@@ -65,33 +65,33 @@\n float64%0A    fmt.\n-S\n+s\n can(&num1)%0A    f\n@@ -97,9 +97,9 @@\n fmt.\n-S\n+s\n can(\n@@ -138,12 +138,11 @@\n o%22)%0A\n-%7D%0A\n     %0A\n+%7D\n %0A\n",
+            "lines": "10"
+        },
+        {
+            "label": "2026-03-10_17-50-44",
+            "content": "@@ -131,20 +131,8 @@\n ndo%22\n-, num1, num2\n )%0A%7D%0A\n",
+            "lines": "10"
+        },
+        {
+            "label": "2026-03-10_17-51-40",
+            "content": "@@ -116,16 +116,29 @@\n Println(\n+%22ola mundo%22, \n num1, nu\n",
+            "lines": "10"
+        },
+        {
+            "label": "2026-03-10_17-57-16",
+            "content": "@@ -124,10 +124,9 @@\n num1\n- +\n+,\n  num\n",
+            "lines": "10"
+        },
+        {
+            "label": "2026-03-10_17-57-27",
+            "content": "package main\nimport \"fmt\"\nfunc main() {\n    var num1, num2 float64\n    fmt.Scan(&num1)\n    fmt.Scan(&num2)\n    fmt.Println(num1 + num2)\n}\n    \n\n",
+            "lines": "10"
+        }
+    ]
+}

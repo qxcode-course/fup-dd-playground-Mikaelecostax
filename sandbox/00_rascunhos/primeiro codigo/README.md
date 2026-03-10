@@ -1,11 +1,18 @@
 ---
-# Não altere essa chave, ela deve ser única para cada rascunho
-key=user_000
+key: user_001
 ---
 
-# teste
+# primeiro codigo
 
-Escreva aqui as informações que você quiser salvar, esse é o seu rascunho.
+Escreva aqui as informações que você quer salvar, esse é o seu rascunho.
+O texto abaixo é informativo e você pode apagar depois de aprender como usar os rascunhos.
+
+## Como usar os rascunhos
+
+- Para renomear seu rascunho, basta renomear a pasta do rascunho.
+- Para reorganizar, você pode criar subpastas dentro do sandbox e mover as pastas de rascunhos pra lá.
+- Você pode usar o atalho R(Reload) no TKO para recarregar os rascunhos depois de criar, renomear ou reorganizar eles.
+- Tudo que você fizer nos rascunhos também será rastreado pela ferramenta.
 
 ## Como criar seus próprios testes
 
