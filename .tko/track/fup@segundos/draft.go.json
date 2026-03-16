@@ -1,0 +1,99 @@
+{
+    "patches": [
+        {
+            "label": "2026-03-16_18-00-22",
+            "content": "@@ -45,18 +45,19 @@\n var \n-num1\n+a\n  int %0A\n+    \n %0A   \n",
+            "lines": "7"
+        },
+        {
+            "label": "2026-03-16_18-00-38",
+            "content": "@@ -51,16 +51,17 @@\n m1 int %0A\n+%0A\n     fmt.\n",
+            "lines": "7"
+        },
+        {
+            "label": "2026-03-16_18-00-48",
+            "content": "@@ -45,23 +45,12 @@\n var \n-tempo segundos \n+num1\n  int\n",
+            "lines": "6"
+        },
+        {
+            "label": "2026-03-16_18-07-07",
+            "content": "@@ -74,30 +74,24 @@\n fmt.\n-Scan(&tempo, &segundos\n+Println(%22qxcode%22\n )%0A%7D%0A\n",
+            "lines": "6"
+        },
+        {
+            "label": "2026-03-16_18-07-49",
+            "content": "@@ -50,9 +50,8 @@\n empo\n-;\n  seg\n@@ -60,16 +60,17 @@\n dos  int\n+ \n %0A    fmt\n@@ -98,25 +98,6 @@\n os)%0A\n-    fmt.Printfln()%0A\n %7D%0A\n",
+            "lines": "6"
+        },
+        {
+            "label": "2026-03-16_18-09-50",
+            "content": "@@ -50,31 +50,17 @@\n empo\n-, hora, minuto,\n+;\n  segundo\n   in\n@@ -55,16 +55,17 @@\n  segundo\n+s\n   int%0A  \n@@ -85,84 +85,38 @@\n empo\n-)%0A    hora = (tempo/3600)%0A    minuto = (hora/60)%0A    segundos = (minuto/60)%0A%0A\n+, &segundos)%0A    fmt.Printfln()\n %0A%7D%0A\n",
+            "lines": "7"
+        },
+        {
+            "label": "2026-03-16_18-17-25",
+            "content": "@@ -69,17 +69,17 @@\n  segundo\n-s\n+ \n  int%0A   \n",
+            "lines": "11"
+        },
+        {
+            "label": "2026-03-16_18-18-19",
+            "content": "@@ -174,55 +174,8 @@\n 60)%0A\n- fmt.Printf(%22%25d:%25d:%25d%22, hora, minuto, segundos)\n %0A%0A%7D%0A\n",
+            "lines": "11"
+        },
+        {
+            "label": "2026-03-16_18-19-31",
+            "content": "@@ -134,26 +134,20 @@\n nuto = (\n-tempo%253600\n+hora\n /60)%0A   \n@@ -163,23 +163,15 @@\n  = (\n-(tempo%253600%25) %25\n+minuto/\n 60)%0A\n",
+            "lines": "11"
+        },
+        {
+            "label": "2026-03-16_18-22-04",
+            "content": "@@ -178,16 +178,17 @@\n o%253600%25)\n+ \n %2560)%0A fm\n",
+            "lines": "11"
+        },
+        {
+            "label": "2026-03-16_18-22-15",
+            "content": "@@ -208,10 +208,8 @@\n d:%25d\n-/n\n %22, h\n",
+            "lines": "11"
+        },
+        {
+            "label": "2026-03-16_18-22-38",
+            "content": "@@ -208,9 +208,9 @@\n d:%25d\n-%5C\n+/\n n%22, \n",
+            "lines": "11"
+        },
+        {
+            "label": "2026-03-16_18-22-49",
+            "content": "@@ -183,19 +183,16 @@\n 0%25)%2560)%0A\n-   \n  fmt.Pri\n",
+            "lines": "11"
+        },
+        {
+            "label": "2026-03-16_18-23-04",
+            "content": "@@ -107,16 +107,17 @@\n  hora = \n+(\n tempo/36\n@@ -118,16 +118,17 @@\n mpo/3600\n+)\n %0A    min\n@@ -133,16 +133,17 @@\n inuto = \n+(\n tempo%2536\n@@ -147,16 +147,17 @@\n %253600/60\n+)\n %0A    seg\n@@ -164,16 +164,17 @@\n undos = \n+(\n (tempo%253\n@@ -181,16 +181,17 @@\n 600%25)%2560\n+)\n %0A    fmt\n",
+            "lines": "11"
+        },
+        {
+            "label": "2026-03-16_18-23-36",
+            "content": "@@ -131,17 +131,16 @@\n inuto = \n-(\n tempo%2536\n@@ -141,17 +141,16 @@\n mpo%253600\n-)\n /60%0A    \n",
+            "lines": "11"
+        },
+        {
+            "label": "2026-03-16_18-23-51",
+            "content": "@@ -69,16 +69,17 @@\n  segundo\n+s\n  int%0A   \n@@ -229,13 +229,14 @@\n  segundo\n+s\n )%0A%0A%7D%0A\n",
+            "lines": "11"
+        },
+        {
+            "label": "2026-03-16_18-24-42",
+            "content": "@@ -172,16 +172,17 @@\n mpo%253600\n+%25\n )%2560%0A   \n",
+            "lines": "11"
+        },
+        {
+            "label": "2026-03-16_18-25-05",
+            "content": "@@ -157,16 +157,17 @@\n  segundo\n+s\n  = (temp\n",
+            "lines": "11"
+        },
+        {
+            "label": "2026-03-16_18-25-17",
+            "content": "package main\nimport \"fmt\"\nfunc main() {\n    var tempo, hora, minuto, segundo int\n    fmt.Scan(&tempo)\n    hora = tempo/3600\n    minuto = (tempo%3600)/60\n    segundo = (tempo%3600)%60\n    fmt.Printf(\"%d:%d:%d\\n\", hora, minuto, segundo)\n\n}\n",
+            "lines": "11"
+        }
+    ]
+}
