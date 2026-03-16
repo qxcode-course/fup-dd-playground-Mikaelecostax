@@ -42,8 +42,23 @@
         },
         {
             "label": "2026-03-16_04-58-39",
-            "content": "package main\nimport \"fmt\"\nfunc main() {\n    var aq, bq, cq float64\n    var dv, ev, fv float64\n    fmt.Scan(&aq, &bq, &cq)\n    fmt.Scan(&dv, &ev, &fv)\n    total := aq*dv + bq*ev + cq*fv\n    fmt.Print(\"%.2f\\n\", total)\n    \n}\n",
+            "content": "@@ -195,14 +195,13 @@\n rint\n-f\n (%22%25.\n-1\n+2\n f%5Cn%22\n",
             "lines": "11"
+        },
+        {
+            "label": "2026-03-16_17-41-25",
+            "content": "@@ -64,36 +64,8 @@\n t64%0A\n-    fmt.Scan(&aq, &bq, &cq)%0A\n     \n@@ -105,141 +105,84 @@\n an(&\n-dv, &ev, &fv\n+aq, &bq, &cq\n )%0A    \n-var mk float64%0A    fmt.Scan(&mk)%0A    var tudo float64%0A    tudo \n+fmt.Scan(&dv, &ev, &fv)%0A    total :\n = \n-(\n aq*dv\n-)\n  + \n-(\n bq*ev\n-)\n  + \n-(\n cq*fv\n-)%0A    troco := tudo - mk\n %0A   \n@@ -200,20 +200,20 @@\n (%22%25.\n-2\n+1\n f%5Cn%22, t\n-roco\n+otal\n )%0A  \n",
+            "lines": "11"
+        },
+        {
+            "label": "2026-03-16_17-55-54",
+            "content": "@@ -257,17 +257,17 @@\n  := \n-mk - tudo\n+tudo - mk\n %0A   \n",
+            "lines": "15"
+        },
+        {
+            "label": "2026-03-16_17-56-32",
+            "content": "package main\nimport \"fmt\"\nfunc main() {\n    var aq, bq, cq float64\n    fmt.Scan(&aq, &bq, &cq)\n    var dv, ev, fv float64\n    fmt.Scan(&dv, &ev, &fv)\n    var mk float64\n    fmt.Scan(&mk)\n    var tudo float64\n    tudo = (aq*dv) + (bq*ev) + (cq*fv)\n    troco := mk - tudo\n    fmt.Printf(\"%.2f\\n\", troco)\n    \n}\n",
+            "lines": "15"
         }
     ]
 }
