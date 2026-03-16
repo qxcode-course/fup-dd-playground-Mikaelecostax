@@ -13,12 +13,13 @@ sources:
   quests: null
   tasks: null
 expanded:
-- fup@missão-operações
 - fup@campanha-principal
+- fup@missão-operações
 tasks:
   fup@tres: '{self:1, rate:100, study:15, friend:nao, guided:1}'
   fup@resto: '{self:1, rate:100, study:25, friend:nao}'
   fup@media: '{self:1, rate:100, study:20, friend:nao, concept:1}'
+  fup@sobrou: '{self:1, rate:100, friend:gilvan}'
 flags:
   painel: 0
   quests: 0
