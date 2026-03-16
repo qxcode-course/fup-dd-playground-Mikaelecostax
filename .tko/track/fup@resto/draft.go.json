@@ -2,8 +2,48 @@
     "patches": [
         {
             "label": "2026-03-10_18-14-46",
-            "content": "package main\nimport \"fmt\"\nfunc main() {\n    fmt.Println(\"qxcode\")\n}\n",
+            "content": "@@ -37,70 +37,8 @@\n ) %7B%0A\n-    var a int%0A    var b int%0A    fmt.Scan(&a)%0A    fmt.Scan(&b)%0A\n     \n",
             "lines": "5"
+        },
+        {
+            "label": "2026-03-16_03-45-45",
+            "content": "@@ -115,13 +115,16 @@\n tln(\n-a + b\n+%22qxcode%22\n )%0A%7D%0A\n",
+            "lines": "9"
+        },
+        {
+            "label": "2026-03-16_03-47-16",
+            "content": "@@ -112,19 +112,14 @@\n rint\n+ln\n (a \n-/ b, a %25\n++\n  b)%0A\n",
+            "lines": "9"
+        },
+        {
+            "label": "2026-03-16_03-50-14",
+            "content": "@@ -45,25 +45,23 @@\n var \n-bombons, crian%C3%A7as\n+a int%0A    var b\n  int\n@@ -79,82 +79,54 @@\n an(&\n-bombons, %25crian%C3%A7as)%0A    fmt.Println(bombons / crian%C3%A7as, bombons %25 crian%C3%A7as\n+a)%0A    fmt.Scan(&b)%0A    fmt.Print(a / b, a %25 b\n )%0A%7D%0A\n",
+            "lines": "9"
+        },
+        {
+            "label": "2026-03-16_03-52-20",
+            "content": "@@ -55,17 +55,17 @@\n s, crian\n-c\n+%C3%A7\n as int%0A \n@@ -88,25 +88,25 @@\n bons, %25crian\n-c\n+%C3%A7\n as)%0A    fmt.\n@@ -128,17 +128,17 @@\n  / crian\n-c\n+%C3%A7\n as, bomb\n@@ -148,15 +148,15 @@\n  %25 crian\n-c\n+%C3%A7\n as)%0A%7D%0A\n",
+            "lines": "7"
+        },
+        {
+            "label": "2026-03-16_03-53-09",
+            "content": "@@ -45,14 +45,25 @@\n var \n-ab, bc\n+bombons, criancas\n  int\n@@ -81,49 +81,82 @@\n an(&\n-ab, %25bc)%0A    fmt.Println(ab / bc, ab %25 bc\n+bombons, %25criancas)%0A    fmt.Println(bombons / criancas, bombons %25 criancas\n )%0A%7D%0A\n",
+            "lines": "7"
+        },
+        {
+            "label": "2026-03-16_03-54-29",
+            "content": "@@ -46,11 +46,13 @@\n ar a\n+b\n , b\n+c\n  int\n@@ -71,12 +71,14 @@\n n(&a\n+b\n , %25b\n+c\n )%0A  \n@@ -96,19 +96,23 @@\n ln(a\n+b\n  / b\n+c\n , a\n+b\n  %25 b\n+c\n )%0A%7D%0A\n",
+            "lines": "7"
+        },
+        {
+            "label": "2026-03-16_03-55-31",
+            "content": "@@ -46,21 +46,9 @@\n ar a\n- int %0A    var\n+,\n  b i\n@@ -67,17 +67,17 @@\n can(&a, \n-&\n+%25\n b)%0A    f\n",
+            "lines": "7"
+        },
+        {
+            "label": "2026-03-16_04-14-27",
+            "content": "package main\nimport \"fmt\"\nfunc main() {\n    var a int \n    var b int\n    fmt.Scan(&a, &b)\n    fmt.Println(a / b, a % b)\n}\n",
+            "lines": "8"
         }
     ]
 }

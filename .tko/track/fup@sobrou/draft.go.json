@@ -1,0 +1,49 @@
+{
+    "patches": [
+        {
+            "label": "2026-03-16_04-48-25",
+            "content": "@@ -119,36 +119,8 @@\n cq)%0A\n-    fmt.Scan(&dv, &ev, &fv)%0A\n     \n",
+            "lines": "8"
+        },
+        {
+            "label": "2026-03-16_04-48-52",
+            "content": "@@ -163,26 +163,16 @@\n tln(\n- dv + ev + fv)%0A    \n+%22qxcode%22)\n %0A%7D%0A\n",
+            "lines": "9"
+        },
+        {
+            "label": "2026-03-16_04-52-17",
+            "content": "@@ -172,9 +172,9 @@\n  ev \n--\n++\n  fv)\n",
+            "lines": "10"
+        },
+        {
+            "label": "2026-03-16_04-53-33",
+            "content": "@@ -167,14 +167,14 @@\n  dv \n-*\n++\n  ev \n-*\n+-\n  fv)\n",
+            "lines": "10"
+        },
+        {
+            "label": "2026-03-16_04-54-08",
+            "content": "@@ -167,14 +167,14 @@\n  dv \n-+\n+*\n  ev \n-+\n+*\n  fv)\n",
+            "lines": "10"
+        },
+        {
+            "label": "2026-03-16_04-54-40",
+            "content": "@@ -151,69 +151,33 @@\n     \n-total := aq*\n+fmt.Println( \n dv + \n-bq*\n ev + \n-cq*fv%0A    fmt.Println(%22%25.2f%5Cn%22 total\n+fv\n )%0A  \n",
+            "lines": "10"
+        },
+        {
+            "label": "2026-03-16_04-57-57",
+            "content": "@@ -202,17 +202,16 @@\n %22%25.2f%5Cn%22\n-,\n  total)%0A\n",
+            "lines": "11"
+        },
+        {
+            "label": "2026-03-16_04-58-06",
+            "content": "@@ -191,16 +191,18 @@\n mt.Print\n+ln\n (%22%25.2f%5Cn\n",
+            "lines": "11"
+        },
+        {
+            "label": "2026-03-16_04-58-39",
+            "content": "package main\nimport \"fmt\"\nfunc main() {\n    var aq, bq, cq float64\n    var dv, ev, fv float64\n    fmt.Scan(&aq, &bq, &cq)\n    fmt.Scan(&dv, &ev, &fv)\n    total := aq*dv + bq*ev + cq*fv\n    fmt.Print(\"%.2f\\n\", total)\n    \n}\n",
+            "lines": "11"
+        }
+    ]
+}
