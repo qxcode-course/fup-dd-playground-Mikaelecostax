@@ -13,14 +13,15 @@ sources:
   quests: null
   tasks: null
 expanded:
-- fup@campanha-principal
 - fup@missão-operações
+- fup@campanha-principal
 tasks:
   fup@tres: '{self:1, rate:100, study:15, friend:nao, guided:1}'
   fup@resto: '{self:1, rate:100, study:25, friend:nao}'
   fup@media: '{self:1, rate:100, study:20, friend:nao, concept:1}'
   fup@sobrou: '{self:1, rate:100, friend:gilvan}'
   fup@segundos: '{self:1, rate:100}'
+  fup@celsius: '{self:1, rate:100, study:18}'
 flags:
   painel: 0
   quests: 0
@@ -29,4 +30,4 @@ flags:
   task_graph_mode: 0
   show_time: 0
 lang: go
-selected: fup@segundos
+selected: fup@celsius
