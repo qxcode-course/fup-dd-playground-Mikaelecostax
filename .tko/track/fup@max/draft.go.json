@@ -1,0 +1,39 @@
+{
+    "patches": [
+        {
+            "label": "2026-03-23_17-39-23",
+            "content": "@@ -41,121 +41,35 @@\n     \n-var a int%0A    var b int%0A    var maior int%0A    fmt.Scan(&a, &b)%0A    maior = fmax(a, b)%0A        %0A%0A    fmt.Println(a\n+fmt.Println(%22Hello, World!%22\n )%0A%7D%0A\n",
+            "lines": "5"
+        },
+        {
+            "label": "2026-03-23_17-45-42",
+            "content": "@@ -69,25 +69,65 @@\n     \n-fmt.Scan(&a, &b)%0A\n+var maior int%0A    fmt.Scan(&a, &b)%0A    maior = fmax(a, b)\n %0A   \n",
+            "lines": "12"
+        },
+        {
+            "label": "2026-03-23_17-50-34",
+            "content": "@@ -17,24 +17,13 @@\n ort \n-(\n %22fmt%22\n-, %22math%22%0A)\n %0Afun\n@@ -69,65 +69,40 @@\n     \n-var maior int%0A    fmt.Scan(&a, &b)%0Amaior = math.Max(a,b)%0A\n+fmt.Scan(&a, &b)%0A%0A        %0A%0A    \n fmt.\n@@ -113,13 +113,9 @@\n tln(\n-maior\n+a\n )%0A%7D%0A\n",
+            "lines": "11"
+        },
+        {
+            "label": "2026-03-23_17-57-53",
+            "content": "@@ -19,16 +19,17 @@\n t (%22fmt%22\n+,\n  %22math%22%0A\n",
+            "lines": "11"
+        },
+        {
+            "label": "2026-03-23_17-58-01",
+            "content": "@@ -20,17 +20,16 @@\n  (%22fmt%22 \n-%0A\n %22math%22%0A)\n",
+            "lines": "11"
+        },
+        {
+            "label": "2026-03-23_17-58-10",
+            "content": "@@ -54,23 +54,19 @@\n   var a \n-float64\n+int\n %0A    var\n@@ -68,23 +68,19 @@\n   var b \n-float64\n+int\n %0A    var\n@@ -90,15 +90,11 @@\n ior \n-float64\n+int\n %0A   \n",
+            "lines": "12"
+        },
+        {
+            "label": "2026-03-23_17-58-36",
+            "content": "package main\nimport (\"fmt\" \n\"math\"\n)\nfunc main() {\n    var a float64\n    var b float64\n    var maior float64\n    fmt.Scan(&a, &b)\nmaior = math.Max(a,b)\nfmt.Println(maior)\n}\n",
+            "lines": "12"
+        }
+    ]
+}

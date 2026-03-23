@@ -17,3 +17,14 @@
 2026-03-23 17:35:22, EXEC, v:1, k:fup@abs, mode:FULL, rate:100, size:14
 2026-03-23 17:38:17, MOVE, v:1, k:fup@abs, mode:BACK
 2026-03-23 17:38:36, SELF, v:1, k:fup@abs, self:1, rate:100, study:20, concept:1
+2026-03-23 17:39:12, MOVE, v:1, k:fup@max, mode:DOWN
+2026-03-23 17:39:19, MOVE, v:1, k:fup@max, mode:PICK
+2026-03-23 17:39:23, EXEC, v:1, k:fup@max, mode:FREE, size:5
+2026-03-23 17:45:42, EXEC, v:1, k:fup@max, mode:FULL, size:12, fail:COMP
+2026-03-23 17:50:34, EXEC, v:1, k:fup@max, mode:FULL, rate:50, size:11
+2026-03-23 17:57:53, EXEC, v:1, k:fup@max, mode:FULL, size:11, fail:COMP
+2026-03-23 17:58:01, EXEC, v:1, k:fup@max, mode:FULL, size:11, fail:COMP
+2026-03-23 17:58:10, EXEC, v:1, k:fup@max, mode:FULL, size:12, fail:COMP
+2026-03-23 17:58:36, EXEC, v:1, k:fup@max, mode:FULL, rate:100, size:12
+2026-03-23 17:59:03, MOVE, v:1, k:fup@max, mode:BACK
+2026-03-23 17:59:32, SELF, v:1, k:fup@max, self:1, rate:100, study:20, friend:gilvan

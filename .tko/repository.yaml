@@ -25,6 +25,7 @@ tasks:
   fup@pintando: '{self:1, rate:100, study:20}'
   fup@bala: '{self:1, rate:100, study:20, concept:1}'
   fup@abs: '{self:1, rate:100, study:20, concept:1}'
+  fup@max: '{self:1, rate:100, study:20, friend:gilvan}'
 flags:
   painel: 0
   quests: 0
@@ -33,4 +34,4 @@ flags:
   task_graph_mode: 0
   show_time: 0
 lang: go
-selected: fup@abs
+selected: fup@max
