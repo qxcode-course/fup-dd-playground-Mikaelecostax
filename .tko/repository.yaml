@@ -24,6 +24,7 @@ tasks:
   fup@celsius: '{self:1, rate:100, study:18}'
   fup@pintando: '{self:1, rate:100, study:20}'
   fup@bala: '{self:1, rate:100, study:20, concept:1}'
+  fup@abs: '{self:1, rate:100, study:20, concept:1}'
 flags:
   painel: 0
   quests: 0

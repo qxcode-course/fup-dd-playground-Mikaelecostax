@@ -1,0 +1,44 @@
+{
+    "patches": [
+        {
+            "label": "2026-03-23_17-22-44",
+            "content": "@@ -41,83 +41,35 @@\n     \n-var a int%0A    var b int%0A    fmt.Scan(&a, &b)%0A    %0A%0A    fmt.Println(abs(a-b)\n+fmt.Println(%22Hello, World!%22\n )%0A%7D%0A\n",
+            "lines": "5"
+        },
+        {
+            "label": "2026-03-23_17-27-17",
+            "content": "@@ -104,12 +104,20 @@\n Println(\n+abs(a-b)\n )%0A%7D%0A\n",
+            "lines": "10"
+        },
+        {
+            "label": "2026-03-23_17-27-32",
+            "content": "@@ -69,69 +69,22 @@\n     \n-var resultado int%0A    fmt.Scan(&a, &b)%0A    resultado = abs(a-\n+fmt.Scan(&a, &\n b)%0A \n@@ -108,17 +108,8 @@\n tln(\n-resultado\n )%0A%7D%0A\n",
+            "lines": "10"
+        },
+        {
+            "label": "2026-03-23_17-29-49",
+            "content": "@@ -17,24 +17,13 @@\n ort \n-(\n %22fmt%22\n-, %22math%22%0A)\n %0Afun\n@@ -124,14 +124,9 @@\n o = \n-math.A\n+a\n bs(a\n",
+            "lines": "12"
+        },
+        {
+            "label": "2026-03-23_17-33-03",
+            "content": "@@ -19,17 +19,17 @@\n t (%22fmt%22\n-%0A\n+,\n  %22math%22%0A\n",
+            "lines": "13"
+        },
+        {
+            "label": "2026-03-23_17-33-10",
+            "content": "@@ -54,23 +54,19 @@\n   var a \n-float64\n+int\n %0A    var\n@@ -68,23 +68,19 @@\n   var b \n-float64\n+int\n %0A    var\n@@ -94,15 +94,11 @@\n ado \n-float64\n+int\n %0A   \n@@ -171,18 +171,8 @@\n tln(\n-%22%25.2f%5Cn%22, \n resu\n",
+            "lines": "14"
+        },
+        {
+            "label": "2026-03-23_17-35-12",
+            "content": "@@ -179,16 +179,25 @@\n Println(\n+%22%25.2f%5Cn%22,\n  resulta\n",
+            "lines": "14"
+        },
+        {
+            "label": "2026-03-23_17-35-22",
+            "content": "package main\nimport (\"fmt\"\n \"math\"\n)\nfunc main() {\n    var a float64\n    var b float64\n    var resultado float64\n    fmt.Scan(&a, &b)\n    resultado = math.Abs(a-b)\n    \n\n    fmt.Println( resultado)\n}\n",
+            "lines": "14"
+        }
+    ]
+}
