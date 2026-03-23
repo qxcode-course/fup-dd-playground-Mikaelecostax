@@ -1,0 +1,19 @@
+{
+    "patches": [
+        {
+            "label": "2026-03-23_16-45-52",
+            "content": "@@ -17,31 +17,14 @@\n ort \n-(\n %22fmt%22%0A\n-       %22math%22%0A)%0A\n func\n@@ -41,374 +41,35 @@\n     \n-var x1, y1, distancia, distanciax,  distanciay float64%0A    var x2, y2, distanciat float64%0A    fmt.Scan(&x1, &y1, &x2, &y2)%0A    distanciax = (x2-x1) %0A    distanciay = (y2-y1)%0A    distanciat = distanciax + distanciay%0A    distanciax= math.Pow(distanciax, 2)%0A    distanciay= math.Pow(distanciay, 2)%0A    distancia= math.Sqrt(distanciat)%0A    fmt.Printf(%22%25.2f%5Cn%22, distancia\n+fmt.Println(%22Hello, World!%22\n )%0A%7D%0A\n",
+            "lines": "5"
+        },
+        {
+            "label": "2026-03-23_17-17-28",
+            "content": "@@ -201,16 +201,17 @@\n  (x2-x1)\n+ \n %0A    dis\n@@ -220,60 +220,60 @@\n ncia\n-x= math.Pow(distanciax, 2) %0A    distanciay = (y2-y1)\n+y = (y2-y1)%0A    distanciat = distanciax + distanciay\n %0A   \n@@ -282,17 +282,17 @@\n istancia\n-y\n+x\n = math.P\n@@ -303,17 +303,17 @@\n istancia\n-y\n+x\n , 2)%0A   \n@@ -322,33 +322,28 @@\n istancia\n-t = distanciax + \n+y= math.Pow(\n distanci\n@@ -336,32 +336,36 @@\n h.Pow(distanciay\n+, 2)\n %0A    distancia= \n",
+            "lines": "16"
+        },
+        {
+            "label": "2026-03-23_17-20-14",
+            "content": "package main\nimport (\"fmt\"\n       \"math\"\n)\nfunc main() {\n    var x1, y1, distancia, distanciax,  distanciay float64\n    var x2, y2, distanciat float64\n    fmt.Scan(&x1, &y1, &x2, &y2)\n    distanciax = (x2-x1)\n    distanciax= math.Pow(distanciax, 2) \n    distanciay = (y2-y1)\n    distanciay= math.Pow(distanciay, 2)\n    distanciat = distanciax + distanciay\n    distancia= math.Sqrt(distanciat)\n    fmt.Printf(\"%.2f\\n\", distancia)\n}\n",
+            "lines": "16"
+        }
+    ]
+}

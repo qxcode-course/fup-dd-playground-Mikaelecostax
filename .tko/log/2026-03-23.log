@@ -1,0 +1,7 @@
+2026-03-23 16:45:44, MOVE, v:1, k:fup@bala, mode:DOWN
+2026-03-23 16:45:51, MOVE, v:1, k:fup@bala, mode:PICK
+2026-03-23 16:45:52, EXEC, v:1, k:fup@bala, mode:FREE, size:5
+2026-03-23 17:17:28, EXEC, v:1, k:fup@bala, mode:FULL, rate:16, size:16
+2026-03-23 17:20:14, EXEC, v:1, k:fup@bala, mode:FULL, rate:100, size:16
+2026-03-23 17:20:29, MOVE, v:1, k:fup@bala, mode:BACK
+2026-03-23 17:20:55, SELF, v:1, k:fup@bala, self:1, rate:100, study:20, concept:1

@@ -1,0 +1,19 @@
+{
+    "patches": [
+        {
+            "label": "2026-03-18_04-28-22",
+            "content": "@@ -18,15 +18,14 @@\n ort \n-(\n %22fmt%22%0A\n+\n     \n@@ -34,18 +34,16 @@\n  %22math%22%0A\n-)%0A\n func mai\n@@ -72,27 +72,16 @@\n ct, p, a\n-, resultado\n  float64\n@@ -144,98 +144,33 @@\n     \n-a = p*(p-at)*(p-bt)*(p-ct)%0A    resultado = math.sqrt(a)%0A    fmt.Printf(%22%25.2f%5Cn%22, resultado\n+%0A    fmt.Println(%22qxcode%22\n )%0A%7D%0A\n",
+            "lines": "11"
+        },
+        {
+            "label": "2026-03-18_04-33-54",
+            "content": "@@ -202,17 +202,17 @@\n  = math.\n-S\n+s\n qrt(a)%0A \n",
+            "lines": "13"
+        },
+        {
+            "label": "2026-03-18_04-34-11",
+            "content": "package main\n\nimport (\"fmt\"\n       \"math\"\n)\nfunc main() {\n    var at, bt, ct, p, a, resultado float64\n    fmt.Scan(&at, &bt, &ct)\n    p = (at + bt + ct) / 2\n    a = p*(p-at)*(p-bt)*(p-ct)\n    resultado = math.Sqrt(a)\n    fmt.Printf(\"%.2f\\n\", resultado)\n}\n",
+            "lines": "13"
+        }
+    ]
+}

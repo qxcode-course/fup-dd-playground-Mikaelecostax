@@ -4,3 +4,6 @@
 2026-03-17 17:40:38, EXEC, v:1, k:fup@celsius, mode:FULL, rate:100, size:8
 2026-03-17 17:41:30, MOVE, v:1, k:fup@celsius, mode:BACK
 2026-03-17 17:42:04, SELF, v:1, k:fup@celsius, self:1, rate:100, study:18
+2026-03-17 17:46:56, MOVE, v:1, k:fup@pintando, mode:DOWN
+2026-03-17 17:47:57, MOVE, v:1, k:fup@pintando, mode:PICK
+2026-03-17 18:08:49, MOVE, v:1, k:fup@pintando, mode:BACK
