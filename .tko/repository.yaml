@@ -13,7 +13,7 @@ sources:
   quests: null
   tasks: null
 expanded:
-- fup@base
+- fup@if1
 tasks:
   fup@tres: '{self:1, rate:100, study:15, friend:nao, guided:1}'
   fup@resto: '{self:1, rate:100, study:25, friend:nao}'
@@ -32,4 +32,4 @@ flags:
   task_graph_mode: 0
   show_time: 0
 lang: go
-selected: fup@bala
+selected: fup@ou
