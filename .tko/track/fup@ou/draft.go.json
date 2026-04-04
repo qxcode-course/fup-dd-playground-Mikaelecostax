@@ -7,8 +7,38 @@
         },
         {
             "label": "2026-03-30_17-28-35",
-            "content": "package main\nimport \"fmt\"\nfunc main() {\n    var a int\n    fmt.Scan(&a)\n    \n    fmt.Println(\"Hello, World!\")\n}\n",
+            "content": "@@ -69,21 +69,16 @@\n a)%0A    %0A\n-    %0A\n     fmt.\n@@ -90,11 +90,21 @@\n ln(%22\n-sim\n+Hello, World!\n %22)%0A%7D\n",
             "lines": "8"
+        },
+        {
+            "label": "2026-03-30_17-59-01",
+            "content": "@@ -16,34 +16,15 @@\n port\n-  (\n  %22fmt%22%0A\n-       %22math%22%0A)%0A\n func\n@@ -47,36 +47,11 @@\n r a \n-float64%0A    var simn float64\n+int\n %0A   \n@@ -72,26 +72,13 @@\n     \n-simn = math.Max(a)\n+%0A    \n %0A   \n@@ -98,15 +98,8 @@\n %22sim\n- && nao\n %22)%0A%7D\n",
+            "lines": "9"
+        },
+        {
+            "label": "2026-03-30_18-07-12",
+            "content": "@@ -116,16 +116,17 @@\n     simn\n+ \n = math.M\n",
+            "lines": "11"
+        },
+        {
+            "label": "2026-03-30_18-07-34",
+            "content": "@@ -81,16 +81,17 @@\n  var sim\n+n\n  float64\n@@ -115,16 +115,17 @@\n %0A    sim\n+n\n = math.M\n@@ -150,13 +150,20 @@\n tln(%22sim\n+ && nao\n %22)%0A%7D%0A\n",
+            "lines": "11"
+        },
+        {
+            "label": "2026-03-30_18-07-57",
+            "content": "@@ -79,16 +79,18 @@\n    var s\n+im\n  float64\n@@ -112,17 +112,18 @@\n a)%0A    s\n- \n+im\n = math.M\n@@ -146,13 +146,15 @@\n intln(%22s\n+im\n %22)%0A%7D%0A\n",
+            "lines": "11"
+        },
+        {
+            "label": "2026-03-30_18-08-17",
+            "content": "@@ -65,15 +65,26 @@\n ar a\n-, maior\n+ float64%0A    var s\n  flo\n@@ -113,13 +113,9 @@\n     \n-maior\n+s\n  = m\n@@ -146,14 +146,9 @@\n ln(%22\n-%25.1f%5Cn\n+s\n %22)%0A%7D\n",
+            "lines": "11"
+        },
+        {
+            "label": "2026-03-31_17-00-57",
+            "content": "package main\nimport  ( \"fmt\"\n       \"math\"\n)\nfunc main() {\n    var a, maior float64\n    fmt.Scan(&a)\n    maior = math.Max(a)\n    fmt.Println(\"%.1f\\n\")\n}\n",
+            "lines": "10"
         }
     ]
 }

@@ -1,9 +1,10 @@
 package main
-import "fmt"
+import  ( "fmt"
+       "math"
+)
 func main() {
-    var a int
+    var a, maior float64
     fmt.Scan(&a)
-    
-    
-    fmt.Println("sim")
+    maior = math.Max(a)
+    fmt.Println("%.1f\n")
 }

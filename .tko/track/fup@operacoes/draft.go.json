@@ -1,0 +1,44 @@
+{
+    "patches": [
+        {
+            "label": "2026-04-04_16-56-07",
+            "content": "@@ -248,29 +248,13 @@\n o = \n-float64\n (a\n-)\n  %25 \n-float64(\n b)%0A \n",
+            "lines": "17"
+        },
+        {
+            "label": "2026-04-04_16-56-56",
+            "content": "@@ -59,16 +59,23 @@\n ubtra%C3%A7%C3%A3o\n+, resto\n  float64\n@@ -121,30 +121,8 @@\n t64%0A\n-    var resto float64%0A\n     \n@@ -248,13 +248,31 @@\n o = \n-a %25 b\n+float64(a) %25 float64(b)\n %0A   \n",
+            "lines": "17"
+        },
+        {
+            "label": "2026-04-04_16-58-52",
+            "content": "@@ -60,19 +60,23 @@\n btra%C3%A7%C3%A3o \n-int\n+float64\n %0A    var\n@@ -102,19 +102,23 @@\n divis%C3%A3o \n-int\n+float64\n %0A    var\n@@ -263,31 +263,13 @@\n o = \n-float64(a) %25 float64(b)\n+a %25 b\n %0A   \n@@ -414,27 +414,25 @@\n mt.Printf(%22%25\n-.2f\n+d\n %5Cn%22, resto)%0A\n",
+            "lines": "18"
+        },
+        {
+            "label": "2026-04-04_17-01-16",
+            "content": "@@ -255,13 +255,29 @@\n o = \n+float64\n (a\n+)\n  %25 \n+float64(\n b)%0A \n@@ -280,33 +280,34 @@\n b)%0A    fmt.Print\n-f\n+ln\n (%22%25d%5Cn%22, soma)%0A \n",
+            "lines": "18"
+        },
+        {
+            "label": "2026-04-04_17-03-20",
+            "content": "@@ -116,19 +116,23 @@\n r resto \n-int\n+float64\n %0A    fmt\n",
+            "lines": "18"
+        },
+        {
+            "label": "2026-04-04_17-04-39",
+            "content": "@@ -403,25 +403,27 @@\n mt.Printf(%22%25\n-d\n+.2f\n %5Cn%22, resto)%0A\n",
+            "lines": "18"
+        },
+        {
+            "label": "2026-04-04_17-04-59",
+            "content": "@@ -84,24 +84,33 @@\n ultiplica%C3%A7%C3%A3o\n+, divis%C3%A3o\n  int%0A    var\n@@ -124,32 +124,8 @@\n int%0A\n-    var divis%C3%A3o float64%0A\n     \n@@ -231,29 +231,13 @@\n o = \n-float64\n (a\n-)\n  / \n-float64(\n b)%0A \n",
+            "lines": "18"
+        },
+        {
+            "label": "2026-04-04_17-06-13",
+            "content": "package main\nimport \"fmt\"\nfunc main() {\n    var a, soma, subtra\u00e7\u00e3o int\n    var b, multiplica\u00e7\u00e3o int\n    var resto int\n    var divis\u00e3o float64\n    fmt.Scan(&a, &b)\n    soma = (a + b)\n    subtra\u00e7\u00e3o = (a - b) \n    multiplica\u00e7\u00e3o = (a * b)\n    divis\u00e3o = float64(a) / float64(b)\n    resto = (a % b)\n    fmt.Printf(\"%d\\n\", soma)\n    fmt.Printf(\"%d\\n\", subtra\u00e7\u00e3o)\n    fmt.Printf(\"%d\\n\", multiplica\u00e7\u00e3o)\n    fmt.Printf(\"%.2f\\n\", divis\u00e3o)\n    fmt.Printf(\"%d\\n\", resto)\n}\n",
+            "lines": "19"
+        }
+    ]
+}
