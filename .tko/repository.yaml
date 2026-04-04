@@ -18,10 +18,10 @@ expanded:
 - fup@if1
 - fup@base
 flags:
-  inbox: inbox
+  inbox: all
   panel: help
   show_panel: 'true'
   task_graph_mode: executions
   show_time: 'true'
 lang: go
-selected: fup@data
+selected: fup@calc

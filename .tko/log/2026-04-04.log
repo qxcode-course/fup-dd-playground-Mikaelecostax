@@ -23,3 +23,23 @@
 2026-04-04 17:06:13, EXEC, v:1, k:fup@operacoes, mode:FULL, rate:100, size:19
 2026-04-04 17:06:45, MOVE, v:1, k:fup@operacoes, mode:BACK
 2026-04-04 17:07:21, SELF, v:1, k:fup@operacoes, self:1, rate:100, study:32, concept:1
+2026-04-04 17:09:44, MOVE, v:1, k:fup@ou, mode:PICK
+2026-04-04 17:22:18, EXEC, v:1, k:fup@ou, mode:FULL, rate:0, size:12
+2026-04-04 17:22:34, EXEC, v:1, k:fup@ou, mode:FULL, rate:40, size:12
+2026-04-04 17:22:55, EXEC, v:1, k:fup@ou, mode:FULL, rate:100, size:12
+2026-04-04 17:24:31, MOVE, v:1, k:fup@ou, mode:BACK
+2026-04-04 17:24:57, SELF, v:1, k:fup@ou, self:1, rate:100, study:65, concept:1
+2026-04-04 17:25:05, MOVE, v:1, k:fup@positivo, mode:DOWN
+2026-04-04 17:25:37, MOVE, v:1, k:fup@positivo, mode:PICK
+2026-04-04 17:32:44, EXEC, v:1, k:fup@positivo, mode:FULL, size:13, fail:COMP
+2026-04-04 17:33:48, EXEC, v:1, k:fup@positivo, mode:FULL, rate:100, size:13
+2026-04-04 17:34:43, MOVE, v:1, k:fup@positivo, mode:BACK
+2026-04-04 17:35:09, SELF, v:1, k:fup@positivo, self:1, rate:100, study:20, concept:1
+2026-04-04 17:35:25, MOVE, v:1, k:fup@multiplo, mode:DOWN
+2026-04-04 17:35:55, MOVE, v:1, k:fup@multiplo, mode:PICK
+2026-04-04 17:35:59, MOVE, v:1, k:fup@multiplo, mode:BACK
+2026-04-04 17:36:00, MOVE, v:1, k:fup@multiplo, mode:PICK
+2026-04-04 17:36:02, EXEC, v:1, k:fup@multiplo, mode:FULL, rate:0, size:5
+2026-04-04 17:40:07, EXEC, v:1, k:fup@multiplo, mode:FULL, rate:100, size:11
+2026-04-04 17:40:20, MOVE, v:1, k:fup@multiplo, mode:BACK
+2026-04-04 17:40:39, SELF, v:1, k:fup@multiplo, self:1, rate:100, study:20, concept:1

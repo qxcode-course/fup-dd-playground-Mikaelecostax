@@ -37,8 +37,23 @@
         },
         {
             "label": "2026-03-31_17-00-57",
-            "content": "package main\nimport  ( \"fmt\"\n       \"math\"\n)\nfunc main() {\n    var a, maior float64\n    fmt.Scan(&a)\n    maior = math.Max(a)\n    fmt.Println(\"%.1f\\n\")\n}\n",
+            "content": "@@ -18,15 +18,31 @@\n rt  \n+(\n  %22fmt%22%0A\n+       %22math%22%0A)\n %0Afun\n@@ -64,128 +64,66 @@\n var \n-numero int%0A    fmt.Scan(&numero)%0A    if numero == 3 %7C%7C numero == 5 %7B%0A        fmt.Printf(%22SIM%22)%0A        %7D else %7B%0A        \n+a, maior float64%0A    fmt.Scan(&a)%0A    maior = math.Max(a)%0A\n     \n@@ -139,22 +139,15 @@\n ln(%22\n-N%C3%82O%22)%0A        %7D\n+%25.1f%5Cn%22)\n %0A%7D%0A\n",
             "lines": "10"
+        },
+        {
+            "label": "2026-04-04_17-22-18",
+            "content": "@@ -130,18 +130,17 @@\n mt.Print\n-ln\n+f\n (%22SIM%22)%0A\n",
+            "lines": "12"
+        },
+        {
+            "label": "2026-04-04_17-22-34",
+            "content": "@@ -187,9 +187,9 @@\n n(%22N\n-A\n+%C3%82\n O%22)%0A\n",
+            "lines": "12"
+        },
+        {
+            "label": "2026-04-04_17-22-55",
+            "content": "package main\nimport   \"fmt\"\n\nfunc main() {\n    var numero int\n    fmt.Scan(&numero)\n    if numero == 3 || numero == 5 {\n        fmt.Println(\"SIM\")\n        } else {\n            fmt.Println(\"NAO\")\n        }\n}\n",
+            "lines": "12"
         }
     ]
 }

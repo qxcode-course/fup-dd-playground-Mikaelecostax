@@ -1,0 +1,14 @@
+{
+    "patches": [
+        {
+            "label": "2026-04-04_17-32-44",
+            "content": "@@ -90,16 +90,17 @@\n umero %3E=\n+=\n  0 %7B%0A   \n",
+            "lines": "13"
+        },
+        {
+            "label": "2026-04-04_17-33-48",
+            "content": "package main\nimport \"fmt\"\nfunc main() {\n    var numero int\n    fmt.Scan(&numero)\n    if numero >= 0 {\n        fmt.Println(\"SIM\")\n        \n    } else {\n         fmt.Println(\"NAO\")\n\n    }\n}\n",
+            "lines": "13"
+        }
+    ]
+}

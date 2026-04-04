@@ -1,10 +1,12 @@
 package main
-import  ( "fmt"
-       "math"
-)
+import   "fmt"
+
 func main() {
-    var a, maior float64
-    fmt.Scan(&a)
-    maior = math.Max(a)
-    fmt.Println("%.1f\n")
+    var numero int
+    fmt.Scan(&numero)
+    if numero == 3 || numero == 5 {
+        fmt.Println("SIM")
+        } else {
+            fmt.Println("NAO")
+        }
 }
