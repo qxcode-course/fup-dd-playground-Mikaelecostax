@@ -18,3 +18,10 @@
 2026-04-06 18:08:20, EXEC, v:1, k:fup@guarda, mode:FULL, rate:85, size:18
 2026-04-06 18:08:37, EXEC, v:1, k:fup@guarda, mode:FULL, rate:100, size:18
 2026-04-06 18:08:44, MOVE, v:1, k:fup@guarda, mode:BACK
+2026-04-06 18:09:12, MOVE, v:1, k:fup@quantos, mode:DOWN
+2026-04-06 18:09:36, MOVE, v:1, k:fup@quantos, mode:PICK
+2026-04-06 18:11:25, EXEC, v:1, k:fup@quantos, mode:FULL, rate:0, size:9
+2026-04-06 18:20:02, EXEC, v:1, k:fup@quantos, mode:FULL, rate:0, size:20
+2026-04-06 18:20:10, EXEC, v:1, k:fup@quantos, mode:FULL, rate:62, size:20
+2026-04-06 18:21:31, EXEC, v:1, k:fup@quantos, mode:FULL, rate:62, size:22
+2026-04-06 18:21:47, EXEC, v:1, k:fup@quantos, mode:FULL, rate:100, size:22
