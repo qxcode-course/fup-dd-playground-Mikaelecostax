@@ -1,0 +1,34 @@
+{
+    "patches": [
+        {
+            "label": "2026-04-06_17-31-46",
+            "content": "@@ -69,23 +69,20 @@\n     var \n-divisao\n+soma\n  int%0A   \n@@ -103,23 +103,20 @@\n &b)%0A    \n-divisao\n+soma\n =(a+b) %0A\n@@ -143,15 +143,12 @@\n n%22, \n-divisao\n+soma\n )%0A%7D%0A\n",
+            "lines": "11"
+        },
+        {
+            "label": "2026-04-06_17-32-22",
+            "content": "@@ -120,9 +120,9 @@\n o=(a\n-/\n++\n b) %0A\n",
+            "lines": "11"
+        },
+        {
+            "label": "2026-04-06_17-32-30",
+            "content": "@@ -73,31 +73,14 @@\n var \n-c char%0A    var resultad\n+divisa\n o in\n@@ -104,148 +104,30 @@\n , &b\n-, &c\n )%0A    \n-if c == %22+%22 %7B%0A        resultado = a + b%0A        fmt.Printf(%22%25d%5Cn%22, resultado)%0A    %7D else c == %22-%22%7B%0A        resultado = a - b %0A    \n+divisao=(a/b) %0A%0A\n     \n@@ -149,195 +149,15 @@\n n%22, \n-resultado)%0A    %7D else c == %22*%22 %7B%0A        resultado = a*b%0A        fmt.Printf(%22%25d%5Cn%22, resultado)%0A    %7D else c == %22/%22 %7B%0A        resultado = a/b%0A        fmt.Printf(%22%25d%5Cn%22, resultado)%0A    %7D%0A   \n+divisao)\n %0A%7D%0A\n",
+            "lines": "11"
+        },
+        {
+            "label": "2026-04-06_17-55-12",
+            "content": "@@ -212,27 +212,24 @@\n %0A    %7D else \n-if \n c == %22-%22%7B%0A  \n@@ -226,16 +226,16 @@\n == %22-%22%7B%0A\n+\n         \n@@ -298,27 +298,24 @@\n %0A    %7D else \n-if \n c == %22*%22 %7B%0A \n@@ -367,32 +367,32 @@\n %5Cn%22, resultado)%0A\n+\n     %7D else if c \n@@ -386,19 +386,16 @@\n  %7D else \n-if \n c == %22/%22\n",
+            "lines": "23"
+        },
+        {
+            "label": "2026-04-06_17-55-40",
+            "content": "@@ -75,14 +75,12 @@\n r c \n-string\n+char\n %0A   \n",
+            "lines": "23"
+        },
+        {
+            "label": "2026-04-06_17-57-19",
+            "content": "package main\nimport \"fmt\"\nfunc main() {\n    var a int\n    var b int\n    var c string\n    var resultado int\n    fmt.Scan(&a, &b, &c)\n    if c == \"+\" {\n        resultado = a + b\n        fmt.Printf(\"%d\\n\", resultado)\n    } else if c == \"-\"{\n        resultado = a - b \n        fmt.Printf(\"%d\\n\", resultado)\n    } else if c == \"*\" {\n        resultado = a*b\n        fmt.Printf(\"%d\\n\", resultado)\n    } else if c == \"/\" {\n        resultado = a/b\n        fmt.Printf(\"%d\\n\", resultado)\n    }\n   \n}\n",
+            "lines": "23"
+        }
+    ]
+}
