@@ -1,0 +1,129 @@
+{
+    "patches": [
+        {
+            "label": "2026-04-13_17-14-03",
+            "content": "@@ -27,16 +27,17 @@\n  %22math%22)\n+ \n %0Afunc ma\n",
+            "lines": "11"
+        },
+        {
+            "label": "2026-04-13_17-14-57",
+            "content": "@@ -1,129 +1,121 @@\n-package main%0Aimport (%22fmt%22 ; %22math%22)%0Afunc main() %7B%0A    var x1, x2 float64%0A    var y1, y2 float64%0A    var distanciaab float64%0A\n+@@ -23,10 +23,8 @@%0A fmt%2522%0A- ;%0A  %2522ma%0A@@ -28,16 +28,16 @@%0A %2522math%2522)%250A%0A+%0A func mai%0A@@ -120,39 +120,8 @@%0A t64%250A%0A-\n     \n@@ -144,42 +144,48 @@\n at64\n+%250A\n %0A    \n-fmt.Scan(&x1, &x2, &y1, &y2)%0A\n+ %0A@@ -153,60 +153,8 @@%0A y2)%250A%0A-\n     \n@@ -201,25 +201,27 @@\n (x2 - x1 )*2\n-%0A\n+%250A\n     pontoy =\n@@ -237,36 +237,60 @@\n  )*2\n+%250A\n %0A    \n-distanciaa\n+ %0A@@ -171,32 +171,13 @@%0A \n b = \n+%0A-\n fmt.\n+%0A \n sqrt(\n+%0A-\n pont\n@@ -304,48 +304,15 @@\n ntoy\n-)%0A%0A    fmt.Println(%22%25.2f%5Cn%22, distanciaab)%0A%7D\n+%0A )%250A%250A \n %0A\n",
+            "lines": "22"
+        },
+        {
+            "label": "2026-04-13_17-19-08",
+            "content": "@@ -252,16 +252,20 @@\n ciaab = \n+fmt.\n sqrt(pon\n",
+            "lines": "14"
+        },
+        {
+            "label": "2026-04-13_17-20-06",
+            "content": "@@ -1,326 +1,51 @@\n-package main%0Aimport (%22fmt%22 ; %22math%22)%0Afunc main() %7B%0A    var x1, x2 float64%0A    var y1, y2 float64%0A    var distanciaab float64%0A    var pontox, pontoy float64%0A    fmt.Scan(&x1, &x2, &y1, &y2)%0A    pontox = (x2 - x1 )*2%0A    pontoy = (y2 - y1 )*2%0A    distanciaab =mathsqrt(pontox + pontoy)%0A%0A    fmt.Println(%22%25.2f%5Cn%22, distanciaab)%0A%7D\n+@@ -251,20 +251,17 @@%0A nciaab =%0A-math%0A+ %0A sqrt(pon\n %0A\n",
+            "lines": "5"
+        },
+        {
+            "label": "2026-04-13_17-20-38",
+            "content": "@@ -24,16 +24,17 @@\n mt%22 \n-%0A\n+;\n  %22math%22\n+)\n %0Afun\n@@ -255,14 +255,12 @@\n ab =\n- \n math\n-.\n sqrt\n",
+            "lines": "14"
+        },
+        {
+            "label": "2026-04-13_17-21-23",
+            "content": "@@ -29,18 +29,16 @@\n  %22math%22%0A\n-)%0A\n func mai\n",
+            "lines": "15"
+        },
+        {
+            "label": "2026-04-13_17-22-03",
+            "content": "@@ -258,16 +258,17 @@\n  = math.\n+s\n qrt(pont\n",
+            "lines": "16"
+        },
+        {
+            "label": "2026-04-13_17-22-27",
+            "content": "@@ -1,269 +1,35 @@\n-package main%0Aimport (%22fmt%22 %0A %22math%22%0A)%0Afunc main() %7B%0A    var x1, x2 float64%0A    var y1, y2 float64%0A    var distanciaab float64%0A    var pontox, pontoy float64%0A    fmt.Scan(&x1, &x2, &y1, &y2)%0A    pontox = (x2 - x1 )*2%0A    pontoy = (y2 - y1 )*2%0A    distanciaab\n+@@ -258,17 +258,16 @@%0A \n  = math.\n Sqrt\n@@ -28,17 +28,21 @@\n ath.\n-S\n+%0A-S%0A \n qrt(pont\n ox +\n@@ -41,58 +41,60 @@\n pont\n-ox + pontoy)%0A%0A    fmt.Printf(%22%25.2f%5Cn%22, distanciaab)%0A%7D\n+%0A@@ -293,17 +293,18 @@%0A mt.Print%0A-f%0A+ln%0A (%2522%2525.2f%255Cn\n %0A\n",
+            "lines": "9"
+        },
+        {
+            "label": "2026-04-13_17-23-06",
+            "content": "@@ -210,9 +210,9 @@\n x1 )\n-%5E\n+*\n 2%0A  \n@@ -232,16 +232,17 @@\n 2 - y1 )\n+*\n 2%0A    di\n",
+            "lines": "16"
+        },
+        {
+            "label": "2026-04-13_17-23-47",
+            "content": "@@ -206,17 +206,17 @@\n 2 - x1 )\n-*\n+%5E\n 2%0A    po\n@@ -236,9 +236,8 @@\n y1 )\n-*\n 2%0A  \n",
+            "lines": "16"
+        },
+        {
+            "label": "2026-04-13_17-24-05",
+            "content": "@@ -195,25 +195,16 @@\n pontox =\n- math.Pow\n  (x2 - x\n@@ -204,20 +204,20 @@\n (x2 - x1\n-, 2)\n+ )*2\n %0A    pon\n@@ -225,17 +225,8 @@\n oy =\n- math.Pow\n  (y2\n@@ -234,12 +234,12 @@\n - y1\n-, 2)\n+ )*2\n %0A   \n@@ -280,16 +280,17 @@\n pontoy)%0A\n+%0A\n     fmt.\n",
+            "lines": "16"
+        },
+        {
+            "label": "2026-04-13_17-27-14",
+            "content": "@@ -158,225 +158,104 @@\n     \n-var quadrado float64%0A    var quadrado2 float64%0A    fmt.Scan(&x1, &x2, &y1, &y2, &quadrado, &quadrado2)%0A    pontox = (x2 - x1)%0A    quadrado = math.Pow(pontox, 2)%0A    pontoy =  (y2 - y1)%0A    quadrado2 = math.Pow(pontoy,\n+fmt.Scan(&x1, &x2, &y1, &y2)%0A    pontox = math.Pow (x2 - x1, 2)%0A    pontoy = math.Pow (y2 - y1, \n 2)%0A \n@@ -285,28 +285,23 @@\n qrt(\n-quadrado + quadrado2\n+pontox + pontoy\n )%0A  \n",
+            "lines": "15"
+        },
+        {
+            "label": "2026-04-13_17-30-44",
+            "content": "@@ -371,17 +371,16 @@\n (pontoy,\n- \n 2)%0A    d\n",
+            "lines": "19"
+        },
+        {
+            "label": "2026-04-13_17-32-47",
+            "content": "@@ -269,16 +269,41 @@\n pontox =\n+ (x2 - x1)%0A    quadrado =\n  math.Po\n@@ -304,23 +304,22 @@\n ath.Pow(\n-x2 - x1\n+pontox\n , 2)%0A   \n@@ -328,24 +328,16 @@\n ontoy = \n-math.Pow\n  (y2 - y\n@@ -337,16 +337,49 @@\n (y2 - y1\n+)%0A    quadrado2 = math.Pow(pontoy\n , 2)%0A   \n@@ -407,23 +407,28 @@\n qrt(\n-pontox + pontoy\n+quadrado + quadrado2\n )%0A  \n",
+            "lines": "19"
+        },
+        {
+            "label": "2026-04-13_17-40-30",
+            "content": "@@ -312,16 +312,17 @@\n math.Pow\n+ \n (y2 - y1\n",
+            "lines": "17"
+        },
+        {
+            "label": "2026-04-13_17-41-14",
+            "content": "@@ -274,16 +274,24 @@\n x = \n+math.Pow\n (x2 - x1\n )%0A  \n@@ -286,16 +286,19 @@\n (x2 - x1\n+, 2\n )%0A    po\n@@ -308,16 +308,24 @@\n y = \n+math.Pow\n (y2 - y1\n )%0A  \n@@ -320,16 +320,19 @@\n (y2 - y1\n+, 2\n )%0A    di\n",
+            "lines": "17"
+        },
+        {
+            "label": "2026-04-13_17-41-52",
+            "content": "@@ -288,73 +288,25 @@\n     \n-math.Pow(pontox, 2)%0A    pontoy = (y2 - y1)%0A    math.Pow(pontoy, 2\n+pontoy = (y2 - y1\n )%0A  \n",
+            "lines": "17"
+        },
+        {
+            "label": "2026-04-13_17-43-15",
+            "content": "@@ -287,18 +287,8 @@\n %0A   \n- quadrado=\n  mat\n@@ -335,18 +335,8 @@\n     \n-quadrado2=\n math\n@@ -383,28 +383,23 @@\n qrt(\n-quadrado + quadrado2\n+pontox + pontoy\n )%0A  \n",
+            "lines": "19"
+        },
+        {
+            "label": "2026-04-13_17-44-11",
+            "content": "@@ -389,16 +389,25 @@\n ciaab = \n+math.Sqrt\n (quadrad\n",
+            "lines": "19"
+        },
+        {
+            "label": "2026-04-13_17-45-03",
+            "content": "@@ -192,28 +192,16 @@\n uadrado2\n-, distanciaf\n  float64\n@@ -259,21 +259,8 @@\n ado2\n-, &distanciaf\n )%0A  \n@@ -416,48 +416,8 @@\n o2)%0A\n-    distanciaf = math.Sqrt(distanciaab)%0A\n     \n@@ -446,13 +446,14 @@\n istancia\n-f\n+ab\n )%0A%7D%0A\n",
+            "lines": "19"
+        },
+        {
+            "label": "2026-04-13_17-46-05",
+            "content": "@@ -468,11 +468,8 @@\n qrt(\n-2)(\n dist\n",
+            "lines": "20"
+        },
+        {
+            "label": "2026-04-13_17-49-03",
+            "content": "@@ -463,16 +463,18 @@\n ath.Sqrt\n+(2\n )(distan\n",
+            "lines": "20"
+        },
+        {
+            "label": "2026-04-13_17-50-48",
+            "content": "@@ -463,16 +463,17 @@\n ath.Sqrt\n+)\n (distanc\n",
+            "lines": "20"
+        },
+        {
+            "label": "2026-04-13_17-51-26",
+            "content": "@@ -192,16 +192,28 @@\n uadrado2\n+, distanciaf\n  float64\n@@ -263,24 +263,37 @@\n , &quadrado2\n+, &distanciaf\n )%0A    pontox\n@@ -418,17 +418,8 @@\n b = \n-math.Sqrt\n (qua\n@@ -437,16 +437,56 @@\n drado2)%0A\n+    distanciaf = math.Sqrt(distanciaab)%0A\n     fmt.\n@@ -511,14 +511,13 @@\n istancia\n-ab\n+f\n )%0A%7D%0A\n",
+            "lines": "20"
+        },
+        {
+            "label": "2026-04-13_17-52-46",
+            "content": "package main\nimport (\"fmt\" \n \"math\"\n)\nfunc main() {\n    var x1, x2 float64\n    var y1, y2 float64\n    var distanciaab float64\n    var pontox, pontoy float64\n    var quadrado float64\n    var quadrado2 float64\n    fmt.Scan(&x1, &x2, &y1, &y2, &quadrado, &quadrado2)\n    pontox = (x2 - x1)\n    quadrado= math.Pow(pontox, 2)\n    pontoy = (y2 - y1)\n    quadrado2=math.Pow(pontoy, 2)\n    distanciaab = math.Sqrt(quadrado + quadrado2)\n    fmt.Printf(\"%.2f\\n\", distanciaab)\n}\n",
+            "lines": "19"
+        }
+    ]
+}
