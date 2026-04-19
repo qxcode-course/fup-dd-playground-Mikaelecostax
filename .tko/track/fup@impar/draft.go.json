@@ -1,0 +1,24 @@
+{
+    "patches": [
+        {
+            "label": "2026-04-19_23-06-37",
+            "content": "@@ -420,12 +420,6 @@\n do)%0A\n-    %7D%0A\n %7D%0A\n",
+            "lines": "17"
+        },
+        {
+            "label": "2026-04-19_23-07-39",
+            "content": "@@ -54,100 +54,166 @@\n , d2\n-, soma, resultadopar int%0A    fmt.Scan(&p, &d1, &d2, &resultadopar, &soma)%0A    soma = d1 + d2\n+ int%0A    var alice, soma int%0A    var bob, resultado int%0A    var impar int%0A    var par int%0A    fmt.Scan(&p, &d1, &alice, &soma, &bob, &impar, &par, &resultado)\n %0A   \n@@ -226,45 +226,54 @@\n tado\n-par\n  = \n-(\n soma\n- %25 2\n+%0A    if p\n  == 0\n-)\n+ %7B\n %0A    \n-if p == 0 %7B\n+    soma = d1 + d2\n %0A   \n@@ -281,32 +281,53 @@\n     fmt.Println(\n+ %22alice gritou par%22, \n resultadopar)%0A  \n@@ -315,27 +315,24 @@\n %22, resultado\n-par\n )%0A    %7D else\n@@ -352,28 +352,69 @@\n         \n-fmt.Println(\n+soma = d1 + d2%0A        fmt.Println(%22bob gritou par%22, \n resultad\n@@ -414,19 +414,16 @@\n esultado\n-par\n )%0A    %7D%0A\n",
+            "lines": "18"
+        },
+        {
+            "label": "2026-04-19_23-13-10",
+            "content": "@@ -60,20 +60,9 @@\n soma\n- int%0A    var\n+,\n  res\n@@ -75,12 +75,11 @@\n par \n-bool\n+int\n %0A   \n",
+            "lines": "13"
+        },
+        {
+            "label": "2026-04-19_23-15-05",
+            "content": "package main\nimport \"fmt\"\nfunc main() {\n    var p, d1, d2, soma int\n    var resultadopar bool\n    fmt.Scan(&p, &d1, &d2, &resultadopar, &soma)\n    soma = d1 + d2\n    resultadopar = (soma % 2 == 0)\n    if p == 0 {\n        fmt.Println(resultadopar)\n    } else if p == 1 {\n        fmt.Println(resultadopar)\n    }\n}\n",
+            "lines": "14"
+        }
+    ]
+}
