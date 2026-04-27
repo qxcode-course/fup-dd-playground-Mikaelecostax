@@ -32,5 +32,5 @@ flags:
   task_graph_mode: executions
   show_time: 'true'
 lang: go
-selected: fup@final
-selected_index: 30
+selected: fup@semana
+selected_index: 31
