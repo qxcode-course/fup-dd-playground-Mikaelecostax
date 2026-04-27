@@ -2,13 +2,11 @@ package main
 import "fmt"
 func main() {
     var p, d1, d2, soma int
-    var resultadopar bool
-    fmt.Scan(&p, &d1, &d2, &resultadopar, &soma)
+    fmt.Scan(&p, &d1, &d2)
     soma = d1 + d2
-    resultadopar = (soma % 2 == 0)
-    if p == 0 {
-        fmt.Println(resultadopar)
-    } else if p == 1 {
-        fmt.Println(resultadopar)
-    }
-}
+    if soma % 2 == 0  {
+        fmt.Println(p)
+    } else {
+        fmt.Println(1-p)
+    } 
+   }

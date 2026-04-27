@@ -17,8 +17,58 @@
         },
         {
             "label": "2026-04-19_23-15-05",
-            "content": "package main\nimport \"fmt\"\nfunc main() {\n    var p, d1, d2, soma int\n    var resultadopar bool\n    fmt.Scan(&p, &d1, &d2, &resultadopar, &soma)\n    soma = d1 + d2\n    resultadopar = (soma % 2 == 0)\n    if p == 0 {\n        fmt.Println(resultadopar)\n    } else if p == 1 {\n        fmt.Println(resultadopar)\n    }\n}\n",
+            "content": "@@ -82,19 +82,20 @@\n tadopar \n-int\n+bool\n %0A    fmt\n@@ -159,19 +159,16 @@\n  d2%0A    \n-if \n resultad\n@@ -177,68 +177,38 @@\n ar =\n-= 0 %7B%0A        fmt.Println(0)%0A    %7D else if resultadopar\n+ (soma %25 2 == 0)%0A    if p\n  == \n-1\n+0\n  %7B%0A \n@@ -230,65 +230,20 @@\n tln(\n-1)%0A    %7D if p == resultadopar %7B%0A            fmt.Println(p\n+resultadopar\n )%0A  \n@@ -254,16 +254,23 @@\n else if \n+p == 1 \n %7B%0A      \n@@ -287,11 +287,20 @@\n tln(\n-1-p\n+resultadopar\n )%0A  \n",
             "lines": "14"
+        },
+        {
+            "label": "2026-04-27_01-16-59",
+            "content": "@@ -267,21 +267,16 @@\n )%0A    %7D \n-%0A    \n if p == \n@@ -328,16 +328,18 @@\n  %7D else \n+if\n  %7B%0A     \n",
+            "lines": "17"
+        },
+        {
+            "label": "2026-04-27_01-17-35",
+            "content": "@@ -165,16 +165,20 @@\n  if \n-soma %25 2\n+resultadopar\n  == \n@@ -193,24 +193,22 @@\n     \n-resultadopar = 0\n+fmt.Println(0)\n %0A   \n@@ -215,25 +215,18 @@\n  %7D else \n-%7B%0A       \n+if\n  resulta\n@@ -236,11 +236,36 @@\n ar =\n+=\n  1 \n+%7B%0A        fmt.Println(1)\n %0A   \n",
+            "lines": "18"
+        },
+        {
+            "label": "2026-04-27_01-21-13",
+            "content": "@@ -200,17 +200,17 @@\n dopar = \n-1\n+0\n %0A    %7D e\n@@ -234,25 +234,26 @@\n ultadopar = \n-0\n+1 \n %0A    %7D %0A    \n",
+            "lines": "18"
+        },
+        {
+            "label": "2026-04-27_01-21-47",
+            "content": "@@ -200,17 +200,17 @@\n dopar = \n-0\n+1\n %0A    %7D e\n@@ -234,25 +234,25 @@\n ultadopar = \n-1\n+0\n %0A    %7D %0A    \n",
+            "lines": "18"
+        },
+        {
+            "label": "2026-04-27_01-21-58",
+            "content": "@@ -111,16 +111,38 @@\n &d1, &d2\n+, &resultadopar, &soma\n )%0A    so\n",
+            "lines": "18"
+        },
+        {
+            "label": "2026-04-27_01-23-00",
+            "content": "@@ -140,24 +140,11 @@\n     \n-resultadopar = (\n+if \n soma\n@@ -156,16 +156,18 @@\n == 0\n-)\n+ %7B\n %0A    \n-if\n+   \n  res\n@@ -180,32 +180,11 @@\n par \n-%7B%0A        fmt.Println(p)\n+= 0\n %0A   \n@@ -201,32 +201,32 @@\n         \n-fmt.Println(1-p)\n+resultadopar = 1\n %0A    %7D %0A\n",
+            "lines": "18"
+        },
+        {
+            "label": "2026-04-27_01-28-09",
+            "content": "@@ -140,25 +140,58 @@\n     \n-if soma %25 2 == 0 \n+resultadopar = (soma %25 2 == 0)%0A    if resultadopar\n  %7B%0A \n",
+            "lines": "19"
+        },
+        {
+            "label": "2026-04-27_01-30-31",
+            "content": "@@ -227,10 +227,106 @@\n   %7D %0A   \n+ if p == resultadopar %7B%0A            fmt.Println(p)%0A    %7D else  %7B%0A        fmt.Println(1-p)%0A    %7D%0A\n %7D%0A\n",
+            "lines": "18"
+        },
+        {
+            "label": "2026-04-27_01-32-53",
+            "content": "@@ -61,16 +61,41 @@\n oma int%0A\n+    var resultadopar int%0A\n     fmt.\n",
+            "lines": "13"
+        },
+        {
+            "label": "2026-04-27_01-33-06",
+            "content": "package main\nimport \"fmt\"\nfunc main() {\n    var p, d1, d2, soma int\n    fmt.Scan(&p, &d1, &d2)\n    soma = d1 + d2\n    if soma % 2 == 0  {\n        fmt.Println(p)\n    } else {\n        fmt.Println(1-p)\n    } \n   }\n",
+            "lines": "12"
         }
     ]
 }
