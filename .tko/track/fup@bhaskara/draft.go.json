@@ -1,0 +1,19 @@
+{
+    "patches": [
+        {
+            "label": "2026-04-27_03-10-45",
+            "content": "@@ -106,16 +106,38 @@\n &a,&b,&c\n+, &delta, &x, &x1, &x2\n )%0A    de\n",
+            "lines": "22"
+        },
+        {
+            "label": "2026-04-27_03-13-10",
+            "content": "@@ -110,30 +110,8 @@\n b,&c\n-, &delta, &x, &x1, &x2\n )%0A  \n@@ -296,67 +296,8 @@\n  x)%0A\n-        if  x1 == -0 %7B x1 = 0.0 %7D%0Aif x2 == -0 %7B x2 = 0.0 %7D%0A\n     \n",
+            "lines": "22"
+        },
+        {
+            "label": "2026-04-27_03-15-58",
+            "content": "package main\nimport (\"fmt\"\n\"math\"\n)\nfunc main() {\n    var a, b, c, delta, x, x1, x2 float64\n    fmt.Scan(&a,&b,&c, &delta, &x, &x1, &x2)\n    delta = math.Pow(b, 2) - (4 * a * c)\n    if delta < 0 {\n        fmt.Println(\"nao ha raiz real\")\n    } else if delta == 0 {\n        x = -b / (2 * a)\n        fmt.Printf(\"%.2f\\n\", x)\n        if  x1 == -0 { x1 = 0.0 }\nif x2 == -0 { x2 = 0.0 }\n    } else {\n        raizDelta := math.Sqrt(delta)\n\t\tx1 = (-b + raizDelta) / (2 * a)\n\t\tx2 = (-b - raizDelta) / (2 * a)\n        fmt.Printf(\"%.2f\\n\", x1)\n\t\tfmt.Printf(\"%.2f\\n\", x2)\n    }\n   \n}\n",
+            "lines": "24"
+        }
+    ]
+}

@@ -1,0 +1,9 @@
+{
+    "patches": [
+        {
+            "label": "2026-04-27_02-55-58",
+            "content": "package main\nimport \"fmt\"\nfunc main() {\n    var v1, v2, v3 int\n    fmt.Scan(&v1, &v2, &v3)\n    if v1 < v2+v3 && v2 < v1+v3 && v3 < v1+v2{\n        fmt.Println(\"True\")\n    } else {\n        fmt.Println(\"False\")\n    } \n}\n",
+            "lines": "11"
+        }
+    ]
+}
