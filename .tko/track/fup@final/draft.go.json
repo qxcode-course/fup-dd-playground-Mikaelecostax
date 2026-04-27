@@ -1,0 +1,104 @@
+{
+    "patches": [
+        {
+            "label": "2026-04-27_01-54-01",
+            "content": "@@ -283,68 +283,16 @@\n lse \n-%7B%0A        fmt.Println(%22final%22)%0A    %7D else if media+notafinal\n+if media\n  %3E= \n@@ -297,34 +297,24 @@\n = 4 %7C%7C media\n-+notafinal\n  %3E= 7 %7B%0A    \n@@ -369,26 +369,16 @@\n if media\n-+notafinal\n  %3E= 5 %7B%0A\n@@ -410,32 +410,32 @@\n vado na final%22)%0A\n+\n     %7D else if me\n@@ -441,18 +441,8 @@\n edia\n-+notafinal\n  %3C 5\n",
+            "lines": "18"
+        },
+        {
+            "label": "2026-04-27_01-59-07",
+            "content": "@@ -315,21 +315,21 @@\n %22)%0A    %7D\n-%0A    \n+ else\n  if medi\n",
+            "lines": "20"
+        },
+        {
+            "label": "2026-04-27_02-00-27",
+            "content": "@@ -320,25 +320,24 @@\n   %7D%0A     if \n-(\n media+notafi\n@@ -335,27 +335,24 @@\n ia+notafinal\n-)/2\n  %3E= 4 %7C%7C (me\n@@ -348,17 +348,16 @@\n %3E= 4 %7C%7C \n-(\n media+no\n@@ -359,27 +359,24 @@\n ia+notafinal\n-)/2\n  %3E= 7 %7B%0A    \n@@ -418,33 +418,32 @@\n )%0A    %7D else if \n-(\n media+notafinal)\n@@ -441,19 +441,16 @@\n otafinal\n-)/2\n  %3E= 5 %7B%0A\n@@ -504,17 +504,16 @@\n else if \n-(\n media+no\n@@ -523,11 +523,8 @@\n inal\n-)/2\n  %3C 5\n",
+            "lines": "21"
+        },
+        {
+            "label": "2026-04-27_02-03-04",
+            "content": "@@ -75,20 +75,8 @@\n edia\n-, mediafinal\n  int\n@@ -104,16 +104,28 @@\n  &nota2,\n+ &notafinal,\n  &media)\n@@ -324,55 +324,19 @@\n     \n-fmt.Scan(&notafinal)%0A    mediafinal =\n+ if\n  (media\n- + \n++\n nota\n@@ -345,31 +345,10 @@\n nal)\n- / 2%0A     if mediafinal\n+/2\n  %3E= \n@@ -352,26 +352,35 @@\n %3E= 4 %7C%7C \n+(\n media\n++nota\n final\n+)/2\n  %3E= 7 %7B%0A\n@@ -434,26 +434,35 @@\n else if \n+(\n media\n++nota\n final\n+)/2\n  %3E= 5 %7B%0A\n@@ -520,18 +520,27 @@\n  if \n+(\n media\n++nota\n final\n+)/2\n  %3C 5\n",
+            "lines": "21"
+        },
+        {
+            "label": "2026-04-27_02-06-56",
+            "content": "@@ -464,24 +464,97 @@\n  na final%22)%0A\n+    %7D else if mediafinal %3E= 5 %7B%0A        fmt.Println(%22aprovado na final%22)%0A\n     %7D else i\n",
+            "lines": "23"
+        },
+        {
+            "label": "2026-04-27_02-07-26",
+            "content": "@@ -402,18 +402,38 @@\n afinal %3E\n- 5\n+= 4 %7C%7C mediafinal %3E= 7\n  %7B%0A     \n",
+            "lines": "21"
+        },
+        {
+            "label": "2026-04-27_02-09-53",
+            "content": "@@ -314,16 +314,17 @@\n l%22)%0A    \n+%7D\n %0A    fmt\n@@ -529,10 +529,8 @@\n     %7D%0A%7D%0A\n-%7D%0A\n",
+            "lines": "21"
+        },
+        {
+            "label": "2026-04-27_02-12-42",
+            "content": "@@ -298,36 +298,24 @@\n mt.Println(%22\n-aprovado na \n final%22)%0A    \n",
+            "lines": "22"
+        },
+        {
+            "label": "2026-04-27_02-13-01",
+            "content": "@@ -161,74 +161,8 @@\n / 2%0A\n-    fmt.Scan(&notafinal)%0A    mediafinal = (media + notafinal) / 2%0A\n     \n@@ -327,16 +327,82 @@\n %22)%0A    %0A\n+    fmt.Scan(&notafinal)%0A    mediafinal = (media + notafinal) / 2%0A\n      if \n",
+            "lines": "22"
+        },
+        {
+            "label": "2026-04-27_02-13-55",
+            "content": "@@ -384,38 +384,37 @@\n  na final%22)%0A    \n-%7D else\n+%0A    \n  if mediafinal %3E\n@@ -538,11 +538,12 @@\n )%0A    %7D%0A\n+%7D\n %0A%7D%0A\n",
+            "lines": "22"
+        },
+        {
+            "label": "2026-04-27_02-14-23",
+            "content": "@@ -393,20 +393,21 @@\n %22)%0A    %7D\n-%0A   \n+ else\n  if medi\n",
+            "lines": "21"
+        },
+        {
+            "label": "2026-04-27_02-14-36",
+            "content": "@@ -484,16 +484,20 @@\n iafinal \n+%3C 5 \n %7B%0A      \n",
+            "lines": "22"
+        },
+        {
+            "label": "2026-04-27_02-15-06",
+            "content": "@@ -470,16 +470,29 @@\n  %7D else \n+if mediafinal\n  %7B%0A     \n",
+            "lines": "22"
+        },
+        {
+            "label": "2026-04-27_02-15-22",
+            "content": "@@ -392,16 +392,17 @@\n l%22)%0A    \n+%7D\n %0A    if \n@@ -521,16 +521,11 @@\n )%0A    %7D%0A\n-    %7D\n %0A%7D%0A\n",
+            "lines": "22"
+        },
+        {
+            "label": "2026-04-27_02-16-01",
+            "content": "@@ -127,21 +127,8 @@\n edia\n-, &mediafinal\n )%0A  \n",
+            "lines": "22"
+        },
+        {
+            "label": "2026-04-27_02-18-47",
+            "content": "@@ -118,19 +118,28 @@\n nota2, &\n-not\n+media, &medi\n afinal)%0A\n@@ -191,24 +191,65 @@\n &notafinal)%0A\n+    mediafinal = (media + notafinal) / 2%0A\n     if media\n@@ -284,28 +284,24 @@\n %22aprovado%22)%0A\n-    \n     %7D else i\n@@ -314,20 +314,16 @@\n a %3C 4 %7B%0A\n-    \n         \n@@ -347,24 +347,16 @@\n ovado%22)%0A\n-        \n     %7D el\n@@ -372,52 +372,45 @@\n     \n-        mediafinal = (media + notafinal) / 2\n+fmt.Println(%22aprovado na final%22)%0A    \n %0A   \n",
+            "lines": "22"
+        },
+        {
+            "label": "2026-04-27_02-21-04",
+            "content": "@@ -230,32 +230,36 @@\n tln(%22aprovado%22)%0A\n+    \n     %7D else if me\n@@ -268,16 +268,20 @@\n a %3C 4 %7B%0A\n+    \n         \n@@ -301,24 +301,32 @@\n reprovado%22)%0A\n+        \n     %7D else %7B\n@@ -326,16 +326,24 @@\n  else %7B%0A\n+        \n         \n@@ -383,13 +383,8 @@\n / 2%0A\n-    %0A\n     \n",
+            "lines": "20"
+        },
+        {
+            "label": "2026-04-27_02-22-36",
+            "content": "@@ -379,17 +379,17 @@\n afinal %3E\n-=\n+ \n 5 %7B%0A    \n",
+            "lines": "21"
+        },
+        {
+            "label": "2026-04-27_02-24-08",
+            "content": "@@ -157,24 +157,49 @@\n  nota2) / 2%0A\n+    fmt.Scan(&notafinal)%0A\n     if media\n",
+            "lines": "21"
+        },
+        {
+            "label": "2026-04-27_02-25-53",
+            "content": "package main\nimport \"fmt\"\nfunc main() {\n    var nota1, nota2, notafinal, media, mediafinal int\n    fmt.Scan(&nota1, &nota2, &notafinal)\n    media = (nota1 + nota2) / 2\n    if media >= 7 {\n        fmt.Println(\"aprovado\")\n    } else if media < 4 {\n        fmt.Println(\"reprovado\")\n    } else {\n        mediafinal = (media + notafinal) / 2\n    \n    if mediafinal >=5 {\n        fmt.Println(\"aprovado na final\")\n    } else  {\n        fmt.Println(\"reprovado na final\")\n    }\n    }\n}\n",
+            "lines": "20"
+        }
+    ]
+}
