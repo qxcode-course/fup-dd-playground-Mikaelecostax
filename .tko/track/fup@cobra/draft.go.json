@@ -1,0 +1,9 @@
+{
+    "patches": [
+        {
+            "label": "2026-05-03_23-57-09",
+            "content": "package main\nimport \"fmt\"\nfunc main() {\n    var n, x, y, s int\n\tvar c string\n    fmt.Scan(&n, &x, &y, &c, &s)\n    switch c {\n\tcase \"U\":\n\t\ty = (y - s) % n\n\tcase \"D\": \n\t\ty = (y + s) % n\n\tcase \"L\": \n\t\tx = (x - s) % n\n\tcase \"R\": \n\t\tx = (x + s) % n\n\t} \n    if x < 0 {\n\t\tx += n\n\t}\n\tif y < 0 {\n\t\ty += n\n\t}\n    fmt.Printf(\"%d %d\\n\", x, y)\n}\n",
+            "lines": "24"
+        }
+    ]
+}

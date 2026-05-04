@@ -1,0 +1,14 @@
+{
+    "patches": [
+        {
+            "label": "2026-05-03_23-59-41",
+            "content": "@@ -185,19 +185,27 @@\n Println(\n-cliques\n+%22Hello, World!%22\n )%0A%7D%0A\n",
+            "lines": "13"
+        },
+        {
+            "label": "2026-05-03_23-59-49",
+            "content": "package main\nimport \"fmt\"\nfunc main() {\n    var n, d, a int\n    var cliques int\n    fmt.Scan(&n, &d, &a)\n    if d >= a {\n\t\tcliques = d - a\n\t} else {\n\t\tcliques = (n - a) + d\n\t}\n    fmt.Println(cliques)\n}\n",
+            "lines": "13"
+        }
+    ]
+}

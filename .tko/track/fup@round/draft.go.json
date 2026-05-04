@@ -1,0 +1,59 @@
+{
+    "patches": [
+        {
+            "label": "2026-05-03_22-48-59",
+            "content": "@@ -35,180 +35,8 @@\n th%22%0A\n-)%0Afunc ceil(n float64) int %7B%0A%09return int(math.Ceil(n))%0A%7D %0Afunc floor(n float64) int %7B%0A%09return int(math.Floor(n))%0A%7D%0Afunc round(n float64) int %7B%0A%09return int(math.Round(n))%0A%7D%0A\n func\n",
+            "lines": "19"
+        },
+        {
+            "label": "2026-05-03_22-50-41",
+            "content": "@@ -277,17 +277,16 @@\n fmt.Scan\n-f\n (%22%25s %25f%22\n",
+            "lines": "29"
+        },
+        {
+            "label": "2026-05-03_22-51-23",
+            "content": "@@ -14,17 +14,16 @@\n import (\n- \n %22fmt%22%0A  \n@@ -33,16 +33,186 @@\n math%22%0A)%0A\n+func ceil(n float64) int %7B%0A%09return int(math.Ceil(n))%0A%7D %0Afunc floor(n float64) int %7B%0A%09return int(math.Floor(n))%0A%7D%0Afunc round(n float64) int %7B%0A%09return int(math.Round(n))%0A%7D%0A\n func mai\n@@ -232,12 +232,14 @@\n  op \n-rune\n+string\n %0A   \n@@ -279,16 +279,25 @@\n t.Scanf(\n+%22%25s %25f%22, \n &op, &nu\n@@ -332,30 +332,8 @@\n %0A%09%7D%0A\n-    var resultado int%0A\n     \n@@ -461,33 +461,6 @@\n %0A%09%7D%0A\n-    fmt.Println(resultado)%0A\n %7D%0A\n",
+            "lines": "29"
+        },
+        {
+            "label": "2026-05-03_22-54-34",
+            "content": "@@ -20,16 +20,20 @@\n  ( %22fmt%22\n+%0A   \n  %22math%22%0A\n",
+            "lines": "22"
+        },
+        {
+            "label": "2026-05-03_22-54-57",
+            "content": "@@ -20,18 +20,16 @@\n  ( %22fmt%22\n-, \n  %22math%22%0A\n",
+            "lines": "21"
+        },
+        {
+            "label": "2026-05-03_22-55-09",
+            "content": "@@ -24,15 +24,9 @@\n fmt%22\n-%0A      \n+,\n   %22m\n@@ -104,16 +104,17 @@\n fmt.Scan\n+f\n (&op, &n\n",
+            "lines": "21"
+        },
+        {
+            "label": "2026-05-03_22-56-13",
+            "content": "@@ -115,17 +115,8 @@\n can(\n-%22%25c, %25f%22 \n &op,\n@@ -122,16 +122,16 @@\n , &num)%0A\n+\n %09if err \n@@ -199,11 +199,11 @@\n ase \n-'c'\n+%22c%22\n :%0A%09%09\n@@ -235,11 +235,11 @@\n ase \n-'f'\n+%22f%22\n :%0A%09%09\n@@ -272,11 +272,11 @@\n ase \n-'r'\n+%22r%22\n :%0A%09%09\n",
+            "lines": "22"
+        },
+        {
+            "label": "2026-05-03_23-02-48",
+            "content": "@@ -215,77 +215,57 @@\n :%0A%09%09\n-resultado = int (math.Ceil(num))%0A%09case 'f':%0A%09%09resultado = int (math.F\n+fmt.Println(ceil(num))%0A%09case 'f':%0A%09%09fmt.Println(f\n loor\n@@ -288,31 +288,21 @@\n :%0A%09%09\n-resultado = int (math.R\n+fmt.Println(r\n ound\n",
+            "lines": "22"
+        },
+        {
+            "label": "2026-05-03_23-06-07",
+            "content": "@@ -118,13 +118,13 @@\n (%22%25c\n+,\n  %25f%22\n-,\n  &op\n",
+            "lines": "22"
+        },
+        {
+            "label": "2026-05-03_23-06-34",
+            "content": "@@ -67,14 +67,12 @@\n  op \n-string\n+rune\n %0A   \n@@ -111,16 +111,24 @@\n mt.Scan(\n+%22%25c %25f%22,\n  &op, &n\n@@ -208,11 +208,11 @@\n ase \n-%22c%22\n+'c'\n :%0A%09%09\n@@ -254,11 +254,11 @@\n ase \n-%22f%22\n+'f'\n :%0A%09%09\n@@ -301,11 +301,11 @@\n ase \n-%22r%22\n+'r'\n :%0A%09%09\n",
+            "lines": "22"
+        },
+        {
+            "label": "2026-05-03_23-08-54",
+            "content": "package main\nimport ( \"fmt\"\n        \"math\"\n)\nfunc main() {\n    var op string\n    var num float64\n    _, err := fmt.Scan( &op, &num)\n\tif err != nil {\n\t\treturn\n\t}\n    var resultado int\n    switch op {\n\tcase \"c\":\n\t\tresultado = int (math.Ceil(num))\n\tcase \"f\":\n\t\tresultado = int (math.Floor(num))\n\tcase \"r\":\n\t\tresultado = int (math.Round(num))\n\t}\n    fmt.Println(resultado)\n}\n",
+            "lines": "22"
+        }
+    ]
+}

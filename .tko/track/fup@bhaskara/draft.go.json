@@ -12,8 +12,13 @@
         },
         {
             "label": "2026-04-27_03-15-58",
-            "content": "package main\nimport (\"fmt\"\n\"math\"\n)\nfunc main() {\n    var a, b, c, delta, x, x1, x2 float64\n    fmt.Scan(&a,&b,&c, &delta, &x, &x1, &x2)\n    delta = math.Pow(b, 2) - (4 * a * c)\n    if delta < 0 {\n        fmt.Println(\"nao ha raiz real\")\n    } else if delta == 0 {\n        x = -b / (2 * a)\n        fmt.Printf(\"%.2f\\n\", x)\n        if  x1 == -0 { x1 = 0.0 }\nif x2 == -0 { x2 = 0.0 }\n    } else {\n        raizDelta := math.Sqrt(delta)\n\t\tx1 = (-b + raizDelta) / (2 * a)\n\t\tx2 = (-b - raizDelta) / (2 * a)\n        fmt.Printf(\"%.2f\\n\", x1)\n\t\tfmt.Printf(\"%.2f\\n\", x2)\n    }\n   \n}\n",
-            "lines": "24"
+            "content": "@@ -1,452 +1,54 @@\n-package main%0Aimport (%22fmt%22%0A%22math%22%0A)%0Afunc main() %7B%0A    var a, b, c float64%0A    fmt.Scan(&a,&b,&c)%0A    delta := math.Pow(b, 2) - (4 * a * c)%0A    if delta %3C 0 %7B%0A        fmt.Println(%22nao ha raiz real%22)%0A    %7D else if delta == 0 %7B%0A        x := -b / (2 * a)%0A        if x == -0 %7B%0A%09%09%09x = 0%0A%09%09%7D%0A        fmt.Printf(%22%25.2f%5Cn%22, x)%0A    %7D else %7B%0A        raizDelta := math.Sqrt(delta)%0A%09%09x1 := (-b + raizDelta) / (2 * a)%0A%09%09x2 := (-b - raizDelta) / (2 * a)%0A        if\n+@@ -314,16 +314,75 @@%0A %255Cn%2522, x)%250A%0A+        if \n  x1 \n@@ -57,21 +57,27 @@\n  -0 \n-%7B\n+%257B\n  x1 = 0\n- %7D%0A%09%09\n+.0 %257D%250A\n if x\n@@ -88,87 +88,36 @@\n  -0 \n-%7B\n+%257B\n  x2 = 0\n- %7D%0A        fmt.Printf(%22%25.2f%5Cn%22, x1)%0A%09%09fmt.Printf(%22%25.2f%5Cn%22, x2)%0A    %7D%0A   %0A%7D\n+.0 %257D%250A%0A     %257D el\n %0A\n",
+            "lines": "4"
+        },
+        {
+            "label": "2026-05-03_23-33-45",
+            "content": "package main\nimport (\"fmt\"\n\"math\"\n)\nfunc main() {\n    var a, b, c float64\n    fmt.Scan(&a,&b,&c)\n    delta := math.Pow(b, 2) - (4 * a * c)\n    if delta < 0 {\n        fmt.Println(\"nao ha raiz real\")\n    } else if delta == 0 {\n        x := -b / (2 * a)\n        if x == -0 {\n\t\t\tx = 0\n\t\t}\n        fmt.Printf(\"%.2f\\n\", x)\n    } else {\n        raizDelta := math.Sqrt(delta)\n\t\tx1 := (-b + raizDelta) / (2 * a)\n\t\tx2 := (-b - raizDelta) / (2 * a)\n        if x1 == -0 { x1 = 0 }\n\t\tif x2 == -0 { x2 = 0 }\n        fmt.Printf(\"%.2f\\n\", x1)\n\t\tfmt.Printf(\"%.2f\\n\", x2)\n    }\n   \n}\n",
+            "lines": "27"
         }
     ]
 }

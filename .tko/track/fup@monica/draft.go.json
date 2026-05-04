@@ -1,0 +1,14 @@
+{
+    "patches": [
+        {
+            "label": "2026-05-03_23-43-47",
+            "content": "@@ -240,21 +240,21 @@\n Println(mais\n-v\n+V\n elho)%0A%7D%0A\n",
+            "lines": "17"
+        },
+        {
+            "label": "2026-05-03_23-43-55",
+            "content": "package main\nimport \"fmt\"\nfunc main() {\n    var m int\n    var a int \n    var b int \n    fmt.Scan(&m, &a, &b)\n    c := m - (a + b)\n    maisvelho := a \n    if b > maisvelho {\n\t\tmaisvelho = b\n\t}\n\tif c > maisvelho {\n\t\tmaisvelho = c\n\t}\n    fmt.Println(maisvelho)\n}\n",
+            "lines": "17"
+        }
+    ]
+}

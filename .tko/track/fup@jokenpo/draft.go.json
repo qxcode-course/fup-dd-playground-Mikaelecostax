@@ -1,0 +1,34 @@
+{
+    "patches": [
+        {
+            "label": "2026-05-03_23-22-24",
+            "content": "@@ -279,16 +279,72 @@\n %7Delse %7B%0A\n+%09%09// Se n%C3%A3o %C3%A9 empate e o jog1 n%C3%A3o ganhou, o jog2 ganhou%0A\n %09%09fmt.Pr\n",
+            "lines": "18"
+        },
+        {
+            "label": "2026-05-03_23-22-31",
+            "content": "@@ -162,11 +162,11 @@\n  == \n-'R'\n+%22R%22\n  && \n@@ -173,19 +173,19 @@\n jog2 == \n-'S'\n+%22S%22\n ) %7C%7C%0A%09%09(\n@@ -196,11 +196,11 @@\n  == \n-'S'\n+%22S%22\n  && \n@@ -207,19 +207,19 @@\n jog2 == \n-'P'\n+%22P%22\n ) %7C%7C%0A%09%09(\n@@ -230,11 +230,11 @@\n  == \n-'P'\n+%22P%22\n  && \n",
+            "lines": "17"
+        },
+        {
+            "label": "2026-05-03_23-23-58",
+            "content": "@@ -241,19 +241,19 @@\n jog2 == \n-'R'\n+%22R%22\n ) %7B%0A%09%09fm\n",
+            "lines": "17"
+        },
+        {
+            "label": "2026-05-03_23-24-11",
+            "content": "@@ -142,23 +142,8 @@\n e%22)%0A\n-        return%0A\n %09%7D %0A\n",
+            "lines": "17"
+        },
+        {
+            "label": "2026-05-03_23-24-27",
+            "content": "@@ -46,22 +46,19 @@\n ar jog1 \n-str\n in\n-g\n+t\n %0A    var\n@@ -67,14 +67,12 @@\n og2 \n-string\n+int \n %0A   \n@@ -173,19 +173,19 @@\n jog1 == \n-%22R%22\n+'R'\n  && jog2\n@@ -188,19 +188,19 @@\n jog2 == \n-%22S%22\n+'S'\n ) %7C%7C%0A%09%09(\n@@ -211,11 +211,11 @@\n  == \n-%22S%22\n+'S'\n  && \n@@ -222,19 +222,19 @@\n jog2 == \n-%22P%22\n+'P'\n ) %7C%7C%0A%09%09(\n@@ -245,11 +245,11 @@\n  == \n-%22P%22\n+'P'\n  && \n@@ -260,11 +260,11 @@\n  == \n-%22R%22\n+'R'\n ) %7B%0A\n@@ -289,16 +289,15 @@\n 1%22)%0A\n+\n %09%7Delse \n- \n %7B%0A%09%09\n",
+            "lines": "18"
+        },
+        {
+            "label": "2026-05-03_23-27-02",
+            "content": "package main\nimport \"fmt\"\nfunc main() {\n    var jog1 string\n    var jog2 string\n    fmt.Scan(&jog1, &jog2)\n\tif jog1 == jog2 {\n\t\tfmt.Println(\"empate\")\n        return\n\t} \n    if (jog1 == \"R\" && jog2 == \"S\") ||\n\t\t(jog1 == \"S\" && jog2 == \"P\") ||\n\t\t(jog1 == \"P\" && jog2 == \"R\") {\n\t\tfmt.Println(\"jog1\")\n\t}else  {\n\t\tfmt.Println(\"jog2\")\n\t}\n}\n",
+            "lines": "18"
+        }
+    ]
+}

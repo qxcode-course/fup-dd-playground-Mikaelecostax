@@ -1,0 +1,14 @@
+{
+    "patches": [
+        {
+            "label": "2026-05-03_23-50-23",
+            "content": "@@ -17,24 +17,14 @@\n ort \n-(\n %22fmt%22%0A\n-%22math%22 )%0A\n func\n",
+            "lines": "11"
+        },
+        {
+            "label": "2026-05-03_23-50-48",
+            "content": "package main\nimport (\"fmt\"\n\"math\" )\nfunc main() {\n    var c int\n    var a int\n    fmt.Scan(&c, &a)\n    capacidadealunos := c - 1\n    viagens := float64(a) / float64(capacidadealunos)\n\tresultado := int(math.Ceil(viagens))\n    fmt.Println(resultado)\n}\n",
+            "lines": "12"
+        }
+    ]
+}

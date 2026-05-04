@@ -1,0 +1,14 @@
+{
+    "patches": [
+        {
+            "label": "2026-05-03_23-53-53",
+            "content": "@@ -253,27 +253,26 @@\n rint\n-f(%22%25.0f%5Cn%22, minutos\n+ln(%22Hello, World!%22\n )%0A%7D%0A\n",
+            "lines": "10"
+        },
+        {
+            "label": "2026-05-03_23-54-01",
+            "content": "package main\nimport ( \"fmt\"\n\"math\" )\nfunc main() {\n    var c, bananas, goiabas, mangas int\n    fmt.Scan(&c, &bananas, &goiabas, &mangas)\n    totalfrutas := bananas + goiabas + mangas\n    minutos := math.Ceil(float64(totalfrutas) / float64(c))\n    fmt.Printf(\"%.0f\\n\", minutos)\n}\n",
+            "lines": "10"
+        }
+    ]
+}

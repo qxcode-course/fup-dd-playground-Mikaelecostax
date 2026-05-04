@@ -117,3 +117,11 @@
 2026-04-27 03:13:46, MOVE, v:1, k:fup@bhaskara, mode:PICK
 2026-04-27 03:13:49, EXEC, v:1, k:fup@bhaskara, mode:FULL, rate:85
 2026-04-27 03:15:58, EXEC, v:1, k:fup@bhaskara, mode:FULL, rate:85, size:24
+2026-04-27 03:16:25, MOVE, v:1, k:fup@bhaskara, mode:BACK
+2026-04-27 17:58:46, MOVE, v:1, k:sandbox@user_001, mode:PICK
+2026-04-27 17:59:34, MOVE, v:1, k:sandbox@user_001, mode:BACK
+2026-04-27 18:09:19, MOVE, v:1, k:fup@impar, mode:PICK
+2026-04-27 18:09:34, EXEC, v:1, k:fup@impar, mode:FULL, rate:100
+2026-04-27 18:09:37, MOVE, v:1, k:fup@impar, mode:BACK
+2026-04-27 18:09:40, MOVE, v:1, k:fup@round, mode:PICK
+2026-04-27 18:09:52, MOVE, v:1, k:fup@round, mode:BACK
