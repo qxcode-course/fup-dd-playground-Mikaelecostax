@@ -1,0 +1,14 @@
+{
+    "patches": [
+        {
+            "label": "2026-05-09_01-48-06",
+            "content": "@@ -68,11 +68,8 @@\n %0A   \n- _,\n  err\n",
+            "lines": "21"
+        },
+        {
+            "label": "2026-05-09_01-57-41",
+            "content": "package main\nimport \"fmt\"\nfunc main() {\n    var a int\n    var b int\n    _, err := fmt.Scan(&a, &b)\n    soma := 0\n    if err != nil {\n\t\treturn\n\t}\n    if a > b {\n\t\tfmt.Println(\"invalido\")\n\t\treturn\n\t}\n    for i := a; i <= b; i++ {\n\t\tif i % 2 == 0 {\n\t\t\tsoma += i\n\t\t}\n    }\n    fmt.Println(soma)\n}\n",
+            "lines": "21"
+        }
+    ]
+}

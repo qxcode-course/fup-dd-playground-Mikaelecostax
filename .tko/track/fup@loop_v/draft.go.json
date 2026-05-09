@@ -1,0 +1,59 @@
+{
+    "patches": [
+        {
+            "label": "2026-05-09_01-34-41",
+            "content": "@@ -240,14 +240,17 @@\n tf(%22\n+%5B\n %25d\n+%5D\n  %22, \n+a\n )%0A  \n",
+            "lines": "19"
+        },
+        {
+            "label": "2026-05-09_01-34-56",
+            "content": "@@ -242,12 +242,12 @@\n (%22%25d\n+ \n %22, \n-a\n )%0A  \n",
+            "lines": "19"
+        },
+        {
+            "label": "2026-05-09_01-35-30",
+            "content": "@@ -240,13 +240,10 @@\n tf(%22\n-%5B\n %25d\n-%5D \n %22, a\n@@ -262,10 +262,28 @@\n +%0A    %7D%0A\n+    fmt.Println()%0A\n %7D%0A\n",
+            "lines": "19"
+        },
+        {
+            "label": "2026-05-09_01-36-24",
+            "content": "@@ -87,29 +87,8 @@\n &b)%0A\n-    fmt.Printf(%22%5B %22)%0A\n     \n@@ -269,28 +269,6 @@\n   %7D%0A\n-    fmt.Println(%22 %5D%22)%0A\n %7D%0A\n",
+            "lines": "18"
+        },
+        {
+            "label": "2026-05-09_01-38-58",
+            "content": "@@ -261,10 +261,12 @@\n tf(%22\n+%5B\n %25d\n+%5D\n  %22, \n",
+            "lines": "20"
+        },
+        {
+            "label": "2026-05-09_01-39-07",
+            "content": "@@ -259,16 +259,17 @@\n intf(%22%25d\n+ \n %22, a)%0A  \n@@ -301,14 +301,15 @@\n rintln(%22\n+ \n %5D%22)%0A%7D%0A\n",
+            "lines": "20"
+        },
+        {
+            "label": "2026-05-09_01-39-27",
+            "content": "@@ -300,15 +300,14 @@\n rintln(%22\n- \n %5D%22)%0A%7D%0A\n",
+            "lines": "20"
+        },
+        {
+            "label": "2026-05-09_01-39-36",
+            "content": "@@ -261,13 +261,10 @@\n tf(%22\n-%5B\n %25d\n-%5D \n %22, a\n",
+            "lines": "20"
+        },
+        {
+            "label": "2026-05-09_01-39-55",
+            "content": "@@ -261,10 +261,12 @@\n tf(%22\n+%5B\n %25d\n+%5D\n  %22, \n",
+            "lines": "20"
+        },
+        {
+            "label": "2026-05-09_01-40-04",
+            "content": "@@ -301,14 +301,15 @@\n rintln(%22\n+ \n %5D%22)%0A%7D%0A\n",
+            "lines": "20"
+        },
+        {
+            "label": "2026-05-09_01-40-32",
+            "content": "package main\nimport \"fmt\"\nfunc main() {\n    var a int\n    var b int \n    fmt.Scan(&a, &b)\n    fmt.Printf(\"[ \")\n    for   { \n        if a >= b {\n            break\n        }\n        if a % 2 == 0 {\n            a++ \n            continue\n        }\n        fmt.Printf(\"%d \", a)\n        a++\n    }\n    fmt.Println(\"]\")\n}\n",
+            "lines": "20"
+        }
+    ]
+}

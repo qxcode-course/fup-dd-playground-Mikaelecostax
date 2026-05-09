@@ -1,0 +1,24 @@
+{
+    "patches": [
+        {
+            "label": "2026-05-09_02-18-35",
+            "content": "@@ -92,11 +92,8 @@\n %0A   \n- _,\n  err\n",
+            "lines": "12"
+        },
+        {
+            "label": "2026-05-09_02-18-46",
+            "content": "@@ -92,17 +92,19 @@\n %0A    _, \n-_\n+err\n  := fmt.\n",
+            "lines": "12"
+        },
+        {
+            "label": "2026-05-09_02-19-38",
+            "content": "@@ -94,16 +94,17 @@\n    _, _ \n+:\n = fmt.Sc\n",
+            "lines": "12"
+        },
+        {
+            "label": "2026-05-09_02-19-40",
+            "content": "package main\nimport \"fmt\"\nfunc main() {\n    var idademaisnovo int\n\tvar quantidadefilhos int\n    _, _ = fmt.Scan(&idademaisnovo, &quantidadefilhos)\n    idadeatual := idademaisnovo\n    for i := 0; i < quantidadefilhos; i++ {\n\t\tfmt.Println(idadeatual)\n        idadeatual += 2\n    }\n}\n",
+            "lines": "12"
+        }
+    ]
+}
