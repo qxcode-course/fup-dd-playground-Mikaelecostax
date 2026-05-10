@@ -22,12 +22,7 @@ sources:
   quests: null
   tasks: null
 expanded:
-- fup@if1
 - fup@list
-- fup@for2
-- fup@base
-- fup@if2
-- fup@for1
 flags:
   inbox: all
   panel: skills
@@ -35,5 +30,5 @@ flags:
   task_graph_mode: executions
   show_time: 'true'
 lang: go
-selected: fup@repetidos
-selected_index: 72
+selected: fup@patas
+selected_index: 14

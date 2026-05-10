@@ -102,3 +102,6 @@
 2026-05-10 01:02:12, MOVE, v:1, k:fup@patas, mode:EDIT
 2026-05-10 01:04:42, MOVE, v:1, k:fup@patas, mode:EDIT
 2026-05-10 01:04:52, MOVE, v:1, k:fup@dieta, mode:EDIT
+2026-05-10 01:11:47, MOVE, v:1, k:fup@patas, mode:PICK
+2026-05-10 01:28:50, EXEC, v:1, k:fup@patas, mode:FULL, rate:100, size:38
+2026-05-10 01:28:53, MOVE, v:1, k:fup@patas, mode:BACK
