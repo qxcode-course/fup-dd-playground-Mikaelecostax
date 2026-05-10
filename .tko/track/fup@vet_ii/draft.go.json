@@ -1,0 +1,34 @@
+{
+    "patches": [
+        {
+            "label": "2026-05-10_00-46-22",
+            "content": "@@ -235,90 +235,16 @@\n rint\n-(%22%5B %22)%0A%09for i := 0; i %3C n; i++ %7B%0A%09%09fmt.Printf(%22%25d %22, vetor%5Bi%5D)%0A%09%7D%0A%09fmt.Println(%22%5D%22\n+ln(vetor\n )%0A%7D%0A\n",
+            "lines": "18"
+        },
+        {
+            "label": "2026-05-10_00-47-50",
+            "content": "@@ -129,17 +129,16 @@\n intln(%22%5B\n- \n %5D%22)%0A%09%09re\n@@ -311,16 +311,15 @@\n rintln(%22\n- \n %5D%22)%0A%7D%0A%0A\n",
+            "lines": "22"
+        },
+        {
+            "label": "2026-05-10_00-48-11",
+            "content": "@@ -129,16 +129,17 @@\n intln(%22%5B\n+ \n %5D%22)%0A%09%09re\n",
+            "lines": "22"
+        },
+        {
+            "label": "2026-05-10_00-48-19",
+            "content": "@@ -311,15 +311,16 @@\n rintln(%22\n+ \n %5D%22)%0A%7D%0A%0A\n",
+            "lines": "22"
+        },
+        {
+            "label": "2026-05-10_00-48-28",
+            "content": "@@ -129,17 +129,16 @@\n intln(%22%5B\n- \n %5D%22)%0A%09%09re\n",
+            "lines": "22"
+        },
+        {
+            "label": "2026-05-10_00-48-46",
+            "content": "package main\nimport \"fmt\"\nfunc main() {\n    var n int\n\tif _, err := fmt.Scan(&n); err != nil {\n\t\treturn\n\t}\n\tif n == 0 {\n\t\tfmt.Println(\"[ ]\")\n\t\treturn\n\t}\n\tvetor := make([]int, n)\n\tfor i := 0; i < n; i++ {\n\t\tfmt.Scan(&vetor[i])\n\t}\n\tfmt.Print(\"[ \")\n\tfor i := 0; i < n; i++ {\n\t\tfmt.Printf(\"%d \", vetor[i])\n\t}\n\tfmt.Println(\"]\")\n}\n\n",
+            "lines": "22"
+        }
+    ]
+}

@@ -1,0 +1,54 @@
+{
+    "patches": [
+        {
+            "label": "2026-05-10_00-29-34",
+            "content": "@@ -50,24 +50,8 @@\n int%0A\n-   fmt.Scan(&n)%0A\n     \n",
+            "lines": "15"
+        },
+        {
+            "label": "2026-05-10_00-32-49",
+            "content": "@@ -212,17 +212,18 @@\n mt.Print\n-f\n+ln\n (vetor%5Bi\n",
+            "lines": "16"
+        },
+        {
+            "label": "2026-05-10_00-33-14",
+            "content": "@@ -216,10 +216,9 @@\n rint\n-ln\n+f\n (vet\n",
+            "lines": "16"
+        },
+        {
+            "label": "2026-05-10_00-33-23",
+            "content": "@@ -232,27 +232,6 @@\n %0A%09%7D%0A\n-    fmt.Println(%22 %22)%0A\n %7D%0A\n",
+            "lines": "16"
+        },
+        {
+            "label": "2026-05-10_00-33-41",
+            "content": "@@ -244,12 +244,15 @@\n Println(\n+%22 %22\n )%0A%7D%0A\n",
+            "lines": "17"
+        },
+        {
+            "label": "2026-05-10_00-33-57",
+            "content": "@@ -228,10 +228,28 @@\n %5Bi%5D)%0A%09%7D%0A\n+    fmt.Println()%0A\n %7D%0A\n",
+            "lines": "17"
+        },
+        {
+            "label": "2026-05-10_00-34-22",
+            "content": "@@ -66,63 +66,8 @@\n &n)%0A\n-   if _, err := fmt.Scan(&n); err != nil %7B%0A%09%09return%0A%09%7D%0A\n     \n",
+            "lines": "16"
+        },
+        {
+            "label": "2026-05-10_00-37-15",
+            "content": "@@ -36,17 +36,16 @@\n () %7B%0A   \n- \n var n in\n@@ -47,16 +47,31 @@\n  n int%0A \n+  fmt.Scan(&n)%0A\n    if _,\n@@ -173,17 +173,20 @@\n int, n)%0A\n-%09\n+    \n for i :=\n@@ -227,17 +227,20 @@\n %5Bi%5D)%0A%09%7D%0A\n-%09\n+    \n for i :=\n@@ -280,16 +280,13 @@\n tor%5Bi%5D)%0A\n-    \n+%09\n %7D%0A%7D%0A\n",
+            "lines": "19"
+        },
+        {
+            "label": "2026-05-10_00-39-36",
+            "content": "@@ -107,53 +107,8 @@\n %0A%09%7D%0A\n-    if n == 0 %7B%0A%09%09fmt.Println() %0A%09%09return%0A%09%7D%0A\n     \n",
+            "lines": "18"
+        },
+        {
+            "label": "2026-05-10_00-41-19",
+            "content": "package main\nimport \"fmt\"\nfunc main() {\n    var n int\n    if _, err := fmt.Scan(&n); err != nil {\n\t\treturn\n\t}\n    if n == 0 {\n\t\tfmt.Println() \n\t\treturn\n\t}\n    if n <= 0 {\n\t\treturn\n\t}\n    vetor := make([]int, n)\n\tfor i := 0; i < n; i++ {\n\t\tfmt.Scan(&vetor[i])\n\t}\n\tfor i := 0; i < n; i++ {\n\t\tfmt.Println(vetor[i])\n    }\n}\n",
+            "lines": "22"
+        }
+    ]
+}

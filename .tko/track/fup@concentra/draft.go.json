@@ -1,0 +1,9 @@
+{
+    "patches": [
+        {
+            "label": "2026-05-09_22-39-26",
+            "content": "package main\nimport ( \"fmt\"\n    \"strings\" )\nfunc main() {\n    var a, b int\n    var resultado []string\n\tfmt.Scan(&a, &b)\n\tinicio := a\n\tfim := b\n    for i, j := inicio, fim; i <= fim; i, j = i+1, j-1 {\n\t\tresultado = append(resultado, fmt.Sprintf(\"%d\", i))\n\t\tresultado = append(resultado, fmt.Sprintf(\"%d\", j))\n    }\n    fmt.Printf(\"[ %s ]\\n\", strings.Join(resultado, \" \"))\n}\n",
+            "lines": "15"
+        }
+    ]
+}

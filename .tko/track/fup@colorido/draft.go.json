@@ -1,0 +1,69 @@
+{
+    "patches": [
+        {
+            "label": "2026-05-09_22-07-52",
+            "content": "@@ -421,17 +421,17 @@\n    if pe\n-a\n+A\n tual == \n@@ -441,17 +441,17 @@\n  %7B%0A%09%09%09pe\n-a\n+A\n tual = %22\n",
+            "lines": "29"
+        },
+        {
+            "label": "2026-05-09_22-08-18",
+            "content": "@@ -461,33 +461,33 @@\n %09%09%7D else %7B%0A%09%09%09pe\n-a\n+A\n tual = %22d%22%0A%09%09%7D%0A \n",
+            "lines": "29"
+        },
+        {
+            "label": "2026-05-09_22-08-27",
+            "content": "@@ -204,29 +204,8 @@\n al)%0A\n-    fmt.Printf(%22%5B %22)%0A\n     \n@@ -537,10 +537,8 @@\n , %22 \n- %5D\n %22))%0A\n",
+            "lines": "29"
+        },
+        {
+            "label": "2026-05-09_22-09-13",
+            "content": "@@ -553,16 +553,18 @@\n ltado, %22\n+  \n %5D%22))%0A   \n",
+            "lines": "30"
+        },
+        {
+            "label": "2026-05-09_22-09-24",
+            "content": "@@ -553,17 +553,17 @@\n ltado, %22\n- \n+%5D\n %22))%0A    \n",
+            "lines": "30"
+        },
+        {
+            "label": "2026-05-09_22-09-35",
+            "content": "@@ -566,23 +566,7 @@\n     \n-fmt.Println(%22%5D%22)\n %0A%7D%0A\n",
+            "lines": "30"
+        },
+        {
+            "label": "2026-05-09_22-09-55",
+            "content": "@@ -417,39 +417,23 @@\n do, \n-fmt.Sprintf(%22%25d%25s%22, i, \n+rotulo+\n peatual)\n )%0A  \n@@ -428,17 +428,16 @@\n peatual)\n-)\n %0A       \n@@ -520,24 +520,20 @@\n     \n-saida := %22%5B %22 + \n+fmt.Println(\n stri\n@@ -560,17 +560,14 @@\n %22 %22)\n- + %22 %5D%22%0A%09\n+)%0A    \n fmt.\n@@ -578,13 +578,11 @@\n tln(\n-saida\n+%22%5D%22\n )%0A%7D%0A\n",
+            "lines": "30"
+        },
+        {
+            "label": "2026-05-09_22-11-38",
+            "content": "@@ -317,43 +317,21 @@\n %09%09%09r\n-esultado = append(resultado,\n+otulo =\n  %22ceu%22\n-)\n %0A%09%09%7D\n@@ -345,14 +345,15 @@\n %0A%09%09%09\n-item :\n+rotulo \n = fm\n@@ -369,28 +369,26 @@\n (%22%25d\n-%25s\n %22, i\n-, peatual)%0A%09%09%09\n+)%0A%09%09%7D%0A        \n resu\n@@ -417,17 +417,40 @@\n do, \n-item)%0A%09%09%7D\n+fmt.Sprintf(%22%25d%25s%22, i, peatual))\n %0A   \n@@ -537,30 +537,23 @@\n     \n-fmt.Printf(%22%5B %25s %5D%5Cn%22,\n+saida := %22%5B %22 +\n  str\n@@ -577,12 +577,38 @@\n do, %22 %22)\n+ + %22 %5D%22%0A%09fmt.Println(saida\n )%0A%7D%0A\n",
+            "lines": "30"
+        },
+        {
+            "label": "2026-05-09_22-14-25",
+            "content": "@@ -113,24 +113,46 @@\n do %5B%5Dstring%0A\n+    var rotulo string%0A\n     peatual \n",
+            "lines": "29"
+        },
+        {
+            "label": "2026-05-09_22-14-48",
+            "content": "@@ -515,23 +515,30 @@\n     \n-saida := %22%5B %22 +\n+fmt.Printf(%22%5B %25s %5D%5Cn%22,\n  str\n@@ -566,34 +566,8 @@\n %22 %22)\n- + %22 %5D%22%0A%09fmt.Println(saida\n )%0A%7D%0A\n",
+            "lines": "28"
+        },
+        {
+            "label": "2026-05-09_22-15-39",
+            "content": "@@ -515,30 +515,23 @@\n     \n-fmt.Printf(%22%5B %25s %5D%5Cn%22,\n+saida := %22%5B %22 +\n  str\n@@ -555,12 +555,38 @@\n do, %22 %22)\n+ + %22 %5D%22%0A%09fmt.Println(saida\n )%0A%7D%0A\n",
+            "lines": "29"
+        },
+        {
+            "label": "2026-05-09_22-17-44",
+            "content": "@@ -94,39 +94,8 @@\n ing%0A\n-%09fmt.Scan(&npedra, &peinicial)%0A\n     \n@@ -117,17 +117,20 @@\n %5Dstring%0A\n-%09\n+    \n peatual \n@@ -142,17 +142,77 @@\n inicial%0A\n-%09\n+    fmt.Scanln(&npedra, &peinicial)%0A    fmt.Printf(%22%5B %22)%0A    \n for i :=\n@@ -260,24 +260,25 @@\n continue%0A%09%09%7D\n+ \n %0A        if \n@@ -345,37 +345,15 @@\n %0A%09%09%09\n-resultado = append(resultado,\n+item :=\n  fmt\n@@ -380,16 +380,54 @@\n peatual)\n+%0A%09%09%09resultado = append(resultado, item\n )%0A%09%09%7D%0A  \n",
+            "lines": "28"
+        },
+        {
+            "label": "2026-05-09_22-20-55",
+            "content": "package main\nimport (\"fmt\"\n    \"strings\")\nfunc main() {\n    var npedra int\n\tvar peinicial string\n\tfmt.Scan(&npedra, &peinicial)\n    var resultado []string\n\tpeatual := peinicial\n\tfor i := 0; i <= 10; i++ {\n\t\tif i == npedra {\n\t\t\tcontinue\n\t\t}\n        if i == 10 {\n\t\t\tresultado = append(resultado, \"ceu\")\n\t\t} else {\n\t\t\tresultado = append(resultado, fmt.Sprintf(\"%d%s\", i, peatual))\n\t\t}\n        if peatual == \"d\" {\n\t\t\tpeatual = \"e\"\n\t\t} else {\n\t\t\tpeatual = \"d\"\n\t\t}\n    }\n    fmt.Printf(\"[ %s ]\\n\", strings.Join(resultado, \" \"))\n}\n",
+            "lines": "26"
+        }
+    ]
+}

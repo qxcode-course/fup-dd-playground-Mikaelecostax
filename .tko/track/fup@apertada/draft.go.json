@@ -1,0 +1,9 @@
+{
+    "patches": [
+        {
+            "label": "2026-05-10_00-58-26",
+            "content": "package main\nimport \"fmt\"\nfunc main() {\n    var atual, menor int\n    fmt.Scan(&atual)\n    menor = atual\n    for i := 0; i < 4; i++ {\n        fmt.Scan(&atual)\n        if atual < menor {\n            menor = atual\n        }\n    }\n    fmt.Println(menor)\n}\n",
+            "lines": "14"
+        }
+    ]
+}

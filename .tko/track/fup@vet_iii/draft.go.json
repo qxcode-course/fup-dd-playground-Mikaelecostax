@@ -1,0 +1,9 @@
+{
+    "patches": [
+        {
+            "label": "2026-05-10_00-54-11",
+            "content": "package main\nimport \"fmt\"\nfunc main() {\n    var n int\n\tif _, err := fmt.Scan(&n); err != nil {\n\t\treturn\n\t}\n\tif n <= 0 {\n\t\tfmt.Println(\"[]\")\n\t\treturn\n\t}\n\tvetor := make([]int, n)\n\tfor i := 0; i < n; i++ {\n\t\tfmt.Scan(&vetor[i])\n\t}\n\tfmt.Print(\"[\")\n\tfor i := 0; i < n; i++ {\n\t\tfmt.Print(vetor[i])\n\t\tif i < n-1 {\n\t\t\tfmt.Print(\", \")\n\t\t}\n    }\n\tfmt.Println(\"]\")\n}\n",
+            "lines": "24"
+        }
+    ]
+}

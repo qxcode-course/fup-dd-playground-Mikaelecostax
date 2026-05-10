@@ -1,0 +1,34 @@
+{
+    "patches": [
+        {
+            "label": "2026-05-10_00-16-28",
+            "content": "@@ -82,16 +82,23 @@\n &e)%0A    \n+posicao\n atual :=\n@@ -104,17 +104,20 @@\n = 0%0A\n-%09\n+    \n for %7B%0A%09%09\n salt\n@@ -112,16 +112,22 @@\n for %7B%0A%09%09\n+inicio\n salto :=\n@@ -131,23 +131,46 @@\n  := \n+posicaoatual%0A%09%09posicao\n atual +\n+=\n  s%0A%09%09if \n salt\n@@ -165,21 +165,28 @@\n  s%0A%09%09if \n-salto\n+posicaoatual\n  %3E= p %7B%0A\n@@ -211,36 +211,49 @@\n %25d saiu%5Cn%22, \n-atual, salto\n+iniciosalto, posicaoatual\n )%0A%09%09%09break%0A%09\n@@ -283,39 +283,52 @@\n n%22, \n-atual, salto)%0A%09%09atual = salto -\n+iniciosalto, posicaoatual)%0A%09%09posicaoatual -=\n  e%0A%09\n@@ -332,9 +332,8 @@\n e%0A%09%7D%0A%7D%0A%0A\n-%0A\n",
+            "lines": "18"
+        },
+        {
+            "label": "2026-05-10_00-18-15",
+            "content": "@@ -211,10 +211,9 @@\n rint\n-ln\n+f\n (%22%25d\n@@ -225,16 +225,23 @@\n %22, atual\n+, salto\n )%0A%09%09atua\n",
+            "lines": "18"
+        },
+        {
+            "label": "2026-05-10_00-19-15",
+            "content": "@@ -207,19 +207,23 @@\n mt.Print\n-f(%22\n+ln(%22%25d \n %25d%5Cn%22, a\n",
+            "lines": "18"
+        },
+        {
+            "label": "2026-05-10_00-19-58",
+            "content": "@@ -212,19 +212,16 @@\n intf(%22%25d\n- %25d\n %5Cn%22, atu\n@@ -218,31 +218,24 @@\n %25d%5Cn%22, atual\n-, salto\n )%0A%09%09atual = \n",
+            "lines": "18"
+        },
+        {
+            "label": "2026-05-10_00-20-12",
+            "content": "@@ -157,16 +157,19 @@\n ntf(%22%25d \n+%25d \n saiu%5Cn%22,\n@@ -174,16 +174,23 @@\n %22, atual\n+, salto\n )%0A%09%09%09bre\n",
+            "lines": "18"
+        },
+        {
+            "label": "2026-05-10_00-23-41",
+            "content": "package main\nimport \"fmt\"\nfunc main() {\n    var p, s, e int\n    fmt.Scan(&p, &s, &e)\n    atual := 0\n\tfor {\n\t\tsalto := atual + s\n\t\tif salto >= p {\n\t\t\tfmt.Printf(\"%d saiu\\n\", atual)\n\t\t\tbreak\n\t\t}\n\t\tfmt.Printf(\"%d %d\\n\", atual, salto)\n\t\tatual = salto - e\n\t}\n}\n\n\n",
+            "lines": "18"
+        }
+    ]
+}

@@ -1,0 +1,29 @@
+{
+    "patches": [
+        {
+            "label": "2026-05-09_23-23-04",
+            "content": "@@ -177,18 +177,8 @@\n cao%0A\n-    for %7B%0A\n     \n@@ -635,12 +635,11 @@\n   %7D%0A    \n-%7D\n %0A%7D%0A\n",
+            "lines": "22"
+        },
+        {
+            "label": "2026-05-09_23-25-23",
+            "content": "@@ -267,17 +267,16 @@\n %09%09%09break\n- \n %0A%09%09%7D els\n@@ -298,17 +298,17 @@\n satuais \n-%3E\n+=\n = capaci\n@@ -373,16 +373,50 @@\n ais %3E 0 \n+&& passageirosatuais %3C capacidade \n %7B%0A%09%09%09fmt\n@@ -447,16 +447,42 @@\n %09%7D else \n+if passageirosatuais %3C= 0 \n %7B%0A%09%09%09fmt\n@@ -523,16 +523,123 @@\n uais = 0\n+ %0A%09%09%7D else if passageirosatuais %3E capacidade && passageirosatuais %3C 2*capacidade %7B%0A%09%09%09fmt.Println(%22lotado%22)\n %0A       \n",
+            "lines": "23"
+        },
+        {
+            "label": "2026-05-09_23-26-49",
+            "content": "@@ -94,16 +94,31 @@\n pacidade\n+, &movimentacao\n )%0A%09passa\n@@ -139,105 +139,8 @@\n = 0%0A\n-    for %7B%0A        _, err := fmt.Scan(&movimentacao)%0A%09%09if err == io.EOF %7B%0A%09%09%09break%0A        %7D %0A    \n     \n@@ -173,18 +173,30 @@\n entacao%0A\n-%09%09\n+    for %7B%0A    \n if passa\n@@ -266,21 +266,24 @@\n %0A%09%09%09\n+b\n re\n-turn%0A%09%09%7D%0A%09%09\n+ak %0A%09%09%7D else \n if p\n@@ -303,12 +303,21 @@\n ais \n-%3C= 0\n+%3E= capacidade\n  %7B%0A%09\n@@ -335,41 +335,17 @@\n ln(%22\n-vazi\n+lotad\n o%22)%0A\n-%09%09%09passageirosatuais = 0%0A\n %09%09%7D \n@@ -367,26 +367,18 @@\n iros\n+a\n tuais \n-%3C capacidade\n+%3E 0\n  %7B%0A%09\n@@ -432,24 +432,48 @@\n rintln(%22\n-lotado%22)\n+vazio%22)%0A%09%09%09passageirosatuais = 0\n %0A       \n",
+            "lines": "21"
+        },
+        {
+            "label": "2026-05-09_23-30-45",
+            "content": "@@ -16,26 +16,15 @@\n port\n-(\n  %22fmt%22%0A\n-    %22io%22)%0A\n func\n@@ -441,25 +441,24 @@\n  passageiros\n-a\n tuais %3C capa\n",
+            "lines": "26"
+        },
+        {
+            "label": "2026-05-09_23-31-56",
+            "content": "package main\nimport( \"fmt\"\n    \"io\")\nfunc main() {\n    var capacidade, movimentacao int\n    fmt.Scan(&capacidade)\n\tpassageirosatuais := 0\n    for {\n        _, err := fmt.Scan(&movimentacao)\n\t\tif err == io.EOF {\n\t\t\tbreak\n        } \n        passageirosatuais += movimentacao\n\t\tif passageirosatuais >= 2*capacidade {\n\t\t\tfmt.Println(\"hora de partir\")\n\t\t\treturn\n\t\t}\n\t\tif passageirosatuais <= 0 {\n\t\t\tfmt.Println(\"vazio\")\n\t\t\tpassageirosatuais = 0\n\t\t} else if passageirosatuais < capacidade {\n\t\t\tfmt.Println(\"ainda cabe\")\n\t\t} else {\n\t\t\tfmt.Println(\"lotado\")\n        }\n    }\n}\n",
+            "lines": "27"
+        }
+    ]
+}
