@@ -89,3 +89,19 @@
 2026-05-11 13:19:52, MOVE, v:1, k:fup@tazos, mode:EDIT
 2026-05-11 13:23:14, EXEC, v:1, k:fup@tazos, mode:FULL, rate:100, size:38
 2026-05-11 13:23:15, MOVE, v:1, k:fup@tazos, mode:BACK
+2026-05-11 17:16:41, MOVE, v:1, k:fup@revolta, mode:DOWN
+2026-05-11 17:16:43, MOVE, v:1, k:fup@revolta, mode:PICK
+2026-05-11 17:16:41, MOVE, v:1, k:fup@revolta, mode:EDIT
+2026-05-11 17:16:41, MOVE, v:1, k:fup@revolta, mode:EDIT
+2026-05-11 17:18:06, MOVE, v:1, k:fup@revolta, mode:EDIT
+2026-05-11 17:27:12, MOVE, v:1, k:fup@revolta, mode:BACK
+2026-05-11 17:27:39, MOVE, v:1, k:fup@revolta, mode:PICK
+2026-05-11 17:26:50, MOVE, v:1, k:fup@revolta, mode:EDIT
+2026-05-11 17:37:45, MOVE, v:1, k:fup@revolta, mode:BACK
+2026-05-11 17:40:21, MOVE, v:1, k:fup@vet_ii, mode:PICK
+2026-05-11 17:36:54, MOVE, v:1, k:fup@revolta, mode:EDIT
+2026-05-11 17:42:49, EXEC, v:1, k:fup@vet_ii, mode:FULL, rate:100
+2026-05-11 17:42:49, MOVE, v:1, k:fup@vet_ii, mode:EDIT
+2026-05-11 17:51:36, EXEC, v:1, k:fup@vet_ii, mode:FULL, rate:100
+2026-05-11 17:51:37, MOVE, v:1, k:fup@vet_ii, mode:BACK
+2026-05-11 17:51:36, MOVE, v:1, k:fup@vet_ii, mode:EDIT

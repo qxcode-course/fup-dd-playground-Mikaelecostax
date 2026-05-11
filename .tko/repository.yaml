@@ -22,14 +22,14 @@ sources:
   quests: null
   tasks: null
 expanded:
-- fup@list
 - fup@for2
+- fup@list
 flags:
   inbox: all
-  panel: skills
+  panel: graph
   show_panel: 'true'
   task_graph_mode: executions
   show_time: 'true'
 lang: go
-selected: fup@tazos
-selected_index: 27
+selected: fup@for1
+selected_index: 5
