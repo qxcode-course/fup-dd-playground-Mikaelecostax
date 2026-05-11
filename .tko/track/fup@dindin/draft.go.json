@@ -1,0 +1,19 @@
+{
+    "patches": [
+        {
+            "label": "2026-05-11_11-50-43",
+            "content": "@@ -249,25 +249,40 @@\n )%0A%09%09\n-if\n+switch\n  sabor \n-==\n+%7B%0A        case\n  %22c%22\n- %7B\n+:\n %0A%09%09%09\n@@ -299,32 +299,17 @@\n +%0A%09%09\n-%7D else if sabor ==\n+case\n  %22l%22\n- %7B\n+:\n %0A%09%09%09\n@@ -326,25 +326,40 @@\n %7D%0A%09%09\n-if\n+switch\n  turno \n-==\n+%7B%0A        case\n  %22m%22\n- %7B\n+:\n %0A%09%09%09\n@@ -372,32 +372,17 @@\n +%0A%09%09\n-%7D else if turno ==\n+case\n  %22t%22\n- %7B\n+:\n %0A%09%09%09\n@@ -393,18 +393,20 @@\n e++%0A%09%09%7D%0A\n+%09\n %7D%0A\n+%09\n if choco\n@@ -436,16 +436,24 @@\n intln(%22c\n+hocolate\n %22)%0A%09%7D el\n@@ -494,16 +494,20 @@\n intln(%22l\n+im%C3%A3o\n %22)%0A%09%7D el\n@@ -538,16 +538,36 @@\n te%22)%0A%09%7D%0A\n+%09if manha %3C tarde %7B%0A\n %09%09fmt.Pr\n@@ -578,18 +578,22 @@\n n(%22m\n+anh%C3%A3\n %22)%0A%09%7D \n-%0A   \n+else\n  if \n@@ -624,16 +624,20 @@\n intln(%22t\n+arde\n %22)%0A%09%7D el\n",
+            "lines": "42"
+        },
+        {
+            "label": "2026-05-11_11-59-52",
+            "content": "@@ -528,28 +528,8 @@\n %0A%09%7D%0A\n-%09if manha %3C tarde %7B%0A\n %09%09fm\n@@ -547,18 +547,15 @@\n m%22)%0A\n-    %7D else\n+%09%7D %0A   \n  if \n",
+            "lines": "40"
+        },
+        {
+            "label": "2026-05-11_12-01-43",
+            "content": "package main\nimport \"fmt\"\nfunc main() {\n    var total int\n\tif _, err := fmt.Scan(&total); err != nil {\n\t\treturn\n\t}\n\tchocolate := 0\n\tlimao := 0\n\tmanha := 0\n\ttarde := 0\n\tfor i := 0; i < total; i++ {\n\t\tvar sabor, turno string\n\t\tfmt.Scan(&sabor, &turno)\n\t\tif sabor == \"c\" {\n\t\t\tchocolate++\n\t\t} else if sabor == \"l\" {\n\t\t\tlimao++\n\t\t}\n\t\tif turno == \"m\" {\n\t\t\tmanha++\n\t\t} else if turno == \"t\" {\n\t\t\ttarde++\n\t\t}\n}\nif chocolate > limao {\n\t\tfmt.Println(\"c\")\n\t} else if limao > chocolate {\n\t\tfmt.Println(\"l\")\n\t} else {\n\t\tfmt.Println(\"empate\")\n\t}\n\tif manha < tarde {\n\t\tfmt.Println(\"m\")\n    } else if tarde < manha {\n\t\tfmt.Println(\"t\")\n\t} else {\n\t\tfmt.Println(\"empate\")\n\t}\n}\n",
+            "lines": "40"
+        }
+    ]
+}

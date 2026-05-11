@@ -1,0 +1,9 @@
+{
+    "patches": [
+        {
+            "label": "2026-05-11_11-50-22",
+            "content": "package main\nimport \"fmt\"\nfunc main() {\n    var p, n int\n    var elemento int\n    if _, err := fmt.Scan(&p, &n); err != nil {\n\t\treturn\n\t}\n\tcontador := 0\n\tfor i := 0; i < n; i++ {\n\t\tif _, err := fmt.Scan(&elemento); err == nil {\n\t\t\tif elemento == p {\n\t\t\t\tcontador++\n            }\n\t\t}\n\t}\n\tfmt.Println(contador)\n}\n",
+            "lines": "18"
+        }
+    ]
+}

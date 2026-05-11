@@ -23,6 +23,7 @@ sources:
   tasks: null
 expanded:
 - fup@list
+- fup@for2
 flags:
   inbox: all
   panel: skills
@@ -30,5 +31,5 @@ flags:
   task_graph_mode: executions
   show_time: 'true'
 lang: go
-selected: fup@patas
-selected_index: 14
+selected: fup@tazos
+selected_index: 27

@@ -1,0 +1,54 @@
+{
+    "patches": [
+        {
+            "label": "2026-05-11_11-05-28",
+            "content": "@@ -489,16 +489,17 @@\n break%0A%09%09\n+%7D\n %0A%09%7D%0A%09if \n",
+            "lines": "39"
+        },
+        {
+            "label": "2026-05-11_11-06-26",
+            "content": "@@ -491,17 +491,10 @@\n eak%0A\n-        %7D\n+%09%09\n %0A%09%7D%0A\n",
+            "lines": "39"
+        },
+        {
+            "label": "2026-05-11_11-35-27",
+            "content": "@@ -52,59 +52,20 @@\n nt%0A%09\n-if _, err := fmt.Scan(&n); err != nil %7B%0A%09%09return%0A%09%7D\n+fmt.Scan(&n)\n %0A%09ve\n@@ -139,20 +139,17 @@\n %5Bi%5D)%0A%09%7D%0A\n-    \n+%09\n var m in\n@@ -155,59 +155,20 @@\n nt%0A%09\n-if _, err := fmt.Scan(&m); err != nil %7B%0A%09%09return%0A%09%7D\n+fmt.Scan(&m)\n %0A%09ve\n@@ -242,20 +242,17 @@\n %5Bi%5D)%0A%09%7D%0A\n-    \n+%09\n if n %3E m\n@@ -291,21 +291,16 @@\n %0A%09%7D%0A\n-    en\n+%09\n cont\n-rou\n+ido\n  := \n@@ -305,20 +305,17 @@\n = false%0A\n-    \n+%09\n for i :=\n@@ -336,22 +336,21 @@\n i++ %7B%0A%09%09\n-iguais\n+match\n  := true\n@@ -414,22 +414,21 @@\n %5D %7B%0A%09%09%09%09\n-iguais\n+match\n  = false\n@@ -456,29 +456,26 @@\n %09if \n-iguais\n+match\n  %7B%0A%09%09%09\n-en\n cont\n-rou\n+ido\n  = t\n@@ -491,31 +491,32 @@\n eak%0A\n-%09%09\n+        \n %7D%0A%09%7D%0A\n-    \n+%09\n if \n-en\n cont\n-rou\n+ido\n  %7B%0A%09\n",
+            "lines": "39"
+        },
+        {
+            "label": "2026-05-11_11-40-41",
+            "content": "@@ -332,58 +332,177 @@\n    i\n-, j := 0, 0%0A%09for i %3C n && j %3C m\n+f n %3E m %7B%0A%09%09fmt.Println(%22n%C3%A3o%22)%0A%09%09return%0A%09%7D%0A    encontrou := false%0A    for i := 0; i %3C= m-n; i++ %7B%0A%09%09iguais := true%0A%09%09for j := 0; j %3C n; j++\n  %7B%0A\n+%09\n %09%09if v\n-1%5Bi%5D == v2\n+etor2%5Bi+j%5D != vetor1\n %5Bj%5D \n@@ -510,69 +510,89 @@\n %0A%09%09%09\n-i++%0A%09%09%7D%0A%09%09j++%0A%09%7D%0A    if n %3E m %7B%0A%09%09fmt.Println(%22n%C3%A3o%22)%0A\n+%09iguais = false%0A%09%09%09%09break%0A%09%09%09%7D%0A%09%09%7D%0A%09%09if iguais %7B%0A%09%09%09encontrou = true%0A%09\n %09%09\n+b\n re\n-turn\n+ak%0A%09%09%7D\n %0A%09%7D%0A\n@@ -602,14 +602,17 @@\n  if \n-i == n\n+encontrou\n  %7B%0A%09\n",
+            "lines": "43"
+        },
+        {
+            "label": "2026-05-11_11-44-51",
+            "content": "@@ -51,50 +51,8 @@\n int%0A\n-    var v1, v2 int%0A    fmt.Scan(&v1, &v2)%0A\n %09if \n",
+            "lines": "36"
+        },
+        {
+            "label": "2026-05-11_11-45-32",
+            "content": "@@ -43,24 +43,66 @@\n   var n int%0A\n+    var v1, v2 int%0A    fmt.Scan(&v1, &v2)%0A\n %09if _, err :\n@@ -410,20 +410,16 @@\n %7B%0A%09%09if v\n-etor\n 1%5Bi%5D == \n@@ -419,20 +419,16 @@\n %5Bi%5D == v\n-etor\n 2%5Bj%5D %7B%0A%09\n",
+            "lines": "38"
+        },
+        {
+            "label": "2026-05-11_11-46-15",
+            "content": "@@ -439,25 +439,25 @@\n t.Println(%22n\n-a\n+%C3%A3\n o%22)%0A%09%09return\n@@ -523,17 +523,17 @@\n intln(%22n\n-a\n+%C3%A3\n o%22)%0A%09%7D%0A%7D\n",
+            "lines": "36"
+        },
+        {
+            "label": "2026-05-11_11-46-57",
+            "content": "@@ -331,267 +331,154 @@\n     \n-todosContidos := true%0A    for _, elem1 := range vetor1 %7B%0A%09%09encontrou := false%0A%09%09for _, elem2 := range vetor2\n+i, j := 0, 0%0A%09for i %3C n && j %3C m\n  %7B%0A\n-%09\n %09%09if \n-elem1 == elem2 %7B%0A%09%09%09%09encontrou = true%0A%09%09%09%09break%0A%09%09%09%7D%0A%09\n+vetor1%5Bi%5D == vetor2%5Bj%5D %7B%0A%09%09%09i++%0A%09%09%7D%0A%09%09j++%0A\n %09%7D%0A    \n-    \n if \n-!encontrou %7B%0A%09%09%09todosContidos = false%0A%09%09%09break%0A%09%09%7D%0A%09%7D%0A    if todosContidos\n+n %3E m %7B%0A%09%09fmt.Println(%22nao%22)%0A%09%09return%0A%09%7D%0A    if i == n\n  %7B%0A%09\n@@ -527,9 +527,9 @@\n n(%22n\n-%C3%A3\n+a\n o%22)%0A\n",
+            "lines": "36"
+        },
+        {
+            "label": "2026-05-11_11-49-53",
+            "content": "@@ -636,17 +636,17 @@\n intln(%22n\n-a\n+%C3%A3\n o%22)%0A%09%7D%0A%7D\n",
+            "lines": "39"
+        },
+        {
+            "label": "2026-05-11_11-50-02",
+            "content": "package main\nimport \"fmt\"\nfunc main() {\n    var n int\n\tif _, err := fmt.Scan(&n); err != nil {\n\t\treturn\n\t}\n\tvetor1 := make([]int, n)\n\tfor i := 0; i < n; i++ {\n\t\tfmt.Scan(&vetor1[i])\n\t}\n    var m int\n\tif _, err := fmt.Scan(&m); err != nil {\n\t\treturn\n\t}\n\tvetor2 := make([]int, m)\n\tfor i := 0; i < m; i++ {\n\t\tfmt.Scan(&vetor2[i])\n\t}\n    todosContidos := true\n    for _, elem1 := range vetor1 {\n\t\tencontrou := false\n\t\tfor _, elem2 := range vetor2 {\n\t\t\tif elem1 == elem2 {\n\t\t\t\tencontrou = true\n\t\t\t\tbreak\n\t\t\t}\n\t\t}\n        if !encontrou {\n\t\t\ttodosContidos = false\n\t\t\tbreak\n\t\t}\n\t}\n    if todosContidos {\n\t\tfmt.Println(\"sim\")\n\t} else {\n\t\tfmt.Println(\"nao\")\n\t}\n}\n",
+            "lines": "39"
+        }
+    ]
+}

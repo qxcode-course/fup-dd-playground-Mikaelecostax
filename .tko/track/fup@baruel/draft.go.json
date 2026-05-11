@@ -1,0 +1,54 @@
+{
+    "patches": [
+        {
+            "label": "2026-05-11_13-02-14",
+            "content": "@@ -69,29 +69,19 @@\n sui int%0A\n-%09if _, err :=\n+   \n  fmt.Sca\n@@ -97,155 +97,99 @@\n lbum\n-); err != nil %7B%0A%09%09return%0A%09%7D%0A%09if _, err := fmt.Scan(&totalPossui); err != nil %7B%0A%09%09return%0A%09%7D%0A%09possui := make(map%5Bint%5Dint)%0A%09ordemOriginal := %5B%5Dint%7B%7D%0A%09\n+, &totalPossui)%0A    contagem := make(map%5Bint%5Dint)%0A%09possuiSimples := make(map%5Bint%5Dbool)%0A    \n for \n@@ -252,22 +252,24 @@\n &fig)%0A%09%09\n-possui\n+contagem\n %5Bfig%5D++%0A\n@@ -274,72 +274,42 @@\n +%0A%09%09\n-ordemOriginal = append(ordemOriginal, fig)%0A%09%7D%0A%09fmt.Print(%22%5B %22)%0A%09\n+possuiSimples%5Bfig%5D = true%0A%09%7D%0A     \n prim\n@@ -321,33 +321,37 @@\n epetida := true%0A\n-%09\n+     \n for i := 1; i %3C=\n@@ -365,76 +365,76 @@\n ++ %7B\n-%0A%09%09qtd := possui%5Bi%5D%0A%09%09if qtd %3E 1 %7B%0A%09%09%09for j := 0; j %3C qtd-1; j++\n+ // O limite de figurinhas que ele tem %C3%A9 100%0A%09%09if contagem%5Bi%5D %3E 1\n  %7B%0A\n-%09\n %09%09%09i\n@@ -455,17 +455,16 @@\n etida %7B%0A\n-%09\n %09%09%09%09fmt.\n@@ -477,20 +477,18 @@\n %22 %22)%0A%09%09%09\n-%09\n %7D%0A\n-%09\n %09%09%09fmt.P\n@@ -495,17 +495,16 @@\n rint(i)%0A\n-%09\n %09%09%09prime\n@@ -529,19 +529,18 @@\n e%0A%09%09\n-%09\n %7D%0A\n-%09\n %09%7D\n-%0A%09%7D%0A%09\n+ %0A    \n fmt.\n@@ -551,32 +551,14 @@\n tln(\n-%22 %5D%22)%0A%09fmt.Print(%22%5B %22)%0A%09\n+)%0A    \n prim\n@@ -623,22 +623,25 @@\n %09if \n+!\n possui\n-%5Bi%5D == 0\n+Simples%5Bi%5D\n  %7B%0A%09\n@@ -757,12 +757,8 @@\n tln(\n-%22 %5D%22\n )%0A%7D%0A\n",
+            "lines": "36"
+        },
+        {
+            "label": "2026-05-11_13-05-30",
+            "content": "@@ -864,14 +864,15 @@\n rintln(%22\n+ \n %5D%22)%0A%7D%0A\n",
+            "lines": "46"
+        },
+        {
+            "label": "2026-05-11_13-05-38",
+            "content": "@@ -868,11 +868,9 @@\n ln(%22\n- %5D \n+%5D\n %22)%0A%7D\n",
+            "lines": "46"
+        },
+        {
+            "label": "2026-05-11_13-05-53",
+            "content": "@@ -866,13 +866,14 @@\n ntln(%22 %5D\n+ \n %22)%0A%7D%0A\n",
+            "lines": "46"
+        },
+        {
+            "label": "2026-05-11_13-06-15",
+            "content": "@@ -866,14 +866,13 @@\n ntln(%22 %5D\n- \n %22)%0A%7D%0A\n",
+            "lines": "46"
+        },
+        {
+            "label": "2026-05-11_13-06-23",
+            "content": "@@ -643,16 +643,17 @@\n rintln(%22\n+ \n %5D%22)%0A%09fmt\n",
+            "lines": "46"
+        },
+        {
+            "label": "2026-05-11_13-06-45",
+            "content": "@@ -223,16 +223,42 @@\n nt%5Dint)%0A\n+%09ordemOriginal := %5B%5Dint%7B%7D%0A\n %09for i :\n@@ -337,14 +337,56 @@\n ++%0A%09\n-%7D%0A    \n+%09ordemOriginal = append(ordemOriginal, fig)%0A%09%7D%0A%09\n fmt.\n@@ -385,32 +385,33 @@\n %09%7D%0A%09fmt.Print(%22%5B\n+ \n %22)%0A%09primeiraRepe\n@@ -518,16 +518,44 @@\n ; j++ %7B%0A\n+%09%09%09%09if !primeiraRepetida %7B%0A%09\n %09%09%09%09fmt.\n@@ -565,16 +565,22 @@\n nt(%22 %22)%0A\n+%09%09%09%09%7D%0A\n %09%09%09%09fmt.\n@@ -630,82 +630,8 @@\n %09%09%7D%0A\n-%09%7D %0A    if primeiraRepetida %7B%0A%09%09fmt.Print(%22 %22)%0A%09%7D else %7B%0A%09%09fmt.Print(%22 %22)%0A\n %09%7D%0A%09\n@@ -660,16 +660,17 @@\n Print(%22%5B\n+ \n %22)%0A%09prim\n@@ -748,16 +748,43 @@\n  == 0 %7B%0A\n+%09%09%09if !primeiraFaltando %7B%0A%09\n %09%09%09fmt.P\n@@ -793,16 +793,21 @@\n nt(%22 %22)%0A\n+%09%09%09%7D%0A\n %09%09%09fmt.P\n@@ -863,28 +863,16 @@\n rint\n+ln\n (%22 %5D\n+ \n %22\n-)%0A%09fmt.Println(\n )%0A%7D%0A\n",
+            "lines": "46"
+        },
+        {
+            "label": "2026-05-11_13-12-01",
+            "content": "@@ -73,70 +73,8 @@\n int%0A\n-    var primeiraFaltando bool%0A    fmt.Scan(&primeiraFaltando)%0A\n %09if \n@@ -634,16 +634,41 @@\n nt(%22%5B%22)%0A\n+%09primeiraFaltando := true\n %0A%09for i \n",
+            "lines": "46"
+        },
+        {
+            "label": "2026-05-11_13-15-18",
+            "content": "@@ -69,16 +69,78 @@\n sui int%0A\n+    var primeiraFaltando bool%0A    fmt.Scan(&primeiraFaltando)%0A\n %09if _, e\n@@ -367,25 +367,28 @@\n i%5Bfig%5D++%0A%09%7D%0A\n-%09\n+    \n fmt.Print(%22%5B\n@@ -382,32 +382,58 @@\n  fmt.Print(%22%5B%22)%0A\n+%09primeiraRepetida := true%0A\n %09for i := 1; i %3C\n@@ -445,16 +445,51 @@\n ; i++ %7B%0A\n+%09%09qtd := possui%5Bi%5D%0A%09%09if qtd %3E 1 %7B%0A%09\n %09%09for j \n@@ -498,25 +498,19 @@\n  0; j %3C \n-possui%5Bi%5D\n+qtd\n -1; j++ \n@@ -510,24 +510,25 @@\n 1; j++ %7B%0A%09%09%09\n+%09\n fmt.Printf(%22\n@@ -524,36 +524,155 @@\n mt.Print\n-f\n (%22 \n-%25d%22, i)%0A\n+%22)%0A%09%09%09%09fmt.Print(i)%0A%09%09%09%09primeiraRepetida = false%0A%09\n %09%09%7D%0A\n+%09\n %09%7D%0A%09\n+%7D %0A    if primeiraRepetida %7B%0A%09%09fmt.Print(%22 %22)%0A%09%7D else %7B%0A%09%09fmt.Print(%22 %22)%0A%09%7D%0A%09\n fmt.Prin\n@@ -672,25 +672,24 @@\n mt.Println(%22\n- \n %5D%22)%0A%09fmt.Pri\n@@ -696,16 +696,17 @@\n nt(%22%5B%22)%0A\n+%0A\n %09for i :\n@@ -771,19 +771,57 @@\n rint\n-f\n (%22 \n-%25d%22, i)\n+%22)%0A%09%09%09fmt.Print(i)%0A%09%09%09primeiraFaltando = false\n %0A%09%09%7D\n@@ -838,15 +838,28 @@\n rint\n-ln\n (%22 %5D%22)%0A\n+%09fmt.Println()%0A\n %7D%0A\n",
+            "lines": "48"
+        },
+        {
+            "label": "2026-05-11_13-16-28",
+            "content": "package main\nimport \"fmt\"\nfunc main() {\n    var totalAlbum, totalPossui int\n\tif _, err := fmt.Scan(&totalAlbum); err != nil {\n\t\treturn\n\t}\n\tif _, err := fmt.Scan(&totalPossui); err != nil {\n\t\treturn\n\t}\n\tpossui := make(map[int]int)\n\tfor i := 0; i < totalPossui; i++ {\n\t\tvar fig int\n\t\tfmt.Scan(&fig)\n\t\tpossui[fig]++\n\t}\n\tfmt.Print(\"[\")\n\tfor i := 1; i <= 100; i++ {\n\t\tfor j := 0; j < possui[i]-1; j++ {\n\t\t\tfmt.Printf(\" %d\", i)\n\t\t}\n\t}\n\tfmt.Println(\" ]\")\n\tfmt.Print(\"[\")\n\tfor i := 1; i <= totalAlbum; i++ {\n\t\tif possui[i] == 0 {\n\t\t\tfmt.Printf(\" %d\", i)\n\t\t}\n\t}\n\tfmt.Println(\" ]\")\n}\n",
+            "lines": "31"
+        }
+    ]
+}
