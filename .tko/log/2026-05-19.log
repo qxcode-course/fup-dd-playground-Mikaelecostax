@@ -156,3 +156,15 @@
 2026-05-19 01:57:00, EXEC, v:1, k:fup@inverte, mode:FULL, rate:100, size:14
 2026-05-19 01:57:02, MOVE, v:1, k:fup@inverte, mode:BACK
 2026-05-19 01:57:07, SELF, v:1, k:fup@inverte, self:1, rate:100, concept:1
+2026-05-19 17:29:10, MOVE, v:1, k:fup@amora, mode:DOWN
+2026-05-19 17:29:12, MOVE, v:1, k:fup@amora, mode:PICK
+2026-05-19 17:30:04, EXEC, v:1, k:fup@amora, mode:FULL, rate:0, size:5
+2026-05-19 17:29:10, MOVE, v:1, k:fup@amora, mode:EDIT
+2026-05-19 17:29:10, MOVE, v:1, k:fup@amora, mode:EDIT
+2026-05-19 17:30:04, MOVE, v:1, k:fup@amora, mode:EDIT
+2026-05-19 17:35:07, EXEC, v:1, k:fup@amora, mode:FULL, rate:0, size:7
+2026-05-19 17:35:06, MOVE, v:1, k:fup@amora, mode:EDIT
+2026-05-19 17:35:07, MOVE, v:1, k:fup@amora, mode:EDIT
+2026-05-19 17:58:36, MOVE, v:1, k:fup@amora, mode:EDIT
+2026-05-19 17:59:08, EXEC, v:1, k:fup@amora, mode:FULL, size:11, fail:COMP
+2026-05-19 17:59:24, MOVE, v:1, k:fup@amora, mode:BACK

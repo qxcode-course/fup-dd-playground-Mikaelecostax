@@ -1,0 +1,19 @@
+{
+    "patches": [
+        {
+            "label": "2026-05-19_17-30-04",
+            "content": "@@ -39,71 +39,37 @@\n %7B%0A  \n-var frase string%0A  var trecho string%0A  fmt.Scan(&frase, &trecho\n+  fmt.Println(%22Hello, World!%22\n )%0A%7D%0A\n",
+            "lines": "5"
+        },
+        {
+            "label": "2026-05-19_17-35-07",
+            "content": "@@ -76,27 +76,8 @@\n ing%0A\n-  var contador int%0A\n   fm\n@@ -104,45 +104,6 @@\n ho)%0A\n-  for i := 0; i %3C %22trecho%22; i++ %7B%0A%0A  %7D%0A\n %7D%0A\n",
+            "lines": "7"
+        },
+        {
+            "label": "2026-05-19_17-59-08",
+            "content": "package main\nimport \"fmt\"\nfunc main() {\n  var frase string\n  var trecho string\n  var contador int\n  fmt.Scan(&frase, &trecho)\n  for i := 0; i < \"trecho\"; i++ {\n\n  }\n}\n",
+            "lines": "11"
+        }
+    ]
+}
