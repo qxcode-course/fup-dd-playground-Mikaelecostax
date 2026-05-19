@@ -1,0 +1,9 @@
+{
+    "patches": [
+        {
+            "label": "2026-05-19_01-40-38",
+            "content": "package main\nimport \"fmt\"\nfunc main() {\n    var n int\n\tfmt.Scan(&n)\n\tbotasD := make([]int, 61)\n\tbotasE := make([]int, 61)\n\tfor i := 0; i < n; i++ {\n\t\tvar tamanho int\n\t\tvar pe string\n\t\tfmt.Scan(&tamanho, &pe)\n\t\tif pe == \"D\" {\n\t\t\tbotasD[tamanho]++\n\t\t} else if pe == \"E\" {\n\t\t\tbotasE[tamanho]++\n\t\t}\n\t}\n\ttotalPares := 0\n\tfor i := 30; i <= 60; i++ {\n\t\tif botasD[i] < botasE[i] {\n\t\t\ttotalPares += botasD[i]\n\t\t} else {\n\t\t\ttotalPares += botasE[i]\n\t\t}\n\t}\n\tfmt.Println(totalPares)\n}\n",
+            "lines": "27"
+        }
+    ]
+}

@@ -1,0 +1,9 @@
+{
+    "patches": [
+        {
+            "label": "2026-05-19_01-21-49",
+            "content": "package main\nimport ( \"fmt\"\n    \"math\"\n)\ntype ItemTroco struct {\n\tvalorCentavos int\n\tdescricao     string\n}\nfunc main() {\n    var valorOriginal float64\n\tfmt.Scan(&valorOriginal)\n\ttrocoCentavos := int(math.Round(valorOriginal * 100))\n\topcoes := []ItemTroco{\n\t\t{10000, \"100.00\"},\n\t\t{5000, \"50.00\"},\n\t\t{2000, \"20.00\"},\n\t\t{1000, \"10.00\"},\n\t\t{500, \"5.00\"},\n\t\t{200, \"2.00\"},\n\t\t{100, \"1.00\"},\n\t\t{50, \"0.50\"},\n\t\t{25, \"0.25\"},\n\t\t{10, \"0.10\"},\n\t\t{5, \"0.05\"},\n\t}\n\tfor _, item := range opcoes {\n\t\tquantidade := trocoCentavos / item.valorCentavos\n\t\tfor i := 0; i < quantidade; i++ {\n\t\t\tfmt.Printf(\"%d de %s\\n\", quantidade, item.descricao)\n\t\t\tbreak \n\t\t}\n\t\ttrocoCentavos %= item.valorCentavos\n\t}\n\tfor i := 0; i < trocoCentavos; i++ {\n\t\tfmt.Printf(\"Falta %.2f\\n\", float64(trocoCentavos)/100.0)\n\t\tbreak\n\t}\n}\n",
+            "lines": "38"
+        }
+    ]
+}

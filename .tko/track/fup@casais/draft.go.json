@@ -1,0 +1,9 @@
+{
+    "patches": [
+        {
+            "label": "2026-05-19_01-27-13",
+            "content": "package main\nimport( \"fmt\"\n    \"math\"\n)\nfunc main() {\n   var n int\n\tfmt.Scan(&n)\n\tmachos := make(map[int]int)\n\tfemeas := make(map[int]int)\n\tfor i := 0; i < n; i++ {\n\t\tvar animal int\n\t\tfmt.Scan(&animal)\n\t\tif animal > 0 {\n\t\t\tmachos[animal]++\n\t\t} else if animal < 0 {\n\t\t\tespecieFemea := int(math.Abs(float64(animal)))\n\t\t\tfemeas[especieFemea]++\n\t\t}\n\t}\n\ttotalCasais := 0\n\tfor especie, qtdMachos := range machos {\n\t\tqtdFemeas := femeas[especie]\n\t\tif qtdMachos < qtdFemeas {\n\t\t\ttotalCasais += qtdMachos\n\t\t} else {\n\t\t\ttotalCasais += qtdFemeas\n\t\t}\n\t}\n\tfmt.Println(totalCasais)\n}\n",
+            "lines": "30"
+        }
+    ]
+}

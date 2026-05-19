@@ -1,0 +1,19 @@
+{
+    "patches": [
+        {
+            "label": "2026-05-19_01-22-12",
+            "content": "@@ -65,28 +65,8 @@\n &n)%0A\n-    fmt.Scan(%22%5B %5D%22)%0A\n %09var\n",
+            "lines": "28"
+        },
+        {
+            "label": "2026-05-19_01-23-03",
+            "content": "@@ -61,16 +61,36 @@\n can(&n)%0A\n+    fmt.Scan(%22%5B %5D%22)%0A\n %09var alu\n",
+            "lines": "29"
+        },
+        {
+            "label": "2026-05-19_01-23-33",
+            "content": "package main\nimport \"fmt\"\nfunc main() {\n    var n int\n\tfmt.Scan(&n)\n\tvar alunos []int  \n\tvar servidores []int \n\tfor i := 0; i < n; i++ {\n\t\tvar pessoa int\n\t\tfmt.Scan(&pessoa)\n\t\tif pessoa%2 != 0 {\n\t\t\talunos = append(alunos, pessoa)\n\t\t} else {\n\t\t\tservidores = append(servidores, pessoa)\n\t\t}\n\t}\n\timprimirFila(servidores)\n}\nfunc imprimirFila(fila []int) {\n\tfmt.Print(\"[\")\n\tfor i, v := range fila {\n\t\tfmt.Print(v)\n\t\tif i < len(fila)-1 {\n\t\t\tfmt.Print(\" \")\n\t\t}\n\t}\n\tfmt.Println(\"]\")\n}\n",
+            "lines": "28"
+        }
+    ]
+}

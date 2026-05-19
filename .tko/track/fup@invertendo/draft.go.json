@@ -1,0 +1,19 @@
+{
+    "patches": [
+        {
+            "label": "2026-05-19_01-24-13",
+            "content": "@@ -19,16 +19,308 @@\n t %22fmt%22%0A\n+func main() %7B%0A    Aqui est%C3%A1 a solu%C3%A7%C3%A3o em Go de forma simples e direta.%0A%0APara resolver este problema, vamos ler os n%C3%BAmeros e armazen%C3%A1-los em um vetor. Depois, faremos um la%C3%A7o que percorre o vetor de tr%C3%A1s para frente para exibir o resultado no formato esperado.%0A%0AGo%0Apackage main%0A%0Aimport %22fmt%22%0A%0A\n func mai\n",
+            "lines": "28"
+        },
+        {
+            "label": "2026-05-19_01-24-41",
+            "content": "@@ -147,17 +147,16 @@\n Print(%22%5B\n- \n %22)%0A%09for \n@@ -255,15 +255,14 @@\n rintln(%22\n- \n %5D%22)%0A%7D%0A\n",
+            "lines": "18"
+        },
+        {
+            "label": "2026-05-19_01-24-58",
+            "content": "package main\nimport \"fmt\"\nfunc main() {\n\tvar n int\n\tfmt.Scan(&n)\n\tvetor := make([]int, n)\n\tfor i := 0; i < n; i++ {\n\t\tfmt.Scan(&vetor[i])\n\t}\n\tfmt.Print(\"[ \")\n\tfor i := n - 1; i >= 0; i-- {\n\t\tfmt.Print(vetor[i])\n\t\tif i > 0 {\n\t\t\tfmt.Print(\" \")\n\t\t}\n\t}\n\tfmt.Println(\" ]\")\n}\n",
+            "lines": "18"
+        }
+    ]
+}

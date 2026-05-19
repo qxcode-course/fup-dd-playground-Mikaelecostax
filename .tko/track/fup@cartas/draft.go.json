@@ -1,0 +1,9 @@
+{
+    "patches": [
+        {
+            "label": "2026-05-19_01-16-05",
+            "content": "package main\nimport (\"fmt\"\n    \"strconv\"\n)\nfunc main() {\n   var n int\n\tfmt.Scan(&n)\n\tmao := make([]string, n)\n\tfor i := 0; i < n; i++ {\n\t\tvar carta int\n\t\tfmt.Scan(&carta)\n\t\tswitch carta {\n\t\tcase 1:\n\t\t\tmao[i] = \"A\"\n\t\tcase 11:\n\t\t\tmao[i] = \"J\"\n\t\tcase 12:\n\t\t\tmao[i] = \"Q\"\n\t\tcase 13:\n\t\t\tmao[i] = \"K\"\n\t\tdefault:\n\t\t\tmao[i] = strconv.Itoa(carta)\n\t\t}\n\t}\n\tfmt.Print(\"[\")\n\tfor i, carta := range mao {\n\t\tfmt.Print(carta)\n\t\tif i < n-1 {\n\t\t\tfmt.Print(\", \")\n\t\t}\n\t}\n\tfmt.Println(\"]\")\n}\n",
+            "lines": "33"
+        }
+    ]
+}

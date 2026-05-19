@@ -1,0 +1,9 @@
+{
+    "patches": [
+        {
+            "label": "2026-05-19_01-46-47",
+            "content": "package main\nimport \"fmt\"\nfunc main() {\n   var limite, n int\n\tfmt.Scan(&limite, &n)\n\tganhador := -1\n\tperdedor := 0\n\tmenorDistanciaValida := 999999\n\tmaiorDistanciaGeral := -1\n\tfor i := 0; i < n; i++ {\n\t\tvar jogada int\n\t\tfmt.Scan(&jogada)\n\t\tdistanciaAbsoluta := jogada\n\t\tif distanciaAbsoluta < 0 {\n\t\t\tdistanciaAbsoluta = -distanciaAbsoluta\n\t\t}\n\t\tif distanciaAbsoluta <= limite {\n\t\t\tif distanciaAbsoluta <= menorDistanciaValida {\n\t\t\t\tmenorDistanciaValida = distanciaAbsoluta\n\t\t\t\tganhador = i\n\t\t\t}\n\t\t}\n\t\tif distanciaAbsoluta >= maiorDistanciaGeral {\n\t\t\tmaiorDistanciaGeral = distanciaAbsoluta\n\t\t\tperdedor = i\n\t\t}\n        }\n\tif ganhador == -1 {\n\t\tfmt.Println(\"nenhum\")\n\t} else {\n\t\tfmt.Println(ganhador)\n\t}\n\tfmt.Println(perdedor)\n}\n",
+            "lines": "34"
+        }
+    ]
+}

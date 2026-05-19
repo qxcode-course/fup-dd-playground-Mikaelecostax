@@ -6,30 +6,27 @@ sources:
   type: local
   writeable: true
   quests: null
-  tasks: null
 - name: fup
   target: https://github.com/qxcodefup/arcade.git
   index: README.md
   type: git
   writeable: false
   quests: null
-  tasks: null
 - name: eval1
   target: https://github.com/senapk/fup_26_1_eval_1
   index: README.md
   type: git
   writeable: false
   quests: null
-  tasks: null
 expanded:
-- fup@for2
 - fup@list
+- fup@for2
 flags:
   inbox: all
-  panel: graph
+  panel: skills
   show_panel: 'true'
   task_graph_mode: executions
   show_time: 'true'
 lang: go
-selected: fup@for1
-selected_index: 5
+selected: fup@medico
+selected_index: 36

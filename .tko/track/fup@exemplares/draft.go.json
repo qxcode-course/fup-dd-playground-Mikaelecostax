@@ -1,0 +1,14 @@
+{
+    "patches": [
+        {
+            "label": "2026-05-19_01-29-16",
+            "content": "@@ -494,16 +494,17 @@\n .Print(%22\n+%5B\n %22)%0A%09for \n@@ -605,13 +605,14 @@\n rintln(%22\n+%5D\n %22)%0A%7D%0A\n",
+            "lines": "37"
+        },
+        {
+            "label": "2026-05-19_01-29-32",
+            "content": "package main\nimport \"fmt\"\nfunc main() {\n    var n int\n\tfmt.Scan(&n)\n\tvar unicos []int\n\tfor i := 0; i < n; i++ {\n\t\tvar animal int\n\t\tfmt.Scan(&animal)\n\t\texiste := false\n\t\tfor _, u := range unicos {\n\t\t\tif u == animal {\n\t\t\t\texiste = true\n\t\t\t\tbreak\n\t\t\t}\n\t\t}\n\t\tif !existe {\n\t\t\tunicos = append(unicos, animal)\n\t\t}\n\t}\n\ttam := len(unicos)\n\tfor i := 0; i < tam-1; i++ {\n\t\tfor j := 0; j < tam-i-1; j++ {\n\t\t\tif unicos[j] > unicos[j+1] {\n\t\t\t\tunicos[j], unicos[j+1] = unicos[j+1], unicos[j]\n\t\t\t}\n\t\t}\n\t}\n\tfmt.Print(\"\")\n\tfor i, v := range unicos {\n\t\tfmt.Print(v)\n\t\tif i < len(unicos)-1 {\n\t\t\tfmt.Print(\" \")\n\t\t}\n\t}\n\tfmt.Println(\"\")\n}\n",
+            "lines": "37"
+        }
+    ]
+}
