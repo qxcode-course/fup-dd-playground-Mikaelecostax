@@ -1,0 +1,9 @@
+{
+    "patches": [
+        {
+            "label": "2026-05-19_01-57-00",
+            "content": "package main\nimport ( \"fmt\"\n    \"unicode\"\n)\nfunc main() {\n   var c rune\n\tfmt.Scanf(\"%c\", &c)\n\tif unicode.IsUpper(c) {\n\t\tc = unicode.ToLower(c)\n\t} else if unicode.IsLower(c) {\n\t\tc = unicode.ToUpper(c)\n\t}\n\tfmt.Printf(\"%c\\n\", c)\n}\n",
+            "lines": "14"
+        }
+    ]
+}

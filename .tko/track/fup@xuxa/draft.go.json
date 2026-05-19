@@ -1,0 +1,9 @@
+{
+    "patches": [
+        {
+            "label": "2026-05-19_01-55-08",
+            "content": "package main\nimport (\"fmt\"\n    \"bufio\"\n\t\"os\"\n)\nfunc main() {\n    scanner := bufio.NewScanner(os.Stdin)\n\tif scanner.Scan() {\n\t\tfrase := scanner.Text()\n\t\tcaracteres := []rune(frase)\n\t\tfor i := len(caracteres) - 1; i >= 0; i-- {\n\t\t\tfmt.Print(string(caracteres[i]))\n\t\t}\n\t\tfmt.Println()\n\t}\n}\n",
+            "lines": "16"
+        }
+    ]
+}

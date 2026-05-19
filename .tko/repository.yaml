@@ -20,7 +20,9 @@ sources:
   quests: null
 expanded:
 - fup@list
+- fup@string
 - fup@for2
+- fup@for_extra
 flags:
   inbox: all
   panel: skills
@@ -28,5 +30,5 @@ flags:
   task_graph_mode: executions
   show_time: 'true'
 lang: go
-selected: fup@medico
-selected_index: 36
+selected: fup@gamados
+selected_index: 86

@@ -110,3 +110,49 @@
 2026-05-19 01:44:04, MOVE, v:1, k:fup@piao, mode:PICK
 2026-05-19 01:46:47, EXEC, v:1, k:fup@piao, mode:FULL, rate:100, size:34
 2026-05-19 01:46:48, MOVE, v:1, k:fup@piao, mode:BACK
+2026-05-19 01:48:29, MOVE, v:1, k:fup@jedi, mode:DOWN
+2026-05-19 01:48:30, MOVE, v:1, k:fup@jedi, mode:PICK
+2026-05-19 01:48:58, MOVE, v:1, k:fup@jedi, mode:BACK
+2026-05-19 01:50:10, SELF, v:1, k:fup@zigzag, self:1, rate:100, concept:1
+2026-05-19 01:50:17, SELF, v:1, k:fup@colorido, self:1, rate:100, concept:1
+2026-05-19 01:50:22, SELF, v:1, k:fup@concentra, self:1, rate:100, concept:1
+2026-05-19 01:50:27, SELF, v:1, k:fup@fuga, self:1, rate:100
+2026-05-19 01:50:32, SELF, v:1, k:fup@lotado, self:1, rate:100, concept:1
+2026-05-19 01:50:40, SELF, v:1, k:fup@spok, self:1, rate:100
+2026-05-19 01:50:47, SELF, v:1, k:fup@sapinho, self:1, rate:100, concept:1
+2026-05-19 01:50:50, SELF, v:1, k:fup@fatores, self:1, rate:100
+2026-05-19 01:50:58, SELF, v:1, k:fup@vet_i, self:1, rate:100
+2026-05-19 01:51:02, SELF, v:1, k:fup@vet_ii, self:1, rate:100
+2026-05-19 01:51:05, SELF, v:1, k:fup@apertada, self:1, rate:100
+2026-05-19 01:51:09, SELF, v:1, k:fup@vet_iii, self:1, rate:100
+2026-05-19 01:51:13, SELF, v:1, k:fup@dieta, self:1, rate:100
+2026-05-19 01:51:17, SELF, v:1, k:fup@patas, self:1, rate:100
+2026-05-19 01:51:20, SELF, v:1, k:fup@dindin, self:1, rate:100
+2026-05-19 01:51:24, SELF, v:1, k:fup@repetidos, self:1, rate:100
+2026-05-19 01:51:27, SELF, v:1, k:fup@batraquios, self:1, rate:100
+2026-05-19 01:51:30, SELF, v:1, k:fup@baruel, self:1, rate:100
+2026-05-19 01:51:36, SELF, v:1, k:fup@tazos, self:1, rate:100, concept:1
+2026-05-19 01:51:41, SELF, v:1, k:fup@revolta, self:1, rate:100, concept:1
+2026-05-19 01:51:47, SELF, v:1, k:fup@cartas, self:1, rate:100, concept:1
+2026-05-19 01:51:51, SELF, v:1, k:fup@invertendo, self:1, rate:100, concept:1
+2026-05-19 01:51:55, SELF, v:1, k:fup@fila, self:1, concept:1
+2026-05-19 01:52:02, SELF, v:1, k:fup@troco, self:1, rate:100, concept:1
+2026-05-19 01:52:06, SELF, v:1, k:fup@casais, self:1, rate:100, concept:1
+2026-05-19 01:52:11, SELF, v:1, k:fup@exemplares, self:1, rate:100, concept:1
+2026-05-19 01:52:14, SELF, v:1, k:fup@parkour, self:1, rate:100, concept:1
+2026-05-19 01:52:19, SELF, v:1, k:fup@botas, self:1, rate:100, concept:1
+2026-05-19 01:52:25, SELF, v:1, k:fup@intervalada, self:1, rate:100, concept:1
+2026-05-19 01:52:31, SELF, v:1, k:fup@piao, self:1, rate:100, concept:1
+2026-05-19 01:48:29, MOVE, v:1, k:fup@jedi, mode:EDIT
+2026-05-19 01:48:29, MOVE, v:1, k:fup@jedi, mode:EDIT
+2026-05-19 01:48:29, MOVE, v:1, k:fup@jedi, mode:EDIT
+2026-05-19 01:52:55, MOVE, v:1, k:fup@xuxa, mode:DOWN
+2026-05-19 01:52:56, MOVE, v:1, k:fup@xuxa, mode:PICK
+2026-05-19 01:55:08, EXEC, v:1, k:fup@xuxa, mode:FULL, rate:100, size:16
+2026-05-19 01:55:15, MOVE, v:1, k:fup@xuxa, mode:BACK
+2026-05-19 01:55:22, SELF, v:1, k:fup@xuxa, self:1, rate:100, concept:1
+2026-05-19 01:55:40, MOVE, v:1, k:fup@inverte, mode:DOWN
+2026-05-19 01:55:41, MOVE, v:1, k:fup@inverte, mode:PICK
+2026-05-19 01:57:00, EXEC, v:1, k:fup@inverte, mode:FULL, rate:100, size:14
+2026-05-19 01:57:02, MOVE, v:1, k:fup@inverte, mode:BACK
+2026-05-19 01:57:07, SELF, v:1, k:fup@inverte, self:1, rate:100, concept:1
