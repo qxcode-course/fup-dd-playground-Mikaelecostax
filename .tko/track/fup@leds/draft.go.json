@@ -1,0 +1,9 @@
+{
+    "patches": [
+        {
+            "label": "2026-05-23_22-19-24",
+            "content": "package main\nimport (\n\t\"fmt\"\n)\nfunc main() {\n\tledsPorDigito := map[rune]int{\n\t\t'1': 2,\n\t\t'7': 3,\n\t\t'4': 4,\n\t\t'2': 5, '3': 5, '5': 5,\n\t\t'0': 6, '6': 6, '9': 6,\n\t\t'8': 7,\n\t}\n\tvar n int\n\tif _, err := fmt.Scan(&n); err != nil {\n\t\treturn\n\t}\n\tfor i := 0; i < n; i++ {\n\t\tvar v string\n\t\tfmt.Scan(&v)\n\t\ttotalLeds := 0\n\t\tfor _, digito := range v {\n\t\t\ttotalLeds += ledsPorDigito[digito]\n\t\t}\n\t\tfmt.Printf(\"%d leds\\n\", totalLeds)\n\t}\n}\n",
+            "lines": "27"
+        }
+    ]
+}

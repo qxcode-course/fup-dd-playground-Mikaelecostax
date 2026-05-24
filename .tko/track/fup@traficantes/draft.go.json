@@ -1,0 +1,9 @@
+{
+    "patches": [
+        {
+            "label": "2026-05-23_23-52-17",
+            "content": "package main\nimport (\n\t\"bufio\"\n\t\"fmt\"\n\t\"os\"\n)\nfunc main() {\n\tscanner := bufio.NewScanner(os.Stdin)\n\tvar texto string\n\tif scanner.Scan() {\n\t\ttexto = scanner.Text()\n\t}\n\tvar alvo string\n\tif scanner.Scan() {\n\t\talvo = scanner.Text()\n\t}\n\tvar nova string\n\tif scanner.Scan() {\n\t\tnova = scanner.Text()\n\t}\n\tlenTexto := len(texto)\n\tlenAlvo := len(alvo)\n\tif lenAlvo == 0 {\n\t\tfmt.Println(texto)\n\t\treturn\n\t}\n\tvar resultado []byte\n\ti := 0\n\tfor i < lenTexto {\n\t\tif i+lenAlvo <= lenTexto && texto[i:i+lenAlvo] == alvo {\n\t\t\tresultado = append(resultado, nova...)\n\t\t\ti += lenAlvo\n\t\t} else {\n\t\t\tresultado = append(resultado, texto[i])\n\t\t\ti++\n\t\t}\n\t}\n\tfmt.Println(string(resultado))\n}\n",
+            "lines": "39"
+        }
+    ]
+}

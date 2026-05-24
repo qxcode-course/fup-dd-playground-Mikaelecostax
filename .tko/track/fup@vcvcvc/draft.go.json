@@ -1,0 +1,9 @@
+{
+    "patches": [
+        {
+            "label": "2026-05-24_01-47-36",
+            "content": "package main\nimport (\n\t\"bufio\"\n\t\"fmt\"\n\t\"os\"\n\t\"unicode\"\n)\nfunc ehVogal(r rune) bool {\n\trMinuscula := unicode.ToLower(r)\n\treturn rMinuscula == 'a' || rMinuscula == 'e' || rMinuscula == 'i' || rMinuscula == 'o' || rMinuscula == 'u'\n}\nfunc main() {\n\tscanner := bufio.NewScanner(os.Stdin)\n\tif scanner.Scan() {\n\t\ttexto := scanner.Text()\n\t\tresultado := make([]rune, 0, len(texto))\n\t\tfor _, caractere := range texto {\n\t\t\tif unicode.IsLetter(caractere) {\n\t\t\t\tif ehVogal(caractere) {\n\t\t\t\t\tresultado = append(resultado, 'v')\n\t\t\t\t} else {\n\t\t\t\t\tresultado = append(resultado, 'c')\n\t\t\t\t}\n\t\t\t} else {\n\t\t\t\tresultado = append(resultado, caractere)\n\t\t\t}\n\t\t}\n\t\tfmt.Println(string(resultado))\n\t}\n}\n",
+            "lines": "30"
+        }
+    ]
+}

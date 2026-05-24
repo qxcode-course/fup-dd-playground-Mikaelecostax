@@ -1,0 +1,84 @@
+{
+    "patches": [
+        {
+            "label": "2026-05-23_21-55-09",
+            "content": "@@ -45,10 +45,8 @@\n func\n- (\n  Sub\n@@ -336,17 +336,16 @@\n :fim%5D)%0A%7D\n-)\n %0Afunc ma\n",
+            "lines": "24"
+        },
+        {
+            "label": "2026-05-23_21-56-03",
+            "content": "@@ -36,20 +36,23 @@\n () %7B%0A   \n+ \n func\n+ (\n  Substri\n@@ -53,17 +53,17 @@\n ubstring\n- \n+(\n texto st\n@@ -338,16 +338,17 @@\n :fim%5D)%0A%7D\n+)\n %0Afunc ma\n@@ -355,23 +355,21 @@\n in() %7B%0A%09\n-entrada\n+texto\n  := %22Go \n@@ -387,98 +387,281 @@\n o%22%0A%09\n-inicio := 3%0A%09qtd := 5%0A%09resultado := Substring(entrada, inicio, qtd)%0A%09fmt.Println(resultado)\n+fmt.Printf(%22Caso 1: %25q%5Cn%22, Substring(texto, 3, 5))   %0A%09fmt.Printf(%22Caso 2: %25q%5Cn%22, Substring(texto, 11, 10))%0A%09fmt.Printf(%22Caso 3: %25q%5Cn%22, Substring(texto, -1, 5))  %0A%09fmt.Printf(%22Caso 4: %25q%5Cn%22, Substring(texto, 5, -2))  %0A%09fmt.Printf(%22Caso 5: %25q%5Cn%22, Substring(texto, 20, 3))  %0A%7D\n %0A%7D%0A\n",
+            "lines": "24"
+        },
+        {
+            "label": "2026-05-23_21-57-37",
+            "content": "@@ -50,17 +50,17 @@\n ubstring\n-(\n+ \n texto st\n",
+            "lines": "22"
+        },
+        {
+            "label": "2026-05-23_21-58-23",
+            "content": "@@ -336,8 +336,147 @@\n fim%5D)%0A%7D%0A\n+func main() %7B%0A%09entrada := %22Go e fantastico%22%0A%09inicio := 3%0A%09qtd := 5%0A%09resultado := Substring(entrada, inicio, qtd)%0A%09fmt.Println(resultado)%0A%7D%0A\n",
+            "lines": "22"
+        },
+        {
+            "label": "2026-05-23_22-00-34",
+            "content": "@@ -340,78 +340,4 @@\n )%0A%7D%0A\n-func main() %7B%0A       fmt.Println(Substring(%22Go e fantastico%22, 3, 5))%0A   %7D%0A\n",
+            "lines": "15"
+        },
+        {
+            "label": "2026-05-23_22-01-07",
+            "content": "@@ -36,16 +36,21 @@\n () %7B%0A   \n+func \n Substrin\n@@ -54,16 +54,8 @@\n ring\n- := func\n (tex\n@@ -336,8 +336,82 @@\n fim%5D)%0A%7D%0A\n+func main() %7B%0A       fmt.Println(Substring(%22Go e fantastico%22, 3, 5))%0A   %7D%0A\n",
+            "lines": "18"
+        },
+        {
+            "label": "2026-05-23_22-05-53",
+            "content": "@@ -343,229 +343,4 @@\n )%0A%7D%0A\n-runes := %5B%5Drune(texto)%0AtotalRunes := len(runes)%0A%0Aif inicio %3C 0 %7C%7C quantidade %3C= 0 %7C%7C inicio %3E= totalRunes %7B%0A%09return %22%22%0A%7D%0A%0Afim := inicio + quantidade%0Aif fim %3E totalRunes %7B%0A%09fim = totalRunes%0A%7D%0A%0Areturn string(runes%5Binicio:fim%5D)%0A\n",
+            "lines": "15"
+        },
+        {
+            "label": "2026-05-23_22-07-12",
+            "content": "@@ -530,16 +530,17 @@\n Runes%0A%7D%0A\n+%0A\n return s\n@@ -544,30 +544,28 @@\n n string(runes%5Binicio:fim%5D)%0A\n-%7D%0A\n",
+            "lines": "28"
+        },
+        {
+            "label": "2026-05-23_22-07-58",
+            "content": "@@ -24,16 +24,28 @@\n t%22%0Afunc \n+main() %7B%0A   \n Substrin\n@@ -45,16 +45,24 @@\n ubstring\n+ := func\n (texto s\n@@ -343,69 +343,230 @@\n )%0A%7D%0A\n-func main() %7B%0A%09fmt.Println(Substring(%22Go e fantastico%22, 3, 5)\n+runes := %5B%5Drune(texto)%0AtotalRunes := len(runes)%0A%0Aif inicio %3C 0 %7C%7C quantidade %3C= 0 %7C%7C inicio %3E= totalRunes %7B%0A%09return %22%22%0A%7D%0A%0Afim := inicio + quantidade%0Aif fim %3E totalRunes %7B%0A%09fim = totalRunes%0A%7D%0Areturn string(runes%5Binicio:fim%5D\n )%0A%7D%0A\n",
+            "lines": "28"
+        },
+        {
+            "label": "2026-05-23_22-09-44",
+            "content": "@@ -319,8 +319,73 @@\n fim%5D)%0A%7D%0A\n+func main() %7B%0A%09fmt.Println(Substring(%22Go e fantastico%22, 3, 5))%0A%7D%0A\n",
+            "lines": "17"
+        },
+        {
+            "label": "2026-05-23_22-11-01",
+            "content": "@@ -6,16 +6,28 @@\n ge main%0A\n+import %22fmt%22\n %0Afunc Su\n",
+            "lines": "14"
+        },
+        {
+            "label": "2026-05-23_22-11-11",
+            "content": "@@ -10,20 +10,8 @@\n ain%0A\n-import %22fmt%22\n %0Afun\n",
+            "lines": "14"
+        },
+        {
+            "label": "2026-05-23_22-11-42",
+            "content": "@@ -17,33 +17,13 @@\n ort \n-(%0A%09%22bufio%22%0A%09%22fmt%22%0A%09%22os%22%0A)\n+%22fmt%22\n %0Afun\n@@ -323,269 +323,4 @@\n )%0A%7D%0A\n-func main() %7B%0A%09scanner := bufio.NewScanner(os.Stdin)%0A%09var texto string%0A%09if scanner.Scan() %7B%0A%09%09texto = scanner.Text()%0A%09%7D%0A%09var inicio, quantidade int%0A%09fmt.Scan(&inicio)%0A%09fmt.Scan(&quantidade)%0A%09resultado := Substring(texto, inicio, quantidade)%0A%09fmt.Print(resultado)%0A%7D%0A\n",
+            "lines": "14"
+        },
+        {
+            "label": "2026-05-23_22-13-43",
+            "content": "@@ -41,19 +41,8 @@\n os%22%0A\n-%09%22strings%22%0A\n )%0Afu\n@@ -354,20 +354,21 @@\n in() %7B%0A%09\n-read\n+scann\n er := bu\n@@ -378,12 +378,13 @@\n .New\n-Read\n+Scann\n er(o\n@@ -392,141 +392,33 @@\n .Std\n-err)%0A%09_ = reader                           %0A%09var texto string%0A%09var inicio, quantidade int%0A%09scanner := bufio.NewScanner(os.Stdin)%0A%09for\n+in)%0A%09var texto string%0A%09if\n  sca\n@@ -437,15 +437,14 @@\n %7B%0A%09%09\n-linha :\n+texto \n = sc\n@@ -461,220 +461,67 @@\n ()%0A%09\n-%09if len(strings.TrimSpace(linha)) %3E 0 %7C%7C linha == %22%22 %7B%0A%09%09%09texto = linha%0A%09%09%09break%0A%09%09%7D%0A%09%7D%0A%09if scanner.Scan() %7B%0A%09\n+%7D%0A%09var inicio, quantidade int%0A\n %09fmt.S\n-s\n can\n-f(scanner.Text(), %22%25d%22, &inicio)%0A%09%7D%0A%09if scanner.Scan() %7B%0A%09\n+(&inicio)%0A\n %09fmt.S\n-s\n can\n-f(scanner.Text(), %22%25d%22, \n+(\n &qua\n@@ -529,19 +529,16 @@\n tidade)%0A\n-%09%7D%0A\n %09resulta\n",
+            "lines": "30"
+        },
+        {
+            "label": "2026-05-23_22-15-39",
+            "content": "@@ -868,10 +868,8 @@\n rint\n-ln\n (res\n",
+            "lines": "41"
+        },
+        {
+            "label": "2026-05-23_22-15-53",
+            "content": "package main\nimport (\n\t\"bufio\"\n\t\"fmt\"\n\t\"os\"\n\t\"strings\"\n)\nfunc Substring(texto string, inicio int, quantidade int) string {\n\trunes := []rune(texto)\n\ttotalRunes := len(runes)\n\tif inicio < 0 || quantidade <= 0 || inicio >= totalRunes {\n\t\treturn \"\"\n\t}\n\tfim := inicio + quantidade\n\tif fim > totalRunes {\n\t\tfim = totalRunes\n\t}\n\treturn string(runes[inicio:fim])\n}\nfunc main() {\n\treader := bufio.NewReader(os.Stderr)\n\t_ = reader                           \n\tvar texto string\n\tvar inicio, quantidade int\n\tscanner := bufio.NewScanner(os.Stdin)\n\tfor scanner.Scan() {\n\t\tlinha := scanner.Text()\n\t\tif len(strings.TrimSpace(linha)) > 0 || linha == \"\" {\n\t\t\ttexto = linha\n\t\t\tbreak\n\t\t}\n\t}\n\tif scanner.Scan() {\n\t\tfmt.Sscanf(scanner.Text(), \"%d\", &inicio)\n\t}\n\tif scanner.Scan() {\n\t\tfmt.Sscanf(scanner.Text(), \"%d\", &quantidade)\n\t}\n\tresultado := Substring(texto, inicio, quantidade)\n\tfmt.Println(resultado)\n}\n",
+            "lines": "41"
+        }
+    ]
+}

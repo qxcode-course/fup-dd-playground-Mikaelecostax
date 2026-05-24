@@ -1,0 +1,39 @@
+{
+    "patches": [
+        {
+            "label": "2026-05-24_02-12-54",
+            "content": "@@ -17,17 +17,16 @@\n ort \n-(\n %0A%09%22fmt%22%0A\n )%0Afu\n@@ -21,17 +21,16 @@\n %0A%09%22fmt%22%0A\n-)\n %0Afunc ca\n@@ -67,20 +67,21 @@\n  int %7B%0A%09\n-soma\n+total\n  := 0%0A%09f\n@@ -121,14 +121,20 @@\n %7B%0A%09%09\n-soma +\n+valorASCII :\n = in\n@@ -152,32 +152,103 @@\n %5D)%0A%09\n-%7D%0A%09return soma %25 100\n+%09if i%252 == 0 %7B%0A%09%09%09total += valorASCII%0A%09%09%7D else %7B%0A%09%09%09total -= valorASCII%0A%09%09%7D%0A%09%7D%0A%09return total\n %0A%7D%0A\n-%0A\n func\n",
+            "lines": "40"
+        },
+        {
+            "label": "2026-05-24_02-15-02",
+            "content": "@@ -26,19 +26,8 @@\n mt%22%0A\n-%09%22unicode%22%0A\n )%0Afu\n@@ -122,20 +122,19 @@\n %7B%0A%09%09\n-char := rune\n+soma += int\n (pal\n@@ -146,129 +146,8 @@\n i%5D)%0A\n-%09%09valorASCII := int(char)%0A%09%09if unicode.IsUpper(char) %7B%0A%09%09%09soma += (valorASCII - 50)%0A%09%09%7D else %7B%0A%09%09%09soma += valorASCII%0A%09%09%7D%0A\n %09%7D%0A%09\n@@ -164,18 +164,19 @@\n a %25 100%0A\n-\n %7D%0A\n+%0A\n func mai\n",
+            "lines": "36"
+        },
+        {
+            "label": "2026-05-24_02-16-57",
+            "content": "@@ -26,113 +26,20 @@\n mt%22%0A\n-)%0Afunc ehVogalMaiuscula(c byte) bool %7B%0A%09return c == 'A' %7C%7C c == 'E' %7C%7C c == 'I' %7C%7C c == 'O' %7C%7C c == 'U'%0A%7D\n+%09%22unicode%22%0A)\n %0Afun\n@@ -133,70 +133,84 @@\n %7B%0A%09%09\n-valorASCII := int(palavra%5Bi%5D)%0A%09%09if ehVogalMaiuscula(palavra%5Bi%5D\n+char := rune(palavra%5Bi%5D)%0A%09%09valorASCII := int(char)%0A%09%09if unicode.IsUpper(char\n ) %7B%0A\n@@ -638,17 +638,16 @@\n estada)%0A\n-%0A\n %09%09if val\n@@ -734,17 +734,16 @@\n %0A%09%09%7D%0A%09%7D%0A\n-%0A\n %09novaPal\n@@ -839,17 +839,16 @@\n etra%0A%09%7D%0A\n-%0A\n %09fmt.Pri\n",
+            "lines": "42"
+        },
+        {
+            "label": "2026-05-24_02-19-24",
+            "content": "@@ -26,20 +26,113 @@\n mt%22%0A\n-%09%22unicode%22%0A)\n+)%0Afunc ehVogalMaiuscula(c byte) bool %7B%0A%09return c == 'A' %7C%7C c == 'E' %7C%7C c == 'I' %7C%7C c == 'O' %7C%7C c == 'U'%0A%7D\n %0Afun\n@@ -189,69 +189,40 @@\n 0%0A%09f\n-requencia := make(map%5Brune%5Dint)%0A%09for _, char := range \n+or i := 0; i %3C len(\n palavra\n+); i++\n  %7B%0A%09\n@@ -244,100 +244,57 @@\n int(\n-char)%0A%09%09charMinusculo := unicode.ToLower(char)%0A%09%09vezesApareceu := frequencia%5BcharMinusculo%5D%0A\n+palavra%5Bi%5D)%0A%09%09if ehVogalMaiuscula(palavra%5Bi%5D) %7B%0A%09\n %09%09so\n@@ -317,59 +317,48 @@\n I - \n-(\n 50\n- * vezesApareceu))%0A%09%09frequencia%5BcharMinusculo%5D++\n+)%0A%09%09%7D else %7B%0A%09%09%09soma += valorASCII%0A%09%09%7D\n %0A%09%7D%0A\n@@ -717,16 +717,17 @@\n estada)%0A\n+%0A\n %09%09if val\n@@ -814,16 +814,17 @@\n %0A%09%09%7D%0A%09%7D%0A\n+%0A\n %09novaPal\n@@ -920,16 +920,17 @@\n etra%0A%09%7D%0A\n+%0A\n %09fmt.Pri\n",
+            "lines": "46"
+        },
+        {
+            "label": "2026-05-24_02-22-51",
+            "content": "@@ -22,17 +22,27 @@\n %0A%09%22fmt%22%0A\n+%09%22unicode%22\n %0A\n-\n )%0Afunc c\n@@ -79,20 +79,17 @@\n ) int %7B%0A\n-    \n+%09\n soma := \n@@ -90,20 +90,17 @@\n ma := 0%0A\n-    \n+%09\n frequenc\n@@ -118,73 +118,33 @@\n map%5B\n-byt\n+run\n e%5Dint)%0A\n-    for i := 0; i %3C len(palavra); i++ %7B%0A       \n+%09for _,\n  char :=\n  pal\n@@ -139,24 +139,30 @@\n  char :=\n+ range\n  palavra\n %5Bi%5D%0A    \n@@ -157,20 +157,13 @@\n avra\n-%5Bi%5D%0A        \n+ %7B%0A%09%09\n valo\n@@ -182,24 +182,18 @@\n t(char)%0A\n-        \n+%09%09\n charMinu\n@@ -205,173 +205,123 @@\n  := \n-char%0A        if char %3E= 'A' && char %3C= 'Z' %7B%0A            charMinusculo = char + 32%0A        %7D%0A        soma += (valorASCII - (50 * frequencia%5BcharMinusculo%5D))%0A        \n+unicode.ToLower(char)%0A%09%09vezesApareceu := frequencia%5BcharMinusculo%5D%0A%09%09soma += (valorASCII - (50 * vezesApareceu))%0A%09%09\n freq\n@@ -348,18 +348,12 @@\n %5D++%0A\n-    %7D%0A    \n+%09%7D%0A%09\n retu\n",
+            "lines": "41"
+        },
+        {
+            "label": "2026-05-24_02-25-23",
+            "content": "@@ -471,67 +471,8 @@\n 0%0A%7D%0A\n-func ehVogalMaiuscula(c byte) bool %7B%0A    return c == 'A'%0A%7D%0A\n func\n",
+            "lines": "44"
+        },
+        {
+            "label": "2026-05-24_02-27-16",
+            "content": "package main\nimport (\n\t\"fmt\"\n\n)\nfunc calculaAscologia(palavra string) int {\n    soma := 0\n    frequencia := make(map[byte]int)\n    for i := 0; i < len(palavra); i++ {\n        char := palavra[i]\n        valorASCII := int(char)\n        charMinusculo := char\n        if char >= 'A' && char <= 'Z' {\n            charMinusculo = char + 32\n        }\n        soma += (valorASCII - (50 * frequencia[charMinusculo]))\n        frequencia[charMinusculo]++\n    }\n    return soma % 100\n}\nfunc ehVogalMaiuscula(c byte) bool {\n    return c == 'A'\n}\nfunc main() {\n\tvar palavraOriginal string\n\tif _, err := fmt.Scan(&palavraOriginal); err != nil {\n\t\treturn\n\t}\n\tvalorOriginal := calculaAscologia(palavraOriginal)\n\tmenorValor := valorOriginal\n\tmelhorLetra := \"\"\n\tfor c := 'a'; c <= 'z'; c++ {\n\t\tpalavraTestada := palavraOriginal + string(c)\n\t\tvalorTestado := calculaAscologia(palavraTestada)\n\t\tif valorTestado < menorValor {\n\t\t\tmenorValor = valorTestado\n\t\t\tmelhorLetra = string(c)\n\t\t}\n\t}\n\tnovaPalavra := palavraOriginal\n\tif melhorLetra != \"\" {\n\t\tnovaPalavra = palavraOriginal + melhorLetra\n\t}\n\tfmt.Println(valorOriginal)\n\tfmt.Println(novaPalavra)\n\tfmt.Println(menorValor)\n}\n",
+            "lines": "47"
+        }
+    ]
+}

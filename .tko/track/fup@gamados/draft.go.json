@@ -1,0 +1,9 @@
+{
+    "patches": [
+        {
+            "label": "2026-05-24_00-44-57",
+            "content": "package main\nimport (\n\t\"bufio\"\n\t\"fmt\"\n\t\"os\"\n\t\"strings\"\n)\nfunc main() {\n\tscanner := bufio.NewScanner(os.Stdin)\n\tif scanner.Scan() {\n\t\ttexto := scanner.Text()\n\t\tpalavras := strings.Fields(texto)\n\t\tif len(palavras) <= 1 {\n\t\t\tfmt.Println(\"sim\")\n\t\t\treturn\n        }\n\t\tordenado := true\n\t\tfor i := 0; i < len(palavras)-1; i++ {\n\t\t\tif palavras[i] > palavras[i+1] {\n\t\t\t\tordenado = false\n\t\t\t\tbreak\n\t\t\t}\n\t\t}\n\t\tif ordenado {\n\t\t\tfmt.Println(\"sim\")\n\t\t} else {\n\t\t\tfmt.Println(\"nao\")\n\t\t}\n\t}\n}\n",
+            "lines": "30"
+        }
+    ]
+}

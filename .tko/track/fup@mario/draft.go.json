@@ -1,0 +1,9 @@
+{
+    "patches": [
+        {
+            "label": "2026-05-24_01-05-00",
+            "content": "package main\nimport (\n\t\"fmt\"\n)\nfunc main() {\n\tvar n int\n\tif _, err := fmt.Scan(&n); err != nil {\n\t\treturn\n\t}\n\talturas := make([]int, n)\n\tmaiorAltura := 0\n\tfor i := 0; i < n; i++ {\n\t\tfmt.Scan(&alturas[i])\n\t\tif alturas[i] > maiorAltura {\n\t\t\tmaiorAltura = alturas[i]\n\t\t}\n\t}\n\tfor nivel := maiorAltura; nivel >= 1; nivel-- {\n\t\tfor col := 0; col < n; col++ {\n\t\t\tif alturas[col] >= nivel {\n\t\t\t\tfmt.Print(\"#\")\n\t\t\t} else {\n\t\t\t\tfmt.Print(\"_\")\n\t\t\t}\n\t\t}\n\t\tfmt.Println()\n\t}\n}\n",
+            "lines": "28"
+        }
+    ]
+}

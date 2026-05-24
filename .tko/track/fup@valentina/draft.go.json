@@ -1,0 +1,9 @@
+{
+    "patches": [
+        {
+            "label": "2026-05-24_01-18-44",
+            "content": "package main\nimport (\n\t\"fmt\"\n)\nfunc main() {\n\tvar c1Char, operacaoChar, c2Char string\n\tif _, err := fmt.Scan(&c1Char); err != nil {\n\t\treturn\n\t}\n\tif _, err := fmt.Scan(&operacaoChar); err != nil {\n\t\treturn\n\t}\n\tif _, err := fmt.Scan(&c2Char); err != nil {\n\t\treturn\n\t}\n\tc1 := c1Char[0]\n\top := operacaoChar[0]\n\tc2 := c2Char[0]\n\tval1 := int(c1 - 'a')\n\tval2 := int(c2 - 'a')\n\tvar resultadoNum int\n\tif op == '+' {\n\t\tresultadoNum = (val1 + val2) % 26\n\t} else if op == '-' {\n\t\tresultadoNum = (val1 - val2 + 26) % 26\n\t}\n\tresultadoLetra := byte(resultadoNum) + 'a'\n\tfmt.Printf(\"%c\\n\", resultadoLetra)\n}\n",
+            "lines": "29"
+        }
+    ]
+}

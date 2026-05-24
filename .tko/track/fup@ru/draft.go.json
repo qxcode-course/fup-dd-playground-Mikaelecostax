@@ -1,0 +1,19 @@
+{
+    "patches": [
+        {
+            "label": "2026-05-23_22-38-20",
+            "content": "@@ -428,10 +428,9 @@\n rint\n-ln\n+f\n (%22%25d\n",
+            "lines": "29"
+        },
+        {
+            "label": "2026-05-23_22-38-37",
+            "content": "@@ -21,698 +21,440 @@\n (%0A%09%22\n-bufio%22%0A%09%22fmt%22%0A%09%22os%22%0A%09%22strings%22%0A)%0Afunc ehVogal(r rune) bool %7B%0A%09c := strings.ToLower(string(r))%0A%09return c == %22a%22 %7C%7C c == %22e%22 %7C%7C c == %22i%22 %7C%7C c == %22o%22 %7C%7C c == %22u%22%0A%7D%0Afunc ehConsoante(r rune) bool %7B%0A%09if (r %3E= 'a' && r %3C= 'z') %7C%7C (r %3E= 'A' && r %3C= 'Z') %7B%0A%09%09return !ehVogal(r)%0A%09%7D%0A%09return false%0A%7D%0Afunc main() %7B%0A%09scanner := bufio.NewScanner(os.Stdin)%0A%09if scanner.Scan() %7B%0A%09%09texto := scanner.Text()%0A%09%09var vogais %5B%5Drune%0A%09%09var consoantes %5B%5Drune%0A%09%09for _, caractere\n+fmt%22%0A)%0Afunc main() %7B%0A%09ledsPorDigito := map%5Brune%5Dint%7B%0A%09%09'1': 2,%0A%09%09'7': 3,%0A%09%09'4': 4,%0A%09%09'2': 5, '3': 5, '5': 5,%0A%09%09'0': 6, '6': 6, '9': 6,%0A%09%09'8': 7,%0A%09%7D%0A%09var n int%0A%09if _, err := fmt.Scan(&n); err != nil %7B%0A%09%09return%0A%09%7D%0A%09for i := 0; i %3C n; i++ %7B%0A%09%09var v string%0A%09%09if _, err\n  := \n-range texto %7B%0A%09%09%09if ehVogal(caractere) %7B%0A%09%09%09%09vogais = append(vogais, caractere)%0A%09%09%09%7D else if ehConsoante(caractere) %7B%0A%09%09%09%09consoante\n+fmt.Scan(&v); err != nil %7B%0A%09%09%09break%0A%09%09%7D%0A%09%09totalLeds := 0%0A%09%09for _, digito := range v %7B%0A%09%09%09totalLed\n s \n++\n = \n-append(consoantes, caractere)%0A%09%09%09%7D%0A%09%09%7D%0A%09%09fmt.Println(string(vogais))%0A%09%09fmt.Println(string(consoantes)\n+ledsPorDigito%5Bdigito%5D%0A%09%09%7D%0A%09%09fmt.Println(%22%25d leds%5Cn%22, totalLeds\n )%0A%09%7D\n",
+            "lines": "29"
+        },
+        {
+            "label": "2026-05-23_22-40-16",
+            "content": "package main\nimport (\n\t\"bufio\"\n\t\"fmt\"\n\t\"os\"\n\t\"strings\"\n)\nfunc ehVogal(r rune) bool {\n\tc := strings.ToLower(string(r))\n\treturn c == \"a\" || c == \"e\" || c == \"i\" || c == \"o\" || c == \"u\"\n}\nfunc ehConsoante(r rune) bool {\n\tif (r >= 'a' && r <= 'z') || (r >= 'A' && r <= 'Z') {\n\t\treturn !ehVogal(r)\n\t}\n\treturn false\n}\nfunc main() {\n\tscanner := bufio.NewScanner(os.Stdin)\n\tif scanner.Scan() {\n\t\ttexto := scanner.Text()\n\t\tvar vogais []rune\n\t\tvar consoantes []rune\n\t\tfor _, caractere := range texto {\n\t\t\tif ehVogal(caractere) {\n\t\t\t\tvogais = append(vogais, caractere)\n\t\t\t} else if ehConsoante(caractere) {\n\t\t\t\tconsoantes = append(consoantes, caractere)\n\t\t\t}\n\t\t}\n\t\tfmt.Println(string(vogais))\n\t\tfmt.Println(string(consoantes))\n\t}\n}\n",
+            "lines": "34"
+        }
+    ]
+}

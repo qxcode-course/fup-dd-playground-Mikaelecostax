@@ -1,11 +1,30 @@
 package main
-import "fmt"
+import (
+	"bufio"
+	"fmt"
+	"os"
+)
 func main() {
-  var frase string
-  var trecho string
-  var contador int
-  fmt.Scan(&frase, &trecho)
-  for i := 0; i < "trecho"; i++ {
-
+	scanner := bufio.NewScanner(os.Stdin)
+	var frase string
+	if scanner.Scan() {
+		frase = scanner.Text()
+	}
+	var trecho string
+	if scanner.Scan() {
+		trecho = scanner.Text()
+	}
+	if len(trecho) == 0 || len(trecho) > len(frase) {
+		fmt.Println(0)
+		return
   }
+	contador := 0
+	tamanhoTrecho := len(trecho)
+	for i := 0; i <= len(frase)-tamanhoTrecho; i++ {
+		pedaco := frase[i : i+tamanhoTrecho]
+		if pedaco == trecho {
+			contador++
+		}
+	}
+	fmt.Println(contador)
 }

@@ -12,8 +12,13 @@
         },
         {
             "label": "2026-05-19_17-59-08",
-            "content": "package main\nimport \"fmt\"\nfunc main() {\n  var frase string\n  var trecho string\n  var contador int\n  fmt.Scan(&frase, &trecho)\n  for i := 0; i < \"trecho\"; i++ {\n\n  }\n}\n",
+            "content": "@@ -17,349 +17,114 @@\n ort \n-(%0A%09%22bufio%22%0A%09%22fmt%22%0A%09%22os%22%0A)%0Afunc main() %7B%0A%09scanner := bufio.NewScanner(os.Stdin)%0A%09var frase string%0A%09if scanner.Scan() %7B%0A%09%09frase = scanner.Text()%0A%09%7D%0A%09var trecho string%0A%09if scanner.Scan() %7B%0A%09%09trecho = scanner.Text()%0A%09%7D%0A%09if len(trecho) == 0 %7C%7C len(trecho) %3E len(frase) %7B%0A%09%09fmt.Println(0)%0A%09%09return%0A  %7D%0A%09contador := 0%0A%09tamanhoTrecho := len(\n+%22fmt%22%0Afunc main() %7B%0A  var frase string%0A  var trecho string%0A  var contador int%0A  fmt.Scan(&frase, &\n trecho)%0A\n %09for\n@@ -119,17 +119,18 @@\n trecho)%0A\n-%09\n+  \n for i :=\n@@ -140,42 +140,25 @@\n  i %3C\n-= len(frase)-tamanhoT\n+ %22t\n recho\n+%22\n ; i++ %7B%0A\n %09%09pe\n@@ -157,113 +157,11 @@\n + %7B%0A\n-%09%09pedaco := frase%5Bi : i+tamanhoTrecho%5D%0A%09%09if pedaco == trecho %7B%0A%09%09%09contador++%0A%09%09%7D%0A%09%7D%0A%09fmt.Println(contador)\n+%0A  %7D\n %0A%7D%0A\n",
             "lines": "11"
+        },
+        {
+            "label": "2026-05-23_23-26-20",
+            "content": "package main\nimport (\n\t\"bufio\"\n\t\"fmt\"\n\t\"os\"\n)\nfunc main() {\n\tscanner := bufio.NewScanner(os.Stdin)\n\tvar frase string\n\tif scanner.Scan() {\n\t\tfrase = scanner.Text()\n\t}\n\tvar trecho string\n\tif scanner.Scan() {\n\t\ttrecho = scanner.Text()\n\t}\n\tif len(trecho) == 0 || len(trecho) > len(frase) {\n\t\tfmt.Println(0)\n\t\treturn\n  }\n\tcontador := 0\n\ttamanhoTrecho := len(trecho)\n\tfor i := 0; i <= len(frase)-tamanhoTrecho; i++ {\n\t\tpedaco := frase[i : i+tamanhoTrecho]\n\t\tif pedaco == trecho {\n\t\t\tcontador++\n\t\t}\n\t}\n\tfmt.Println(contador)\n}\n",
+            "lines": "30"
         }
     ]
 }

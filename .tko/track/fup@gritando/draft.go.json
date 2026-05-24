@@ -1,0 +1,14 @@
+{
+    "patches": [
+        {
+            "label": "2026-05-23_22-57-21",
+            "content": "@@ -17,525 +17,59 @@\n ort \n-(%0A%09%22bufio%22%0A%09%22fmt%22%0A%09%22os%22%0A%09%22unicode%22%0A)%0Afunc main() %7B%0A%09scanner := bufio.NewScanner(os.Stdin)%0A%09if scanner.Scan() %7B%0A%09%09texto := scanner.Text()%0A%09%09resultado := make(%5B%5Drune, 0, len(texto))%0A%09%09for _, caractere := range texto %7B%0A%09%09%09if unicode.IsUpper(caractere) %7B%0A%09%09%09%09resultado = append(resultado, unicode.ToLower(caractere))%0A%09%09%09%7D else if unicode.IsLower(caractere) %7B%0A%09%09%09%09resultado = append(resultado, unicode.ToUpper(caractere))%0A%09%09%09%7D else %7B%0A%09%09%09%09resultado = append(resultado, caractere)%0A%09%09%09%7D%0A%09%09%7D%0A%09%09fmt.Println(string(resultado))%0A%09%7D\n+%22fmt%22%0Afunc main() %7B%0A    fmt.Println(%22Hello, World!%22)\n %0A%7D%0A\n",
+            "lines": "5"
+        },
+        {
+            "label": "2026-05-23_22-58-21",
+            "content": "package main\nimport (\n\t\"bufio\"\n\t\"fmt\"\n\t\"os\"\n\t\"unicode\"\n)\nfunc main() {\n\tscanner := bufio.NewScanner(os.Stdin)\n\tif scanner.Scan() {\n\t\ttexto := scanner.Text()\n\t\tresultado := make([]rune, 0, len(texto))\n\t\tfor _, caractere := range texto {\n\t\t\tif unicode.IsUpper(caractere) {\n\t\t\t\tresultado = append(resultado, unicode.ToLower(caractere))\n\t\t\t} else if unicode.IsLower(caractere) {\n\t\t\t\tresultado = append(resultado, unicode.ToUpper(caractere))\n\t\t\t} else {\n\t\t\t\tresultado = append(resultado, caractere)\n\t\t\t}\n\t\t}\n\t\tfmt.Println(string(resultado))\n\t}\n}\n",
+            "lines": "24"
+        }
+    ]
+}
