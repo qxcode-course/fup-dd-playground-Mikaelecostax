@@ -19,16 +19,18 @@ sources:
   writeable: false
   quests: null
 expanded:
-- fup@string
 - fup@list
-- fup@for2
-- fup@for_extra
+- fup@string
+- fup@base
+- fup@games
 flags:
   inbox: all
   panel: skills
-  show_panel: 'true'
   task_graph_mode: executions
   show_time: 'true'
+audit:
+  enabled: false
+  interval_seconds: null
 lang: go
-selected: fup@eribelton
-selected_index: 90
+selected: fup@base
+selected_index: 1

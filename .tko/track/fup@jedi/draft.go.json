@@ -1,0 +1,104 @@
+{
+    "patches": [
+        {
+            "label": "2026-06-01_17-19-57",
+            "content": "@@ -49,306 +49,32 @@\n nume\n-t int%0A    if _, err := fmt.Scan(%25numet); err != nil %7B%0A        return%0A    %7D%0A    Jedi := 0%0A    Sith := 0%0A    Empate := numet / 2 %0A    for i := 0; i %3C numet; i++ %7B%0A        var forca int %0A        fmt.Scan(&forca)%0A    %7D if i %3C Empate %7B%0A        Jedi += forca%0A    %7D else %7B %0A        Sith += forca%0A    %7D%0A    \n+l int%0A    var valorel int\n %0A%7D%0A\n",
+            "lines": "6"
+        },
+        {
+            "label": "2026-07-02_01-48-35",
+            "content": "@@ -348,155 +348,7 @@\n     \n-if Jedi %3E Sith %7B%0A        fmt.Println(%22Jedi%22)%0A    %7D else if Sith %3E Jedi%7B%0A        fmt.Println(%22Sith%22)%0A    %7D else %7B%0A        fmt.Println(%22Empate%22)%0A    %7D\n %0A%7D%0A\n",
+            "lines": "20"
+        },
+        {
+            "label": "2026-07-02_01-51-08",
+            "content": "@@ -77,17 +77,17 @@\n mt.Scan(\n-&\n+%25\n numet); \n@@ -260,21 +260,16 @@\n )%0A    %7D \n-%0A    \n if i %3C E\n",
+            "lines": "26"
+        },
+        {
+            "label": "2026-07-02_01-51-56",
+            "content": "@@ -260,16 +260,21 @@\n )%0A    %7D \n+%0A    \n if i %3C E\n",
+            "lines": "27"
+        },
+        {
+            "label": "2026-07-02_01-52-10",
+            "content": "@@ -258,16 +258,17 @@\n ca)%0A    \n+%7D\n  if i %3C \n",
+            "lines": "26"
+        },
+        {
+            "label": "2026-07-02_01-53-07",
+            "content": "@@ -494,10 +494,8 @@\n     %7D%0A%7D%0A\n-%7D%0A\n",
+            "lines": "26"
+        },
+        {
+            "label": "2026-07-02_01-53-15",
+            "content": "@@ -413,17 +413,16 @@\n h %3E Jedi\n- \n %7B%0A      \n",
+            "lines": "27"
+        },
+        {
+            "label": "2026-07-02_01-53-50",
+            "content": "@@ -54,16 +54,29 @@\n  int%0A   \n+ if _, err :=\n  fmt.Sca\n@@ -84,16 +84,51 @@\n (&numet)\n+; err != nil %7B%0A        return%0A    %7D\n %0A    Jed\n",
+            "lines": "27"
+        },
+        {
+            "label": "2026-07-02_01-56-46",
+            "content": "@@ -123,9 +123,11 @@\n umet\n-/\n+ / \n 2 %0A \n",
+            "lines": "25"
+        },
+        {
+            "label": "2026-07-02_01-57-18",
+            "content": "@@ -104,21 +104,21 @@\n = 0%0A    \n-metad\n+Empat\n e := num\n@@ -220,13 +220,13 @@\n i %3C \n-metad\n+Empat\n e %7B%0A\n",
+            "lines": "25"
+        },
+        {
+            "label": "2026-07-02_01-59-41",
+            "content": "@@ -293,13 +293,8 @@\n   %7D%0A\n-    %0A\n     \n",
+            "lines": "25"
+        },
+        {
+            "label": "2026-07-02_02-02-42",
+            "content": "@@ -80,65 +80,31 @@\n     \n-var \n Jedi \n-int\n+:= 0\n %0A    \n-var \n Sith \n-int %0A    fmt.Scan(&Jedi, &Sith)\n+:= 0\n %0A   \n@@ -289,16 +289,20 @@\n a%0A    %7D%0A\n+    \n %0A    if \n",
+            "lines": "26"
+        },
+        {
+            "label": "2026-07-02_02-04-34",
+            "content": "@@ -476,23 +476,8 @@\n e%22)%0A\n-        return%0A\n     \n",
+            "lines": "27"
+        },
+        {
+            "label": "2026-07-02_02-04-54",
+            "content": "@@ -373,31 +373,16 @@\n %22Jedi%22)%0A\n-        return%0A\n     %7D el\n",
+            "lines": "28"
+        },
+        {
+            "label": "2026-07-02_02-05-06",
+            "content": "@@ -444,31 +444,16 @@\n %22Sith%22)%0A\n-        return%0A\n     %7D el\n",
+            "lines": "29"
+        },
+        {
+            "label": "2026-07-02_02-05-15",
+            "content": "@@ -323,21 +323,16 @@\n a%0A    %7D%0A\n-    %7D\n %0A    if \n",
+            "lines": "30"
+        },
+        {
+            "label": "2026-07-02_02-10-25",
+            "content": "@@ -530,8 +530,10 @@\n     %7D%0A%7D%0A\n+%7D%0A\n",
+            "lines": "30"
+        },
+        {
+            "label": "2026-07-02_02-10-35",
+            "content": "@@ -378,16 +378,31 @@\n %22Jedi%22)%0A\n+        return%0A\n     %7D el\n@@ -449,16 +449,31 @@\n %22Sith%22)%0A\n+        return%0A\n     %7D el\n@@ -507,16 +507,31 @@\n mpate%22)%0A\n+        return%0A\n     %7D%0A%7D%0A\n",
+            "lines": "29"
+        },
+        {
+            "label": "2026-07-02_02-10-55",
+            "content": "@@ -80,31 +80,65 @@\n     \n+var \n Jedi \n-:= 0\n+int\n %0A    \n+var \n Sith \n-:= 0\n+int %0A    fmt.Scan(&Jedi, &Sith)\n %0A   \n",
+            "lines": "26"
+        },
+        {
+            "label": "2026-07-02_02-14-36",
+            "content": "package main\nimport \"fmt\"\nfunc main() {\n    var numet int\n    fmt.Scan(&numet)\n    Jedi := 0\n    Sith := 0\n    metade := numet/2 \n    for i := 0; i < numet; i++ {\n        var forca int \n        fmt.Scan(&forca)\n     if i < metade {\n        Jedi += forca\n    } else { \n        Sith += forca\n    }\n    }\n    if Jedi > Sith {\n        fmt.Println(\"Jedi\")\n    } else if Sith > Jedi {\n        fmt.Println(\"Sith\")\n    } else {\n        fmt.Println(\"Empate\")\n    }\n}\n",
+            "lines": "25"
+        }
+    ]
+}

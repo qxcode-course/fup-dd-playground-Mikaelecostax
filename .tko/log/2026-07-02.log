@@ -1,0 +1,41 @@
+2026-07-02 01:38:00, MOVE, v:1, k:fup@jedi, mode:PICK
+2026-07-02 01:42:02, MOVE, v:1, k:fup@jedi, mode:EDIT
+2026-07-02 01:47:04, MOVE, v:1, k:fup@jedi, mode:EDIT
+2026-07-02 01:48:35, EXEC, v:1, k:fup@jedi, mode:FULL, size:20, fail:COMP
+2026-07-02 01:48:44, EXEC, v:1, k:fup@jedi, mode:FULL, fail:COMP
+2026-07-02 01:51:08, EXEC, v:1, k:fup@jedi, mode:FULL, size:26, fail:COMP
+2026-07-02 01:51:11, EXEC, v:1, k:fup@jedi, mode:FULL, fail:COMP
+2026-07-02 01:51:21, EXEC, v:1, k:fup@jedi, mode:FULL, fail:COMP
+2026-07-02 01:51:56, EXEC, v:1, k:fup@jedi, mode:FULL, size:27, fail:COMP
+2026-07-02 01:51:52, MOVE, v:1, k:fup@jedi, mode:EDIT
+2026-07-02 01:52:10, EXEC, v:1, k:fup@jedi, mode:FULL, size:26, fail:COMP
+2026-07-02 01:53:07, EXEC, v:1, k:fup@jedi, mode:FULL, size:26, fail:COMP
+2026-07-02 01:53:15, EXEC, v:1, k:fup@jedi, mode:FULL, rate:0, size:27
+2026-07-02 01:53:50, EXEC, v:1, k:fup@jedi, mode:FULL, rate:0, size:27
+2026-07-02 01:56:46, EXEC, v:1, k:fup@jedi, mode:FULL, rate:0, size:25
+2026-07-02 01:57:04, MOVE, v:1, k:fup@jedi, mode:EDIT
+2026-07-02 01:56:46, MOVE, v:1, k:fup@jedi, mode:EDIT
+2026-07-02 01:57:18, EXEC, v:1, k:fup@jedi, mode:FULL, rate:0, size:25
+2026-07-02 01:59:41, EXEC, v:1, k:fup@jedi, mode:FULL, rate:0, size:25
+2026-07-02 01:59:43, EXEC, v:1, k:fup@jedi, mode:FULL, rate:0
+2026-07-02 01:59:43, MOVE, v:1, k:fup@jedi, mode:EDIT
+2026-07-02 01:59:38, MOVE, v:1, k:fup@jedi, mode:EDIT
+2026-07-02 02:02:42, EXEC, v:1, k:fup@jedi, mode:FULL, rate:0, size:26
+2026-07-02 02:04:34, EXEC, v:1, k:fup@jedi, mode:FULL, rate:0, size:27
+2026-07-02 02:04:54, EXEC, v:1, k:fup@jedi, mode:FULL, rate:16, size:28
+2026-07-02 02:05:06, EXEC, v:1, k:fup@jedi, mode:FULL, rate:50, size:29
+2026-07-02 02:05:15, EXEC, v:1, k:fup@jedi, mode:FULL, rate:66, size:30
+2026-07-02 02:05:14, MOVE, v:1, k:fup@jedi, mode:EDIT
+2026-07-02 02:05:14, MOVE, v:1, k:fup@jedi, mode:EDIT
+2026-07-02 02:10:25, EXEC, v:1, k:fup@jedi, mode:FULL, size:30, fail:COMP
+2026-07-02 02:10:35, EXEC, v:1, k:fup@jedi, mode:FULL, rate:66, size:29
+2026-07-02 02:10:55, EXEC, v:1, k:fup@jedi, mode:FULL, rate:66, size:26
+2026-07-02 02:11:23, EXEC, v:1, k:fup@jedi, mode:FULL, rate:66
+2026-07-02 02:10:53, MOVE, v:1, k:fup@jedi, mode:EDIT
+2026-07-02 02:11:23, MOVE, v:1, k:fup@jedi, mode:EDIT
+2026-07-02 02:14:36, EXEC, v:1, k:fup@jedi, mode:FULL, rate:100, size:25
+2026-07-02 02:14:47, EXEC, v:1, k:fup@jedi, mode:FULL, rate:100
+2026-07-02 02:14:49, MOVE, v:1, k:fup@jedi, mode:BACK
+2026-07-02 02:14:35, MOVE, v:1, k:fup@jedi, mode:EDIT
+2026-07-02 02:14:47, MOVE, v:1, k:fup@jedi, mode:EDIT
+2026-07-02 02:17:11, SELF, v:1, k:fup@jedi, self:1, rate:100, study:32, concept:1
