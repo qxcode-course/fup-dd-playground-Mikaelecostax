@@ -19,18 +19,18 @@ sources:
   writeable: false
   quests: null
 expanded:
-- fup@list
-- fup@string
 - fup@base
 - fup@games
+- fup@list
+- fup@string
 flags:
   inbox: all
   panel: skills
   task_graph_mode: executions
   show_time: 'true'
 audit:
-  enabled: false
+  enabled: true
   interval_seconds: null
 lang: go
-selected: fup@base
-selected_index: 1
+selected: fup@tres
+selected_index: 2
