@@ -1,0 +1,14 @@
+{
+    "patches": [
+        {
+            "label": "2026-07-07_20-49-39",
+            "content": "@@ -175,33 +175,37 @@\n for j := 0; j %3C \n-n\n+count\n ; j++ %7B%0A        \n",
+            "lines": "27"
+        },
+        {
+            "label": "2026-07-07_20-49-55",
+            "content": "package main\nimport \"fmt\"\nfunc main() {\n    var n int \n    fmt.Scan(&n)\n    matriz:= make([][]int, n)\n    for i := 0; i < n; i++ {\n        matriz[i] = make([]int, n)\n        for j := 0; j < n; j++ {\n            fmt.Scan(&matriz[i][j])\n        }\n    }\n    MS := -1\n    ColV := 0\n    for j := 0; j < n; j++ {\n        somac := 0\n        for i := 0; i < n; i++ {\n            elemento := matriz[i][j]\n            somac += elemento * elemento\n        }\n        if somac > MS{\n            MS = somac\n            ColV = j \n        }\n    }\n    fmt.Println(ColV)\n}\n",
+            "lines": "27"
+        }
+    ]
+}

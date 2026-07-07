@@ -1,0 +1,34 @@
+{
+    "patches": [
+        {
+            "label": "2026-07-07_21-29-50",
+            "content": "@@ -276,17 +276,16 @@\n ocor := \n-0\n %0A    for\n",
+            "lines": "26"
+        },
+        {
+            "label": "2026-07-07_21-30-10",
+            "content": "@@ -598,14 +598,11 @@\n fmt.\n-Printl\n+Sca\n n(to\n",
+            "lines": "26"
+        },
+        {
+            "label": "2026-07-07_21-30-31",
+            "content": "@@ -338,10 +338,8 @@\n %3C nl\n--1\n ; i+\n@@ -383,96 +383,8 @@\n %5Bj%5D%0A\n-            if matriz%5Bi%5D%5Bj%5D %3E matriz%5Bi+1%5D%5Bj%5D%7B%0A                totalocor++%0A            %7D%0A\n     \n",
+            "lines": "26"
+        },
+        {
+            "label": "2026-07-07_21-33-18",
+            "content": "@@ -465,24 +465,211 @@\n           %7D%0A\n+            for k := i +1; k %3C nl; k++ %7B%0A                soldadob := matriz%5Bk%5D%5Bj%5D%0A                if soldadoc %3E soldadob %7B%0A                    totalocor++%0A                %7D%0A            %7D%0A\n         %7D%0A  \n",
+            "lines": "29"
+        },
+        {
+            "label": "2026-07-07_21-34-23",
+            "content": "@@ -336,32 +336,69 @@\n i %3C nl-1; i++ %7B%0A\n+            soldadoc := matriz%5Bi%5D%5Bj%5D%0A\n             if m\n",
+            "lines": "23"
+        },
+        {
+            "label": "2026-07-07_21-34-45",
+            "content": "package main\nimport \"fmt\"\nfunc main() {\n    var nl, nc int\n    fmt.Scan(&nl, &nc)\n    matriz := make([][]int, nl)\n    for i := 0; i < nl; i++ {\n        matriz[i] = make([]int, nc)\n        for j := 0; j < nc; j++ {\n            fmt.Scan(&matriz[i][j])\n        }\n    }\n    totalocor := 0\n    for j := 0; j < nc; j++ {\n        for i := 0; i < nl-1; i++ {\n            if matriz[i][j] > matriz[i+1][j]{\n                totalocor++\n            }\n        }\n    }\n        fmt.Println(totalocor)\n}\n",
+            "lines": "22"
+        }
+    ]
+}

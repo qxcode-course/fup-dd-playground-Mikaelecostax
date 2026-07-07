@@ -1,0 +1,49 @@
+{
+    "patches": [
+        {
+            "label": "2026-07-07_21-53-39",
+            "content": "@@ -742,18 +742,16 @@\n soma, %22 \n-%5B%5D\n %22)%0A     \n",
+            "lines": "31"
+        },
+        {
+            "label": "2026-07-07_21-53-54",
+            "content": "@@ -747,11 +747,9 @@\n  %22 %5B\n- %5D \n+%5D\n %22)%0A \n",
+            "lines": "31"
+        },
+        {
+            "label": "2026-07-07_21-54-07",
+            "content": "@@ -741,16 +741,20 @@\n (soma, %22\n+ %5B %5D\n  %22)%0A    \n",
+            "lines": "31"
+        },
+        {
+            "label": "2026-07-07_21-54-19",
+            "content": "@@ -685,14 +685,12 @@\n int(\n-%5B\n soma\n-%5D\n )%0A  \n",
+            "lines": "31"
+        },
+        {
+            "label": "2026-07-07_21-54-43",
+            "content": "@@ -685,16 +685,14 @@\n int(\n-%22%5B%5D%22\n+%5B\n soma\n+%5D\n )%0A  \n",
+            "lines": "31"
+        },
+        {
+            "label": "2026-07-07_21-55-04",
+            "content": "@@ -685,18 +685,16 @@\n int(%22%5B%5D%22\n-, \n soma)%0A  \n",
+            "lines": "31"
+        },
+        {
+            "label": "2026-07-07_21-55-14",
+            "content": "@@ -677,24 +677,30 @@\n   fmt.Print(\n+%22%5B%5D%22, \n soma)%0A      \n",
+            "lines": "31"
+        },
+        {
+            "label": "2026-07-07_21-55-25",
+            "content": "@@ -539,32 +539,8 @@\n + %7B%0A\n-        fmt.Print(%22%5B %22)%0A\n     \n@@ -793,12 +793,8 @@\n tln(\n-%22 %5D%22\n )%0A  \n",
+            "lines": "31"
+        },
+        {
+            "label": "2026-07-07_21-56-44",
+            "content": "package main\nimport \"fmt\"\nfunc main() {\n    var linhas, colunas int\n    fmt.Scan(&linhas, &colunas)\n    matrizA:= make([][]int, linhas)\n    for i := 0; i < linhas; i++ {\n        matrizA[i] = make([]int, colunas)\n        for j := 0; j < colunas; j++ {\n            fmt.Scan(&matrizA[i][j])\n        }\n    }\n    matrizB := make([][]int,linhas)\n    for i := 0; i < linhas; i++ {\n        matrizB[i] = make([]int, colunas)\n        for j := 0; j < colunas; j++ {\n            fmt.Scan(&matrizB[i][j])\n        }\n    }\n    for i := 0; i < linhas; i++ {\n        fmt.Print(\"[ \")\n        for j := 0; j < colunas; j++ {\n            soma:= matrizA[i][j] + matrizB[i][j]\n            if j == colunas-1 {\n                fmt.Print(soma)\n            } else {\n                fmt.Print(soma, \" \")\n            }\n        }\n        fmt.Println(\" ]\")\n    }\n}\n",
+            "lines": "32"
+        }
+    ]
+}

@@ -1,0 +1,9 @@
+{
+    "patches": [
+        {
+            "label": "2026-07-07_22-36-57",
+            "content": "package main\nimport \"fmt\"\ntype restaurante struct {\n    nome string\n    pontos int\n}\nfunc encontrarMP(restaurantes []restaurante) string {\n    vencedor := restaurantes[0]\n    for i := 1; i < len(restaurantes); i++ {\n        atual := restaurantes[i]\n        if atual.pontos > vencedor.pontos {\n            vencedor = atual\n        } else if atual.pontos == vencedor.pontos {\n            if atual.nome < vencedor.nome {\n                vencedor = atual\n            }\n        }\n    }\n    return vencedor.nome\n}\nfunc main () {\n    var n int\n    fmt.Scan(&n)\n    restaurantes := make([]restaurante, n)\n    for i := 0; i < n; i++ {\n        fmt.Scan(&restaurantes[i].nome, &restaurantes[i].pontos)\n    }\n    vencedornome := encontrarMP(restaurantes)\n    fmt.Println(vencedornome)\n}\n",
+            "lines": "30"
+        }
+    ]
+}

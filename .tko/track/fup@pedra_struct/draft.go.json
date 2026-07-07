@@ -1,0 +1,39 @@
+{
+    "patches": [
+        {
+            "label": "2026-07-07_22-03-25",
+            "content": "@@ -70,51 +70,8 @@\n int%0A\n-     var a, b int%0A        fmt.Scan(&a, &b)%0A\n     \n@@ -147,16 +147,62 @@\n ; i++ %7B%0A\n+        var a, b int%0A        fmt.Scan(&a, &b)%0A\n         \n",
+            "lines": "32"
+        },
+        {
+            "label": "2026-07-07_22-03-55",
+            "content": "@@ -404,17 +404,17 @@\n cedor = \n-1\n+i\n %0A    %7D%0A \n",
+            "lines": "32"
+        },
+        {
+            "label": "2026-07-07_22-04-01",
+            "content": "@@ -23,16 +23,29 @@\n %0A%09%22fmt%22%0A\n+%09%22math/bits%22%0A\n )%0Afunc m\n",
+            "lines": "32"
+        },
+        {
+            "label": "2026-07-07_22-04-17",
+            "content": "@@ -27,21 +27,8 @@\n mt%22%0A\n-%09%22math/bits%22%0A\n )%0Afu\n@@ -49,24 +49,67 @@\n   var n int%0A\n+     var a, b int%0A        fmt.Scan(&a, &b)%0A\n     fmt.Scan\n@@ -148,16 +148,16 @@\n  999999%0A\n+\n     for \n@@ -181,54 +181,8 @@\n + %7B%0A\n-        var a, b int%0A        fmt.Scan(&a, &b)%0A\n     \n@@ -395,17 +395,20 @@\n r = \n-i\n+1\n %0A    %7D%0A\n-%7D\n+    \n if v\n",
+            "lines": "31"
+        },
+        {
+            "label": "2026-07-07_22-06-10",
+            "content": "@@ -17,16 +17,18 @@\n port\n+ (\n %0A%09%22fmt%22%0A\n func\n@@ -23,16 +23,31 @@\n %0A%09%22fmt%22%0A\n+%09%22math/bits%22%0A)%0A\n func mai\n@@ -416,19 +416,16 @@\n %0A    %7D%0A%7D\n-   \n if vence\n",
+            "lines": "32"
+        },
+        {
+            "label": "2026-07-07_22-06-50",
+            "content": "@@ -233,24 +233,30 @@\n e%0A        %7D%0A\n+    %7D%0A\n     diferenc\n@@ -398,19 +398,18 @@\n i%0A    %7D%0A\n+%7D\n  \n-%7D%0A\n   if ven\n",
+            "lines": "30"
+        },
+        {
+            "label": "2026-07-07_22-08-38",
+            "content": "package main\n\nimport\n\t\"fmt\"\nfunc main() {\n    var n int\n    fmt.Scan(&n)\n    vencedor:= -1\n    MP := 999999\n    for i := 0; i < n; i++ {\n        var a, b int\n        fmt.Scan(&a, &b)\n        if a < 10 || b < 10 {\n            continue\n        }\n    diferenca := a-b\n    if diferenca < 0 {\n        diferenca = -diferenca\n    }\n    if diferenca < MP {\n        MP = diferenca\n        vencedor = i\n    }\n }\n  if vencedor == -1 {\n        fmt.Println(\"sem ganhador\")\n    } else {\n        fmt.Println(vencedor)\n    }\n}\n",
+            "lines": "30"
+        }
+    ]
+}

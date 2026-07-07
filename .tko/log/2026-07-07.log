@@ -100,3 +100,146 @@
 2026-07-07 03:09:38, SELF, v:1, k:fup@imperador, self:1, rate:100, study:23, concept:1
 2026-07-07 03:09:46, MOVE, v:1, k:fup@coluna, mode:DOWN
 2026-07-07 03:09:47, MOVE, v:1, k:fup@coluna, mode:PICK
+2026-07-07 03:09:18, MOVE, v:1, k:fup@imperador, mode:EDIT
+2026-07-07 03:09:23, MOVE, v:1, k:fup@imperador, mode:EDIT
+2026-07-07 03:09:46, MOVE, v:1, k:fup@coluna, mode:EDIT
+2026-07-07 03:10:25, MOVE, v:1, k:fup@coluna, mode:EDIT
+2026-07-07 20:40:49, MOVE, v:1, k:fup@coluna, mode:PICK
+2026-07-07 20:45:32, MOVE, v:1, k:fup@coluna, mode:EDIT
+2026-07-07 20:49:39, EXEC, v:1, k:fup@coluna, mode:FULL, size:27, fail:COMP
+2026-07-07 20:49:55, EXEC, v:1, k:fup@coluna, mode:FULL, rate:100, size:27
+2026-07-07 20:49:57, MOVE, v:1, k:fup@coluna, mode:BACK
+2026-07-07 20:50:05, SELF, v:1, k:fup@coluna, self:1, rate:100, concept:1
+2026-07-07 20:50:14, MOVE, v:1, k:fup@quadrado, mode:DOWN
+2026-07-07 20:50:16, MOVE, v:1, k:fup@quadrado, mode:PICK
+2026-07-07 20:49:53, MOVE, v:1, k:fup@coluna, mode:EDIT
+2026-07-07 20:49:55, MOVE, v:1, k:fup@coluna, mode:EDIT
+2026-07-07 20:50:14, MOVE, v:1, k:fup@quadrado, mode:EDIT
+2026-07-07 20:55:36, MOVE, v:1, k:fup@quadrado, mode:EDIT
+2026-07-07 20:59:45, MOVE, v:1, k:fup@quadrado, mode:EDIT
+2026-07-07 21:05:30, MOVE, v:1, k:fup@quadrado, mode:EDIT
+2026-07-07 21:06:22, EXEC, v:1, k:fup@quadrado, mode:FULL, size:37, fail:COMP
+2026-07-07 21:06:23, EXEC, v:1, k:fup@quadrado, mode:FULL, fail:COMP
+2026-07-07 21:06:24, EXEC, v:1, k:fup@quadrado, mode:FULL, fail:COMP
+2026-07-07 21:06:25, EXEC, v:1, k:fup@quadrado, mode:FULL, fail:COMP
+2026-07-07 21:06:26, EXEC, v:1, k:fup@quadrado, mode:FULL, fail:COMP
+2026-07-07 21:06:27, EXEC, v:1, k:fup@quadrado, mode:FULL, fail:COMP
+2026-07-07 21:06:27, EXEC, v:1, k:fup@quadrado, mode:FULL, fail:COMP
+2026-07-07 21:06:27, EXEC, v:1, k:fup@quadrado, mode:FULL, fail:COMP
+2026-07-07 21:06:27, EXEC, v:1, k:fup@quadrado, mode:FULL, fail:COMP
+2026-07-07 21:06:28, EXEC, v:1, k:fup@quadrado, mode:FULL, fail:COMP
+2026-07-07 21:06:28, EXEC, v:1, k:fup@quadrado, mode:FULL, fail:COMP
+2026-07-07 21:07:28, EXEC, v:1, k:fup@quadrado, mode:FULL, rate:100, size:37
+2026-07-07 21:07:29, MOVE, v:1, k:fup@quadrado, mode:BACK
+2026-07-07 21:07:38, SELF, v:1, k:fup@quadrado, self:1, rate:100, concept:1
+2026-07-07 21:08:14, MOVE, v:1, k:fup@pedra_struct, mode:DOWN
+2026-07-07 21:08:15, MOVE, v:1, k:fup@pedra_struct, mode:PICK
+2026-07-07 21:10:24, MOVE, v:1, k:fup@pedra_struct, mode:BACK
+2026-07-07 21:10:30, MOVE, v:1, k:fup@boletim, mode:DOWN
+2026-07-07 21:10:30, MOVE, v:1, k:fup@boletim, mode:PICK
+2026-07-07 21:06:50, MOVE, v:1, k:fup@quadrado, mode:EDIT
+2026-07-07 21:07:28, MOVE, v:1, k:fup@quadrado, mode:EDIT
+2026-07-07 21:08:14, MOVE, v:1, k:fup@pedra_struct, mode:EDIT
+2026-07-07 21:08:14, MOVE, v:1, k:fup@pedra_struct, mode:EDIT
+2026-07-07 21:10:30, MOVE, v:1, k:fup@boletim, mode:EDIT
+2026-07-07 21:13:39, EXEC, v:1, k:fup@boletim, mode:FULL, rate:100, size:13
+2026-07-07 21:13:40, MOVE, v:1, k:fup@boletim, mode:BACK
+2026-07-07 21:13:48, SELF, v:1, k:fup@boletim, self:1, rate:100
+2026-07-07 21:13:54, MOVE, v:1, k:fup@soldados, mode:DOWN
+2026-07-07 21:13:55, MOVE, v:1, k:fup@soldados, mode:PICK
+2026-07-07 21:13:33, MOVE, v:1, k:fup@boletim, mode:EDIT
+2026-07-07 21:13:39, MOVE, v:1, k:fup@boletim, mode:EDIT
+2026-07-07 21:13:54, MOVE, v:1, k:fup@soldados, mode:EDIT
+2026-07-07 21:15:37, MOVE, v:1, k:fup@soldados, mode:EDIT
+2026-07-07 21:20:38, MOVE, v:1, k:fup@soldados, mode:EDIT
+2026-07-07 21:23:24, MOVE, v:1, k:fup@soldados, mode:EDIT
+2026-07-07 21:29:49, EXEC, v:1, k:fup@soldados, mode:FULL, size:26, fail:COMP
+2026-07-07 21:29:49, EXEC, v:1, k:fup@soldados, mode:FULL, size:26, fail:COMP
+2026-07-07 21:29:50, EXEC, v:1, k:fup@soldados, mode:FULL, size:26, fail:COMP
+2026-07-07 21:29:50, EXEC, v:1, k:fup@soldados, mode:FULL, size:26, fail:COMP
+2026-07-07 21:29:50, EXEC, v:1, k:fup@soldados, mode:FULL, size:26, fail:COMP
+2026-07-07 21:29:51, EXEC, v:1, k:fup@soldados, mode:FULL, fail:COMP
+2026-07-07 21:29:51, EXEC, v:1, k:fup@soldados, mode:FULL, fail:COMP
+2026-07-07 21:29:51, EXEC, v:1, k:fup@soldados, mode:FULL, fail:COMP
+2026-07-07 21:29:52, EXEC, v:1, k:fup@soldados, mode:FULL, fail:COMP
+2026-07-07 21:29:52, EXEC, v:1, k:fup@soldados, mode:FULL, fail:COMP
+2026-07-07 21:29:52, EXEC, v:1, k:fup@soldados, mode:FULL, fail:COMP
+2026-07-07 21:29:52, EXEC, v:1, k:fup@soldados, mode:FULL, fail:COMP
+2026-07-07 21:29:52, EXEC, v:1, k:fup@soldados, mode:FULL, fail:COMP
+2026-07-07 21:29:52, EXEC, v:1, k:fup@soldados, mode:FULL, fail:COMP
+2026-07-07 21:29:52, EXEC, v:1, k:fup@soldados, mode:FULL, fail:COMP
+2026-07-07 21:29:52, EXEC, v:1, k:fup@soldados, mode:FULL, fail:COMP
+2026-07-07 21:29:53, EXEC, v:1, k:fup@soldados, mode:FULL, fail:COMP
+2026-07-07 21:29:53, EXEC, v:1, k:fup@soldados, mode:FULL, fail:COMP
+2026-07-07 21:29:53, EXEC, v:1, k:fup@soldados, mode:FULL, fail:COMP
+2026-07-07 21:30:10, EXEC, v:1, k:fup@soldados, mode:FULL, rate:0, size:26
+2026-07-07 21:30:12, EXEC, v:1, k:fup@soldados, mode:FULL, rate:0
+2026-07-07 21:30:31, EXEC, v:1, k:fup@soldados, mode:FULL, rate:28, size:26
+2026-07-07 21:30:31, MOVE, v:1, k:fup@soldados, mode:EDIT
+2026-07-07 21:30:31, MOVE, v:1, k:fup@soldados, mode:EDIT
+2026-07-07 21:33:18, EXEC, v:1, k:fup@soldados, mode:FULL, rate:14, size:29
+2026-07-07 21:34:23, EXEC, v:1, k:fup@soldados, mode:FULL, size:23, fail:COMP
+2026-07-07 21:34:45, EXEC, v:1, k:fup@soldados, mode:FULL, rate:100, size:22
+2026-07-07 21:34:47, MOVE, v:1, k:fup@soldados, mode:BACK
+2026-07-07 21:34:54, SELF, v:1, k:fup@soldados, self:1, rate:100, concept:1
+2026-07-07 21:35:12, MOVE, v:1, k:fup@simetrica, mode:DOWN
+2026-07-07 21:35:14, MOVE, v:1, k:fup@simetrica, mode:PICK
+2026-07-07 21:34:44, MOVE, v:1, k:fup@soldados, mode:EDIT
+2026-07-07 21:34:45, MOVE, v:1, k:fup@soldados, mode:EDIT
+2026-07-07 21:35:12, MOVE, v:1, k:fup@simetrica, mode:EDIT
+2026-07-07 21:40:37, MOVE, v:1, k:fup@simetrica, mode:EDIT
+2026-07-07 21:41:34, EXEC, v:1, k:fup@simetrica, mode:FULL, rate:33, size:21
+2026-07-07 21:41:38, EXEC, v:1, k:fup@simetrica, mode:FULL, rate:33
+2026-07-07 21:41:39, EXEC, v:1, k:fup@simetrica, mode:FULL, rate:33
+2026-07-07 21:41:52, EXEC, v:1, k:fup@simetrica, mode:FULL, rate:100, size:21
+2026-07-07 21:41:54, MOVE, v:1, k:fup@simetrica, mode:BACK
+2026-07-07 21:42:01, SELF, v:1, k:fup@simetrica, self:1, rate:100
+2026-07-07 21:44:06, MOVE, v:1, k:fup@matrizes, mode:DOWN
+2026-07-07 21:44:06, MOVE, v:1, k:fup@matrizes, mode:PICK
+2026-07-07 21:41:51, MOVE, v:1, k:fup@simetrica, mode:EDIT
+2026-07-07 21:41:52, MOVE, v:1, k:fup@simetrica, mode:EDIT
+2026-07-07 21:44:06, MOVE, v:1, k:fup@matrizes, mode:EDIT
+2026-07-07 21:50:33, MOVE, v:1, k:fup@matrizes, mode:EDIT
+2026-07-07 21:53:39, EXEC, v:1, k:fup@matrizes, mode:FULL, rate:0, size:31
+2026-07-07 21:53:54, EXEC, v:1, k:fup@matrizes, mode:FULL, rate:0, size:31
+2026-07-07 21:54:07, EXEC, v:1, k:fup@matrizes, mode:FULL, rate:0, size:31
+2026-07-07 21:54:19, EXEC, v:1, k:fup@matrizes, mode:FULL, rate:0, size:31
+2026-07-07 21:54:44, EXEC, v:1, k:fup@matrizes, mode:FULL, size:31, fail:COMP
+2026-07-07 21:55:04, EXEC, v:1, k:fup@matrizes, mode:FULL, size:31, fail:COMP
+2026-07-07 21:55:06, EXEC, v:1, k:fup@matrizes, mode:FULL, fail:COMP
+2026-07-07 21:55:14, EXEC, v:1, k:fup@matrizes, mode:FULL, rate:0, size:31
+2026-07-07 21:55:25, EXEC, v:1, k:fup@matrizes, mode:FULL, rate:0, size:31
+2026-07-07 21:55:23, MOVE, v:1, k:fup@matrizes, mode:EDIT
+2026-07-07 21:55:25, MOVE, v:1, k:fup@matrizes, mode:EDIT
+2026-07-07 21:56:44, EXEC, v:1, k:fup@matrizes, mode:FULL, rate:100, size:32
+2026-07-07 21:56:46, MOVE, v:1, k:fup@matrizes, mode:BACK
+2026-07-07 21:56:53, SELF, v:1, k:fup@matrizes, self:1, rate:100, concept:1
+2026-07-07 21:57:32, MOVE, v:1, k:fup@pedra_struct, mode:PICK
+2026-07-07 21:56:43, MOVE, v:1, k:fup@matrizes, mode:EDIT
+2026-07-07 21:56:44, MOVE, v:1, k:fup@matrizes, mode:EDIT
+2026-07-07 22:00:39, MOVE, v:1, k:fup@pedra_struct, mode:EDIT
+2026-07-07 22:03:25, EXEC, v:1, k:fup@pedra_struct, mode:FULL, size:32, fail:COMP
+2026-07-07 22:03:55, EXEC, v:1, k:fup@pedra_struct, mode:FULL, size:32, fail:COMP
+2026-07-07 22:03:56, EXEC, v:1, k:fup@pedra_struct, mode:FULL, fail:COMP
+2026-07-07 22:04:01, EXEC, v:1, k:fup@pedra_struct, mode:FULL, size:32, fail:COMP
+2026-07-07 22:04:02, EXEC, v:1, k:fup@pedra_struct, mode:FULL, fail:COMP
+2026-07-07 22:04:17, EXEC, v:1, k:fup@pedra_struct, mode:FULL, rate:66, size:31
+2026-07-07 22:05:31, MOVE, v:1, k:fup@pedra_struct, mode:EDIT
+2026-07-07 22:04:16, MOVE, v:1, k:fup@pedra_struct, mode:EDIT
+2026-07-07 22:06:10, EXEC, v:1, k:fup@pedra_struct, mode:FULL, size:32, fail:COMP
+2026-07-07 22:06:11, EXEC, v:1, k:fup@pedra_struct, mode:FULL, fail:COMP
+2026-07-07 22:06:50, EXEC, v:1, k:fup@pedra_struct, mode:FULL, size:30, fail:COMP
+2026-07-07 22:08:38, EXEC, v:1, k:fup@pedra_struct, mode:FULL, rate:100, size:30
+2026-07-07 22:08:40, MOVE, v:1, k:fup@pedra_struct, mode:BACK
+2026-07-07 22:08:47, SELF, v:1, k:fup@pedra_struct, self:1, rate:100, concept:1
+2026-07-07 22:09:19, MOVE, v:1, k:fup@pizza, mode:DOWN
+2026-07-07 22:09:20, MOVE, v:1, k:fup@pizza, mode:PICK
+2026-07-07 22:08:37, MOVE, v:1, k:fup@pedra_struct, mode:EDIT
+2026-07-07 22:08:38, MOVE, v:1, k:fup@pedra_struct, mode:EDIT
+2026-07-07 22:09:19, MOVE, v:1, k:fup@pizza, mode:EDIT
+2026-07-07 22:10:39, MOVE, v:1, k:fup@pizza, mode:EDIT
+2026-07-07 22:15:40, MOVE, v:1, k:fup@pizza, mode:EDIT
+2026-07-07 22:18:23, MOVE, v:1, k:fup@pizza, mode:EDIT
+2026-07-07 22:36:57, EXEC, v:1, k:fup@pizza, mode:FULL, rate:100, size:30
+2026-07-07 22:37:00, MOVE, v:1, k:fup@pizza, mode:BACK
+2026-07-07 22:37:16, SELF, v:1, k:fup@pizza, self:1, rate:100, concept:1

@@ -1,0 +1,14 @@
+{
+    "patches": [
+        {
+            "label": "2026-07-07_21-41-34",
+            "content": "@@ -419,17 +419,16 @@\n ntln(%22na\n-o\n %22)%0A    %7D\n",
+            "lines": "21"
+        },
+        {
+            "label": "2026-07-07_21-41-52",
+            "content": "package main\nimport \"fmt\"\nfunc main() {\n    var matriz [3][3]int \n    for i := 0; i < 3; i++ {\n        for j := 0; j < 3; j++ {\n            fmt.Scan(&matriz[i][j])\n        }\n    }\n    simetrica := true\n    if matriz[0][1] != matriz[1][0] ||\n    matriz[0][2] != matriz[2][0] ||\n    matriz[1][2] != matriz[2][1] {\n        simetrica = false\n    }\n    if simetrica {\n        fmt.Println(\"sim\")\n    } else {\n        fmt.Println(\"nao\")\n    }\n}\n",
+            "lines": "21"
+        }
+    ]
+}

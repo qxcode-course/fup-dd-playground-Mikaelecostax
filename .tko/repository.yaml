@@ -24,6 +24,7 @@ expanded:
 - fup@mat
 - fup@games
 - fup@list
+- fup@struct
 flags:
   inbox: all
   panel: skills
@@ -33,5 +34,5 @@ audit:
   enabled: true
   interval_seconds: null
 lang: go
-selected: fup@imperador
-selected_index: 121
+selected: fup@pizza
+selected_index: 137
