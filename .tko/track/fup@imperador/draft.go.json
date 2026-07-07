@@ -1,0 +1,44 @@
+{
+    "patches": [
+        {
+            "label": "2026-07-07_02-59-20",
+            "content": "@@ -532,16 +532,17 @@\n         \n+%7D\n %0A       \n@@ -923,10 +923,9 @@\n     %7D%0A%7D%0A\n-%7D\n %0A\n",
+            "lines": "44"
+        },
+        {
+            "label": "2026-07-07_03-02-04",
+            "content": "@@ -745,24 +745,25 @@\n       %7D%0A    \n+%7D\n  %0A    if PG \n@@ -920,14 +920,12 @@\n )%0A    %7D%0A%7D%0A%7D%0A\n-%7D%0A\n",
+            "lines": "44"
+        },
+        {
+            "label": "2026-07-07_03-02-56",
+            "content": "@@ -749,17 +749,16 @@\n   %7D%0A    \n-%7D\n  %0A    if\n@@ -921,9 +921,12 @@\n     %7D%0A%7D%0A\n+%7D%0A%7D\n %0A\n",
+            "lines": "45"
+        },
+        {
+            "label": "2026-07-07_03-03-33",
+            "content": "@@ -922,10 +922,9 @@\n     %7D%0A%7D%0A\n-%7D\n %0A\n",
+            "lines": "44"
+        },
+        {
+            "label": "2026-07-07_03-03-41",
+            "content": "@@ -752,22 +752,16 @@\n %0A    %7D %0A\n-    %7D%0A\n     if P\n@@ -922,8 +922,10 @@\n     %7D%0A%7D%0A\n+%7D%0A\n",
+            "lines": "44"
+        },
+        {
+            "label": "2026-07-07_03-05-38",
+            "content": "@@ -468,21 +468,8 @@\n  if \n-LL != -1 && (\n i ==\n@@ -482,17 +482,17 @@\n  j == CL\n-)\n+ \n %7B%0A      \n",
+            "lines": "44"
+        },
+        {
+            "label": "2026-07-07_03-08-36",
+            "content": "@@ -655,17 +655,21 @@\n if i\n-+\n+ + \n j == n\n--1\n+ - i\n  %7B%0A \n",
+            "lines": "44"
+        },
+        {
+            "label": "2026-07-07_03-09-23",
+            "content": "package main\nimport \"fmt\"\nfunc main() {\n    var n int\n    fmt.Scan(&n)\n    arena:= make([][]string, n)\n    LL, CL := -1, -1\n    for i := 0; i < n; i++ {\n        arena[i] = make([]string, n)\n        for j := 0; j < n; j++ {\n            fmt.Scan(&arena[i][j])\n            if arena[i][j]== \"L\" {\n                LL = i\n                CL = j\n            }\n        }\n    }\n    PG := 0\n    PC := 0\n    for i := 0; i <n; i ++ {\n        for j := 0; j < n ; j++ {\n            if LL != -1 && (i == LL || j == CL){\n                continue\n            }\n        \n        if arena[i][j] == \"G\"{\n            PG += 2\n        } else if arena[i][j] == \"C\"{\n            if i+j == n-1 {\n                PC +=2\n            } else {\n                PC +=1\n            }\n        }\n    } \n    }\n    if PG > PC {\n        fmt.Println(\"Gladiadores\")\n    } else if PC > PG {\n        fmt.Println(\"Condenados a morte\")\n    } else {\n        fmt.Println(\"Ninguem\")\n    }\n}\n",
+            "lines": "44"
+        }
+    ]
+}

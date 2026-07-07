@@ -1,0 +1,19 @@
+{
+    "patches": [
+        {
+            "label": "2026-07-07_01-28-34",
+            "content": "@@ -646,233 +646,8 @@\n ing%0A\n-        if letrascorrespondentes == totalLP %7B%0A            resultado = %22chefe%22%0A        %7D else if letrascorrespondentes*2 %3E totalLP %7B%0A            resultado = %22ultron%22%0A        %7D else %7B%0A            resultado = %22pessoa%22%0A        %7D%0A\n     \n@@ -664,16 +664,16 @@\n meiro %7B%0A\n+\n         \n@@ -821,16 +821,28 @@\n rintln(%0A\n+            \n %0A       \n",
+            "lines": "38"
+        },
+        {
+            "label": "2026-07-07_01-31-48",
+            "content": "@@ -606,24 +606,25 @@\n = len(pessoa\n+l\n )%0A        va\n@@ -1045,12 +1045,22 @@\n Println(\n+%0A%0A        \n )%0A%7D%0A\n",
+            "lines": "45"
+        },
+        {
+            "label": "2026-07-07_01-33-01",
+            "content": "package main\nimport (\"fmt\"\n    \"strings\" )\nfunc main() {\n    var cou string\n    var pessoa string\n    fmt.Scanln(&cou)\n    ultronl := strings.ToLower(cou)\n    letrasul := make(map[rune]bool)\n    for _, letra := range ultronl{\n        letrasul[letra] = true\n    }\n    primeiro := true\n    for {\n        _, err := fmt.Scan(&pessoa)\n        if err != nil {\n            break\n        }\n        pL := strings.ToLower(pessoa)\n        letrascorrespondentes := 0 \n        for _, letra := range pL {\n            if letrasul[letra]{\n                letrascorrespondentes ++\n            }\n        }\n        totalLP := len(pessoa)\n        var resultado string\n        if letrascorrespondentes == totalLP {\n            resultado = \"chefe\"\n        } else if letrascorrespondentes*2 > totalLP {\n            resultado = \"ultron\"\n        } else {\n            resultado = \"pessoa\"\n        }\n        if primeiro {\n            fmt.Print(resultado)\n            primeiro = false \n        } else {\n            fmt.Print(\" \" + resultado)\n        }\n    } \n        fmt.Println()\n}\n",
+            "lines": "43"
+        }
+    ]
+}

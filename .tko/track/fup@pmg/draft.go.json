@@ -1,0 +1,89 @@
+{
+    "patches": [
+        {
+            "label": "2026-07-06_23-16-47",
+            "content": "@@ -289,16 +289,16 @@\n 2f%5Cn\n-%22\n , media\n+%22\n )%0A  \n",
+            "lines": "23"
+        },
+        {
+            "label": "2026-07-06_23-17-45",
+            "content": "@@ -57,33 +57,8 @@\n nt %0A\n-    var resultado string%0A\n     \n@@ -377,26 +377,24 @@\n     \n-resultado += %22P%5Cn%22\n+fmt.Println(%22P%22)\n %0A   \n@@ -444,26 +444,25 @@\n     \n-resultado += %22G%5Cn%22\n+ fmt.Println(%22G%22)\n %0A   \n@@ -491,68 +491,39 @@\n     \n-resultado += %22M%5Cn%22%0A        %7D%0A    %7D%0A    fmt.Println(resultado)\n+fmt.Println(%22M%22)%0A        %7D%0A    %7D\n %0A%7D%0A\n",
+            "lines": "23"
+        },
+        {
+            "label": "2026-07-06_23-24-21",
+            "content": "@@ -563,17 +563,18 @@\n mt.Print\n-f\n+ln\n (resulta\n",
+            "lines": "25"
+        },
+        {
+            "label": "2026-07-06_23-24-36",
+            "content": "@@ -565,17 +565,16 @@\n .Printf(\n-%22\n resultad\n@@ -574,13 +574,12 @@\n esultado\n-%22\n )%0A%7D%0A\n",
+            "lines": "25"
+        },
+        {
+            "label": "2026-07-06_23-24-55",
+            "content": "@@ -565,16 +565,17 @@\n .Printf(\n+%22\n resultad\n@@ -575,12 +575,13 @@\n esultado\n+%22\n )%0A%7D%0A\n",
+            "lines": "25"
+        },
+        {
+            "label": "2026-07-06_23-25-10",
+            "content": "@@ -53,16 +53,41 @@\n ts int %0A\n+    var resultado string%0A\n     fmt.\n@@ -401,23 +401,27 @@\n     \n-fmt.Print(%22P %22)\n+ resultado += %22P%5Cn%22\n %0A   \n@@ -471,23 +471,26 @@\n     \n-fmt.Print(%22G %22)\n+resultado += %22G%5Cn%22\n %0A   \n@@ -518,23 +518,27 @@\n     \n-fmt.Print(%22M %22)\n+ resultado += %22M%5Cn%22\n %0A   \n@@ -567,11 +567,19 @@\n rint\n-ln(\n+f(resultado\n )%0A%7D%0A\n",
+            "lines": "25"
+        },
+        {
+            "label": "2026-07-06_23-27-21",
+            "content": "@@ -384,16 +384,17 @@\n Print(%22P\n+ \n %22)%0A     \n@@ -450,16 +450,17 @@\n Print(%22G\n+ \n %22)%0A     \n@@ -494,16 +494,17 @@\n Print(%22M\n+ \n %22)%0A     \n",
+            "lines": "24"
+        },
+        {
+            "label": "2026-07-06_23-27-43",
+            "content": "@@ -527,13 +527,12 @@\n Println(\n- \n )%0A%7D%0A\n",
+            "lines": "24"
+        },
+        {
+            "label": "2026-07-06_23-28-05",
+            "content": "@@ -383,17 +383,16 @@\n .Print(%22\n- \n P%22)%0A    \n@@ -448,17 +448,16 @@\n .Print(%22\n- \n G%22)%0A    \n",
+            "lines": "24"
+        },
+        {
+            "label": "2026-07-06_23-28-24",
+            "content": "@@ -493,17 +493,16 @@\n .Print(%22\n- \n M%22)%0A    \n",
+            "lines": "24"
+        },
+        {
+            "label": "2026-07-06_23-28-32",
+            "content": "@@ -493,16 +493,17 @@\n .Print(%22\n+ \n M%22)%0A    \n",
+            "lines": "24"
+        },
+        {
+            "label": "2026-07-06_23-28-38",
+            "content": "@@ -449,16 +449,17 @@\n .Print(%22\n+ \n G%22)%0A    \n",
+            "lines": "24"
+        },
+        {
+            "label": "2026-07-06_23-28-50",
+            "content": "@@ -449,17 +449,16 @@\n .Print(%22\n- \n G%22)%0A    \n",
+            "lines": "24"
+        },
+        {
+            "label": "2026-07-06_23-28-59",
+            "content": "@@ -449,16 +449,17 @@\n .Print(%22\n+ \n G%22)%0A    \n",
+            "lines": "24"
+        },
+        {
+            "label": "2026-07-06_23-29-07",
+            "content": "@@ -449,17 +449,16 @@\n .Print(%22\n- \n G%22)%0A    \n",
+            "lines": "24"
+        },
+        {
+            "label": "2026-07-06_23-29-13",
+            "content": "@@ -383,16 +383,17 @@\n .Print(%22\n+ \n P%22)%0A    \n@@ -449,16 +449,17 @@\n .Print(%22\n+ \n G%22)%0A    \n@@ -511,71 +511,8 @@\n   %7D%0A\n-        if i %3C quants-1 %7B%0A            fmt.Print(%22 %22)%0A        %7D%0A\n     \n",
+            "lines": "24"
+        },
+        {
+            "label": "2026-07-06_23-30-45",
+            "content": "package main\nimport \"fmt\"\nfunc main() {\n    var quants int \n    fmt.Scan(&quants)\n    alturas := make([]float64, quants)\n    soma := 0.0\n    for i := 0; i < quants; i++ {\n        fmt.Scan(&alturas[i])\n        soma += alturas[i]\n    }\n    media := soma / float64(quants)\n    fmt.Printf(\"%.2f\\n\", media)\n    for i := 0; i < quants; i++ {\n        if alturas[i] < media {\n           fmt.Print(\"P\")\n        } else if alturas[i] > media {\n           fmt.Print(\"G\")\n        } else {\n           fmt.Print(\"M\")\n        }\n        if i < quants-1 {\n            fmt.Print(\" \")\n        }\n    }\n    fmt.Println( )\n}\n",
+            "lines": "27"
+        }
+    ]
+}

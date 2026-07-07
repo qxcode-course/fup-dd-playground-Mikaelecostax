@@ -1,0 +1,9 @@
+{
+    "patches": [
+        {
+            "label": "2026-07-07_02-35-06",
+            "content": "package main\n\nimport (\n\t\"bufio\"\n\t\"fmt\"\n\t\"strings\"\n    \"os\"\n)\nfunc main() {\n    var n int\n    fmt.Scan(&n)\n    scanner := bufio.NewScanner(os.Stdin)\n    for i := 0; i < n; i++ {\n        scanner.Scan()\n        frase := scanner.Text()\n        MS := \"\"\n        SA := \"\"\n        for _, letra := range frase {\n            if strings.ContainsRune(\"aeiou\", letra){\n                SA += string(letra)\n            } else {\n                if len(SA) > len(MS) {\n                    MS = SA\n                }\n                SA = \"\"\n            }\n        }\n        if len(SA) > len(MS){\n            MS = SA\n        }\n        fmt.Println(MS)\n    }\n}\n",
+            "lines": "33"
+        }
+    ]
+}

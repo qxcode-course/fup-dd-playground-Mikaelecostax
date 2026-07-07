@@ -1,0 +1,44 @@
+{
+    "patches": [
+        {
+            "label": "2026-07-06_23-45-20",
+            "content": "@@ -554,28 +554,24 @@\n ass%5Bi%5D%0A    %7D\n-%0A   \n  if chute ==\n",
+            "lines": "35"
+        },
+        {
+            "label": "2026-07-06_23-45-57",
+            "content": "@@ -558,16 +558,21 @@\n i%5D%0A    %7D\n+%0A    \n if chute\n",
+            "lines": "36"
+        },
+        {
+            "label": "2026-07-06_23-46-03",
+            "content": "@@ -733,157 +733,6 @@\n   %7D%0A\n-    if vt %3E vs %7B%0A        fmt.Println(%22primeiro%22)%0A    %7D else if vs %3E vt %7B%0A        fmt.Println(%22segundo%22)%0A    %7D else %7B%0A        fmt.Println(%22empate%22)%0A    \n %7D%0A\n",
+            "lines": "35"
+        },
+        {
+            "label": "2026-07-06_23-48-15",
+            "content": "@@ -557,16 +557,17 @@\n %5Bi%5D%0A    \n+%7D\n if chute\n@@ -882,12 +882,8 @@\n )%0A    %7D%0A\n-%7D%0A%7D%0A\n",
+            "lines": "41"
+        },
+        {
+            "label": "2026-07-06_23-49-18",
+            "content": "@@ -183,14 +183,15 @@\n e(%5B%5D\n-string\n+float64\n , ro\n",
+            "lines": "43"
+        },
+        {
+            "label": "2026-07-06_23-50-40",
+            "content": "@@ -761,17 +761,18 @@\n mt.Print\n-f\n+ln\n (%22primei\n@@ -773,18 +773,16 @@\n primeiro\n-%5Cn\n %22)%0A    %7D\n@@ -817,17 +817,18 @@\n mt.Print\n-f\n+ln\n (%22segund\n@@ -828,18 +828,16 @@\n %22segundo\n-%5Cn\n %22)%0A    %7D\n@@ -865,17 +865,18 @@\n rint\n-f\n+ln\n (%22empate\n %5Cn%22)\n@@ -875,10 +875,8 @@\n pate\n-%5Cn\n %22)%0A \n",
+            "lines": "43"
+        },
+        {
+            "label": "2026-07-06_23-52-05",
+            "content": "@@ -731,127 +731,8 @@\n   %7D%0A\n-    if real %3C chute %7B%0A        if escolha == %22m%22%7B%0A            vs++%0A        %7D else %7B%0A            vt++%0A        %7D%0A    %7D%0A%7D%0A \n     \n@@ -885,8 +885,10 @@\n     %7D%0A%7D%0A\n+%7D%0A\n",
+            "lines": "43"
+        },
+        {
+            "label": "2026-07-06_23-55-31",
+            "content": "package main\nimport \"fmt\"\nfunc main() {\n    var rodadas int\n    fmt.Scan(&rodadas)\n    valorr := make([]float64, rodadas)\n    chutesp := make([]float64, rodadas)\n    escolhass := make([]string, rodadas)\n    for i := 0; i < rodadas; i++ {\n        fmt.Scan(&valorr[i])\n    }\n    for i := 0; i < rodadas; i++ {\n        fmt.Scan(&chutesp[i])\n    }\n    for i := 0; i < rodadas; i++ {\n        fmt.Scan(&escolhass[i])\n    }\n    vt := 0\n    vs := 0\n    for i := 0; i < rodadas; i++ {\n        real:= valorr[i]\n        chute:= chutesp[i]\n        escolha:= escolhass[i]\n    if chute == real {\n        vt++\n        continue\n    }\n    if real > chute {\n        if escolha == \"M\"{\n            vs++\n        } else {\n            vt++\n        }\n    }\n    if real < chute {\n        if escolha == \"m\"{\n            vs++\n        } else {\n            vt++\n        }\n    }\n}\n     if vt > vs {\n        fmt.Printf(\"primeiro\\n\")\n    } else if vs > vt {\n        fmt.Printf(\"segundo\\n\")\n    } else {\n        fmt.Printf(\"empate\\n\")\n    }\n}\n",
+            "lines": "50"
+        }
+    ]
+}

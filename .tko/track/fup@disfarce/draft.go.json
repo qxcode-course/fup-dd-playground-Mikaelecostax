@@ -1,0 +1,24 @@
+{
+    "patches": [
+        {
+            "label": "2026-07-07_00-30-41",
+            "content": "@@ -318,127 +318,8 @@\n ol)%0A\n-        for _, letra := range ultronL %7B%0A            letrasUl%5Bletra%5D= true%0A        %7D%0A        letrascorrespondentes := 0%0A\n     \n@@ -384,17 +384,16 @@\n l%5Bletra%5D\n- \n %7B%0A      \n",
+            "lines": "30"
+        },
+        {
+            "label": "2026-07-07_00-59-56",
+            "content": "@@ -759,16 +759,17 @@\n sp %3E 0.5\n+0\n %0A       \n",
+            "lines": "34"
+        },
+        {
+            "label": "2026-07-07_01-00-03",
+            "content": "@@ -699,21 +699,95 @@\n        %7D\n+ \n else \n+%7B%0A            letrascorrespondentes/totalletrasp %3E 0.5%0A        %7D%0A        \n if letra\n",
+            "lines": "34"
+        },
+        {
+            "label": "2026-07-07_01-01-34",
+            "content": "package main\nimport (\"fmt\"\n    \"strings\" )\nfunc main() {\n    var x int\n    fmt.Scan(&x)\n    for i := 0; i < x; i++ {\n        var codigoUl, codigop string\n        fmt.Scan(&codigoUl, &codigop)\n        ultronL := strings.ToLower(codigoUl)\n        pessoaL := strings.ToLower(codigop)\n        letrasUl := make(map[rune]bool)\n        for _, letra := range ultronL {\n            letrasUl[letra]= true\n        }\n        letrascorrespondentes := 0\n        for _, letra := range pessoaL {\n            if letrasUl[letra] {\n                letrascorrespondentes++\n            }\n        }\n        totalletrasp := len(pessoaL)\n        if letrascorrespondentes == totalletrasp{\n            fmt.Println(\"chefe\")\n        }else if letrascorrespondentes*2 > totalletrasp{\n            fmt.Println(\"ultron\")\n        } else {\n            fmt.Println(\"pessoa\")\n        }\n    }\n}\n",
+            "lines": "31"
+        }
+    ]
+}

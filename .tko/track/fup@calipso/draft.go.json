@@ -1,0 +1,14 @@
+{
+    "patches": [
+        {
+            "label": "2026-07-07_02-05-26",
+            "content": "@@ -531,19 +531,19 @@\n icode.To\n-Upp\n+Low\n er(carac\n@@ -600,83 +600,32 @@\n %5D = \n-unicode.ToLower(caractere)%0A            %7D%0A            maiuscula = !maiuscula\n+!maiuscula%0A            %7D\n %0A   \n",
+            "lines": "31"
+        },
+        {
+            "label": "2026-07-07_02-14-56",
+            "content": "package main\nimport( \"fmt\"\n    \"bufio\"\n    \"os\"\n     \"unicode\")\nfunc main() {\n   var n int\n   fmt.Scanln(&n)\n   scanner := bufio.NewScanner(os.Stdin)\n   for i := 0; i < n; i++ {\n    scanner.Scan()\n    frase := []rune(scanner.Text())\n    maiuscula := false\n    for _, caractere := range frase{\n        if caractere != ' '{\n            maiuscula = unicode.IsUpper(caractere)\n            break\n        }\n    }\n    for i, caractere := range frase {\n        if caractere != ' '{\n            if maiuscula {\n                frase[i] = unicode.ToUpper(caractere)\n            } else {\n                frase[i] = unicode.ToLower(caractere)\n            }\n            maiuscula = !maiuscula\n        }\n    }\n        fmt.Println(string(frase))\n   }\n}\n",
+            "lines": "32"
+        }
+    ]
+}

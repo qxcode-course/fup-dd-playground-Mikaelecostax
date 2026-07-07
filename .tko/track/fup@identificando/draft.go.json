@@ -1,0 +1,19 @@
+{
+    "patches": [
+        {
+            "label": "2026-07-07_01-42-27",
+            "content": "@@ -393,13 +393,11 @@\n o = \n-%22\n int\n-%22\n %0A   \n",
+            "lines": "28"
+        },
+        {
+            "label": "2026-07-07_01-42-39",
+            "content": "@@ -213,25 +213,25 @@\n f strings.Co\n-n\n+u\n tainsAny(ele\n",
+            "lines": "28"
+        },
+        {
+            "label": "2026-07-07_01-43-08",
+            "content": "package main\nimport (\"fmt\"\n    \"strings\" )\nfunc main() {\n    var elemento string\n    var tipo string\n    primeiro := true \n    for {\n    _, err := fmt.Scan(&elemento)\n    if err != nil {\n        break\n    }\n    if strings.ContainsAny(elemento, \"abcdefghijklmnopqrstuvwxyz\") {\n        tipo = \"str\"\n    } else if strings.Contains(elemento, \".\") {\n        tipo = \"float\"\n    } else {\n        tipo = \"int\"\n    }\n    if primeiro {\n        fmt.Print(tipo)\n        primeiro = false\n    } else {\n        fmt.Print(\" \" + tipo)\n    }\n    }\n    fmt.Println()\n}\n",
+            "lines": "28"
+        }
+    ]
+}
